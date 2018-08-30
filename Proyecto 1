@@ -1,0 +1,40 @@
+Proyecto 1            Fascículo 5
+
+Pérez Facio Javier Alejandro
+
+Compuradora: BBC Modelo B
+
+Una computadora creada por la BBC de Londres,(algo que se me hace curioso por cierto) en 1981. Esisitió en 2  modelos BBC modelo A y B.
+En el fascículo se describe el modelo B. De lo que me pareció mas interesante fue que con esta máquina se empezaron a hacer incursiones,
+por llamarlo así, de usar televisores y pantallas RGB o en todo caso un monitor monocromáico, algo muy común para la época en esos tiempos;
+pero no las televisiones o monitores a color, algo que creí que se había dado con la Apple Lisa del mismo periodo de tiempo.
+
+De lo mas increíble de esta computadora es la RAM, solo contaba con 32 KB, en esta época eso no es absolutamente nada para las cantidades
+que hoy se manejan. Y algo que en verdad me dejó muy asombrado es que tiene la capacidad de cnectar una antena para TV que se usaba para
+transmitir la imagen a la televisión y usarla como monitor. Su procesador, como la mayoría de la época era de 8 bits. Tenía dos ROM,
+una para el S.O. y otra que almacenaba el lenguaje BASIC, algo bastante interesante.
+
+Una de las curiosidades de esta máquina es un puerto llamado "Tubo", que servia para que la BBC Modelo B usara otros procesadores además
+del suyo que era el MOS 6502. Tenía un controlador de video, algo supongo avanzado para la época, ya que casi se empezaba a desarrollar
+la interfaz gráfica. Otra de sus entradas era una analógica en la cual se podría conectar un dispositivo no digital.
+
+Artículo extra.
+
+Artículo: Almacenamiento Seguro.
+
+En el artículo se explican los tipos de almacenamiento de una computadora, algo que me llamó la antención fue que en una parte decía "En la
+actualidad hay dos tipos de memoria interna: RAM y ROM", me parece curioso, supongo que se pensaba que en algún momento iba a haber otro
+tipo de memoria en la computadora. Entrando en materia, nos explican qué hace cada una de ellas; explica el significado de ROM. En la ima-
+gen que aparece en el artículo aparece una EPROM algo que en la actualidad, al menos para mi, es algo raro de ver pero que en aquella época
+era algo muy novedoso.
+
+También explica la definición matemática de 1K (1K=2^10). Habla sobre una memoria en específico la 2364 de Intel que tenía 64536 bits u
+8192 KB. Durante la explicación sobre los bytes hace mención del Bus de Datos. Llegando a la explicación de la RAM, hace mención que es un
+poco mas limitada, algo de lo que hablamos en clase sobre que la RAM se ha quedado corta con respecto al crecimiento de los procesadores,
+ya que menciona que es un poco mas pequeña que la ROM, tiene solo 4096 bits o 1024 nibbles. Aquí nos damos cuenta que desde los 80 la RAM
+se ha quedado corta en desarrollo con respecto a la ROM y el procesador. Después habla sobre la RAM dinámica y estática, de la cual aun
+seguimos usando la RAM dinámica.
+
+Cuando terminé de leer el artículo, me di cuenta que a pesar de que ya tiene bastante tiempo aun seguimos teniendo el problema de que
+la RAM se está quedando muy corta; no ha habido un avance significativo desde 1981 y que seguimos usando en esencia lo mismo que en
+aquella época con respecto a la memoria.
