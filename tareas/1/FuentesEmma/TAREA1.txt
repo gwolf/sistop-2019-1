@@ -1,0 +1,13 @@
+Hola profesor.
+Estoy usando un lenguaje de programación que me recomendó un profesor y hasta ahora me ha parecido muy
+cómodo a lo largo de la carrera su nombre es "Dr. Racket" y tal vez de ahí derive el que no pude terminar 
+la tarea, nunca había usado las funciones de Semaphore,threads o synchronization y por lo tanto he estado
+leyendo la documentación respecto a esos temas y a lo mejor me estoy ahogando en un vaso de agua, pero me
+he hecho bolas y no pude implementarlo a los problemas recomendados de la tarea. 
+No voy a dejar de trabajar respecto a esto, entregaría mi tarea fuera de tiempo. Una disculpa.
+
+https://docs.racket-lang.org/guide/concurrency.html
+https://docs.racket-lang.org/reference/semaphore.html
+https://docs.racket-lang.org/reference/threads.html
+
+ 
