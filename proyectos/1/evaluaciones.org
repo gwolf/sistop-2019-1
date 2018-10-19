@@ -1,0 +1,370 @@
+#+title: Evaluación del primer proyecto
+#+author: Gunnar Wolf
+
+A continuación pueden consultar la evaluación del proyecto
+[[planteado aquí][./README.md]].
+
+Como comentario global: Muchos de ustedes entregaron varios archivos,
+aparentemente diferentes versiones del mismo documento. Dado que no
+puedo revisar a cada uno individualmente, sólo revisaré el primero de
+ellos en un ordenamiento alfabético.
+
+* Aguilar Miguel
+- Documentos entregados :: [[MiguelAguilar/resena.txt][./MiguelAguilar/resena.txt]]
+- Comentarios ::
+  - Un módulo no puede "no tener fin". Tu número de cuenta termina
+    en 7763. El módulo está definido como el residuo de la división
+    entera de un número sobre otro; el residuo de ...7763 / 100
+    es 63. 63/4 es 15.
+
+    Claro, esto no importa /demasiado/, es perfectamente aceptable;
+    les inventé la formulita para que hubiera una mejor cobertura de
+    los diferentes números. Pero... Bueno, suponía que a estas alturas
+    de la carrera, el concepto de aritmética modular ya lo tendrían
+    cubierto.
+  - El nombre del directorio de entrega está equivocado —
+    `MiguelAguilar` en vez de `AguilarMiguel`. No es terrible, pero me
+    dificulta un poco la vida.
+  - Cuida tu ortografía. No acentuaste nada. Mencionas la "sona" de la
+    casa, una máquina que a veces es de "coser" y a veces de
+    "cocer". Varios puntos no seguidos de mayúsculas.
+- Calificación :: 8
+
+* Amado Yerenia
+- Documentos entregados :: [[AmadoYerenia/Proyecto1.docx][./AmadoYerenia/Proyecto1.docx]],
+     [[AmadoYerenia/Proyecto1.txt][./AmadoYerenia/Proyecto1.txt]]
+- Comentarios ::
+  - Acepto que trabajen de más en vez de trabajar de menos ;-) ¡Es un
+    buen resumen del /fascículo entero/! Yo les pedí que leyeran
+    únicamente /dos textos/ (sería el de la Apple 2 y cualquier otro
+    de tu elección). Pero, ya que lo hiciste de la revista entera,
+    ¡bienvenido!
+  - Para cubrir todo lo que hiciste, el resultado fue bueno en líneas
+    generales. Hay algunas precisiones que me gustaría hacerte, pero a
+    grandes rasgos cumpliste perfectamente lo que busca el ejercicio.
+- Calificación :: 10
+
+* Buendía Laura
+- Documentos entregados :: [[BuendiaLaura/reseña_fasc003.pdf][./BuendiaLaura/reseña_fasc003.pdf]]
+- Comentarios ::
+  - Corrección: La Commodore 64 se comercializó desde 1982, no 1962
+    (pero es un /dedazo/, no hace mayor diferencia).
+  - Me da gusto ver que, a pesar de que te centraste en dos artículos
+    principales, "hojeaste" con interés el resto de la revista. ¡Bien!
+- Calificación :: 10
+
+* Chibras Luis
+- Documentos entregados ::  [[ChibrasLuis/BBCmodeloB.docx][./ChibrasLuis/BBCmodeloB.docx]],
+     [[ChibrasLuis/BBCmodeloB.txt][./ChibrasLuis/BBCmodeloB.txt]]
+- Comentarios :: 
+  - ¡Bien por relacionar conceptos con lo visto en clase!
+  - Los CPUs de los 80 no incluían una MMU (/Memory Management Unit/,
+    /Unidad de Administración de Memoria/). Un CPU, sí o sí, bajo
+    cualquier definición que he visto siempre incluyó ALU.
+  - ¿Te parece curioso que haya teclas de función programable? Bueno,
+    y... ¿Cómo definirías a las /teclas de función/ de nuestros
+    teclados actuales (F1...F12)? Cada aplicación define el uso que
+    tendrán.
+  - Ojo con la ortografía. No son tantos errores, pero sí bastante
+    notorios: /anos/ por /años/, /echo/ por /hecho/, /posterior mente/
+    por /posteriormente/, /a/ por /ha/, tanto /cavo/ y /acabo/ por
+    /cabo/, /amenos/ por /a menos/, /articulo/ por /artículo/... ¡No
+    sobre-confíes en los correctores automáticos! Todas las palabras
+    son válidas, pero no significan lo que quieres
+
+    Es importante también buscar un /flujo/ de las oraciones que
+    empleas, separar ideas por comas y puntos, cortar parrafos...
+  - Respecto a lo de estar /barriendo/ el teclado a la espera de
+    eventos, ¿recuerdas que en la clase del jueves 30 hablábamos
+    acerca de la /espera activa/? Bueno... Ahí tienes un caso ☺
+- Calificación :: 9
+
+* Facundo Edgar
+- Documentos entregados :: [[Edgar Facundo/Proyecto001.txt][./Edgar Facundo/Proyecto001.txt]],
+     [[EdgarFacundo/Proyecto001.txt][./EdgarFacundo/Proyecto001.txt]], [[Edgar Facundo/Proyecto01.pdf][./Edgar Facundo/Proyecto01.pdf]],
+     [[EdgarFacundo/Proyecto01.pdf][./EdgarFacundo/Proyecto01.pdf]], [[Edgar Facundo/Proyecto1.docx][./Edgar Facundo/Proyecto1.docx]],
+     [[EdgarFacundo/Proyecto1.docx][./EdgarFacundo/Proyecto1.docx]]
+- Comentarios :: 
+  - También llama mi atención este /Uncommitted Logic Array/. Me
+    suena, por el nombre, a que podría ser algo por el estilo de un
+    FPGA moderno, pero... ¿Qué sentido tendría en una computadora
+    destinada al mercado (semi-)masivo?
+  - La palabra /overhead/ (me sorprende que la hayan dejado sin
+    traducir) es la /sobrecarga/ — Si tienes que dejar reservados 4KB
+    de memoria para comunicación con el SO, por ejemplo, podría
+    decirse que el uso de las facilidades que te da el SO tienen una
+    sobrecarga de 4KB. Nunca vi una Acorn, pero puedo ponerte como
+    ejemplo a la Commodore 64: Venía con 64KB de memoria, pero al
+    encenderla siempre te saludaba indicando que tenías 38KB libre. ¿Y
+    los 26KB restantes? Sobrecarga.
+  - Muy buen resumen. Ya pronto, cuando hablemos de administración de
+    memoria, abordaremos el tema de los mapas de memoria.
+- Calificación :: 10
+
+* Fuentes Emma
+- Documentos entregados :: [[FuentesEmma/Proyecto_1.odt][./FuentesEmma/Proyecto_1.odt]]
+- Comentarios ::
+  - Elegiste un tema interesante; la verificación ortográfica suena
+    muy simple de realizar, pero abordas bien algunas de las
+    complicaciones que traía en los equipos de hace algunas décadas
+  - Cierto lo que dices de las /primeras cosas/: Yo babeaba por
+    conocer una Osborne. Dudo que hayan vendido muchas fuera de
+    Inglaterra, al menos nunca logré ver una.
+- Calificación :: 10
+
+* Guadarrama Edgar
+- Documentos entregados :: [[GuadarramaEdgar/Fasciculo17.odt][./GuadarramaEdgar/Fasciculo17.odt]]
+- Comentarios ::
+  - Te tocó una de las computadoras más limitadas de la
+    colección. Hacia 1984, y a pesar de toda la pataleta que un niño
+    de ocho años podía hacer, mi padre se negó a comprar una
+    computadora similar a esta porque más que ayudarme al aprendizaje
+    podría bloquearme el gusto. Al día de hoy, se lo agradezco.
+  - Me llama la atención que mencionas que tiene "características que
+    nuestras computadoras actuales conservan".
+  - Respecto lo que mencionas de mayúsculas y minúsculas: Nunca usé
+    una Tandy, pero era relativamente común en esa época. Por ejemplo,
+    las primeras computadoras de la muy popular serie Apple 2 no
+    tenían soporte a minúsculas: Era común indicar en pantalla las
+    mayúsculas como negro sobre blanco y las minúsculas como blanco
+    sobre negro, y sólo al enviarlas a la impresora se mandaban
+    "correctamente". Las también muy populares Commodore tenían dos
+    conjuntos de caracteres (el llamado [[https://en.wikipedia.org/wiki/PETSCII][PETSCII]]), para contar con más
+    caracteres semi-gráficos.
+  - ¡Interesante articulito el que elegiste! Sí, en esa época y en
+    esas computadoras podía separarse lo que /yo/ llamaría el /sistema
+    de operaciones de disco/ del conjunto de simples llamadas al
+    sistema... En fin, podría ponerme a discutir respecto al artículo,
+    pero me limito a este comentario. ¡Buen resumen!
+- Calificación :: 10
+
+* Hernández Alejandro
+- Documentos entregados :: [[HernandezAlejandro/Proyecto1_SO.pdf][./HernandezAlejandro/Proyecto1_SO.pdf]]
+- Comentarios ::
+  - La computadora que te tocó no tiene mucho "ángel",
+    desafortunadamente no tengo mucho que comentar al respecto
+  - Me parece una buena lectura del texto del otro artículo. Es un
+    buen tema – Creo que hacia el final este artículo cae en el fácil
+    optimismo de esa época de esperar una inteligencia artificial
+    capaz de generar programas de computadora, cosa que se ha
+    demostrado imposible. Claro, hay muchas herramientas que nos
+    facilitan las partes más tediosas y automatizan /parte de/ la
+    generación de código, pero siguen (y, me atrevo a decir, seguirán)
+    controladas por una dirección humana.
+- Calificación :: 10
+
+* Jiménez Karen
+- Documentos entregados :: [[JimenezKaren/proyecto1_krayolajmz.pdf][./JimenezKaren/proyecto1_krayolajmz.pdf]]
+- Comentarios ::
+  - Me sorprende que digas que «si lo comparamos con algunas máquinas
+    actuales nos damos cuenta que son muy similares a ésta con
+    respecto al microprocesador»... ¿Cómo puede compararse un 6502 a
+    1MHz con el CPU más chiquito que encuentres en la computadora más
+    reducida a la venta el día de hoy?
+  - Elegiste el glosario, y si bien no puedo hacer un comentario
+    general al respecto, puedo aclarar un par de conceptos que me
+    parece que erraste:
+    - Hoy en día padecemos de una invasión de /buzzwords/ - Se
+      refieren a cualquier concepto que suena obscuro y en realidad es
+      algo sencillo. Como el "Cloud Computing"...
+    - El boot no es que «sin la ROM se le llama al sistema operativo
+      para que envíe este mensaje» — El mínimo de ROM que debe haber
+      es lo necesario para que el CPU pueda encontrar al SO. Y eso
+      sería el proceso de boot.
+    - BASIC es un lenguaje, y el nombre /significa/ "código simbólico
+      multipropósito de instrucciones para principiantes".
+  - Pero, en general, bien ☺
+- Calificación :: 10
+
+* Lara Paola
+- Documentos entregados :: [[LaraPaola/Proyecto1.pdf][./LaraPaola/Proyecto1.pdf]]
+- Comentarios ::
+  - ¡Ups! Creo que entendiste un poco mal las instrucciones. No era
+    necesario que revisaras dos fascículos, sino que dos artículos del
+    que te tocaba (el 4). Pero no te preocupes, incluso si descartara
+    la revisión del fascículo 6, lo que mencionas cubre
+    suficientemente bien lo que les pedí ☺
+  - Me gustó tu revisión. No tengo mucho más que comentar. Muy bien
+    por llevar paralelos entre lo que leíste de hace 30 años y lo que
+    vives hoy.
+- Calificación :: 10
+
+* Martínez Jair
+- Documentos entregados :: [[MartinezJair/Proyecto 1.pdf][./MartinezJair/Proyecto 1.pdf]]
+- Comentarios ::
+  - Revisión muy completa, buena y crítica de la Osborne.
+  - Sí, en los 80 las (pequeñísimas) computadoras ya estaban en todos
+    lados ☺ ¡No me tocó crecer en la era de las cavernas! Esa es la
+    generación de mis padres.
+
+    (Claro, ¡creo que /todos/ tenemos exactamente esa misma opinión!)
+- Calificación :: 10
+
+* Medina Anibal
+- Documentos entregados :: [[MedinaAnibal/reseña.txt][./MedinaAnibal/reseña.txt]]
+- Comentarios ::
+  - ¿Otro mas que hizo una revisión de /varios fascículos/?
+    Buenoo... Yo leo con gusto :-) Bastaba con que revisaras /dos de
+    los artículos/ del fascículo 16 (la Sharp MZ-711 y cualquier otro
+    de tu elección). Pero, no te preocupes, tu trabajo cubre
+    perfectamente lo que esperaba en términos de contenido, y hasta se
+    pasa. Eso no es malo ☺
+  - ¡Ojo con ortografía y con palabras inexistentes!  /empleamiento/ ⇒
+    empleo o utilización, /coneccion/, /abla/, /concistia/,
+    /concexion/, /inalambra/, y eso que no pasé del primer párrafo con
+    los ejemplos de error... Además, ni un solo acento en todo tu
+    texto. ¡La comunicación es parte /muy/ importante del trabajo
+    profesional de un ingeniero!
+  - Buena elección de temas. De los que elegiste, me pareció
+    particularmente relevante e interesante el de la evolución de
+    tecnologías para las memorias. Me dio gusto también que revisaras
+    el de "la cinta teórica".
+- Calificación :: 9
+
+* Moreno Luis
+- Documentos entregados ::  [[MorenoLuis/MorenoLuisProyecto1.docx][./MorenoLuis/MorenoLuisProyecto1.docx]],
+     [[MorenoLuis/MorenoLuisProyecto1.txt][./MorenoLuis/MorenoLuisProyecto1.txt]]
+- Comentarios ::
+  - Me gusta la forma en que vas "construyendo tu narrativa" y
+    desarrollando lo que obtienes del texto que leíste. ¡Muy bien!
+  - Jejejej, y recibo el "cebollazo" relativo a la usabilidad de
+    Linux. ¡No te asustes ni te vayas con la finta de que todo es como
+    yo lo hago aparecer! Hay muchísimos sistemas Linux donde la
+    prioridad es ser amigables a usuario final. Recuérdenmelo en
+    clase, les puedo mostrar algunos ejemplos. ¡No le tengan miedo! Es
+    más — Citándote, ¡No lo veas como «aterrador y confuso»! No tiene
+    por qué serlo. ☺
+  - También disfruté re-revisando el texto de «La era de los
+    portátiles». La distancia de nuestro mundo con el de hace 30-35
+    años es... Tremenda.
+    - Hace poco más de diez años, muchos nos burlamos del
+      teclado-en-pantalla de los nuevos teléfonos todo-táctil. Sigo
+      creyendo que su usabilidad es muy baja. Sin embargo, es un gran
+      ejemplo de cómo se logró una mayor miniaturización de lo que
+      esperábamos: quitándole el teclado al teclado. ¡Creo que /casi/
+      cualquiera prefiere la broma de teclado en pantalla que tiene un
+      celular al de la Blackberry que citas!
+  - Muy buena tu reflexión final. Sí, yo disfruté mucho de la era en
+    que podías aspirar a entender /prácticamente todo/ en tu sistema
+    de cómputo, si te esforzabas lo suficiente. Hoy... Resulta
+    imposible. Vamos - Precisamente esta semana salió a la luz lo que
+    para muchos sería obvio: El mismo Linus Torvalds dice que [[https://linux.slashdot.org/story/18/08/31/2329207/linus-torvalds-no-longer-knows-the-whole-linux-kernel-and-thats-ok][ni
+    siquiera él conoce todo lo que forma parte de Linux]]...
+  - Excelente resumen. ¡Felicidades!
+- Calificación :: 10
+
+* Pérez Miguel
+- Documentos entregados :: [[PerezMiguel/Proyecto1][./PerezMiguel/Proyecto1]]
+- Comentarios ::
+  - El Sinclair QL es un bicho muy curioso... En Europa la línea de
+    Sinclair fue muy relevante (creo que en América nunca
+    pegaron). Mencionas lo limitado del 68008 — Sí, esta es la única
+    computadora "importante" que, hasta donde tengo conocimiento, usó
+    este curioso chip, casi todas se estandarizaron en el 68000 (32/16
+    bits), y sus sucesores (limpiamente 32).
+    - Sin embargo... Hasta donde entiendo, en Europa medio mundo tuvo
+      a la Sinclair ZX Spectrum, antecesora de la QL, pero la QL fue
+      básicamente un fracaso comercial, con sólo dos años de vida ☹
+  - ¡Gracias por recordármelo! Como puedes recordar, me cuesta trabajo
+    encontrar más ejemplos cuando les presento mi "tema inventado" de
+    multiprocesamiento asimétrico (AMP). La Sinclair QL, con el 68008
+    y el Intel 8049, es un claro ejemplo.
+  - Respecto a la criptografía, muy bien por interesarte en este
+    tema. A estas alturas, sabrás ya también que es uno de los temas
+    que a mí más me gustan ☺
+- Calificación :: 10
+
+* Ramírez Ángel
+- Documentos entregados :: [[RamirezAngel/RamirezAngelProyecto1.docx][./RamirezAngel/RamirezAngelProyecto1.docx]],
+     [[RamirezAngel/RamirezAngelProyectoUno.docx][./RamirezAngel/RamirezAngelProyectoUno.docx]]
+- Comentarios ::
+  - Mencionas que «Es curioso que en aquel tiempo la RAM y la ROM de
+    un equipo, como este, sea del mismo tamaño, ya que hoy en día hay
+    una gran diferencia de capacidad entre una y otra. La ROM de una
+    maquina suele tener mucha más capacidad de memoria que una RAM» —
+    ¡Falso! Justo al contrario. Normalmente no sabemos el tamaño
+    exacto de nuestro ROM, pero podemos asumir que es bastante pequeño
+    (basta con tener espacio para albergar al BIOS / UEFI);
+    recientemente /re-flasheé/ el ROM de mi portátil, y es de 12MB (y
+    la computadora venía de serie con 4GB de RAM).
+  - Nuestras computadoras actuales también tienen teclas para mover el
+    mouse en la pantalla, ¿qué no? ;-) Pero, sí, pocas máquinas de esa
+    generación empleaban el mouse, la interfaz era mayormente textual.
+
+    La BBC Modelo B se vendió de 1981 a 1994; el mouse se inventó
+    hacia 1968 (¿recuerdas a la [[https://www.youtube.com/watch?v=yJDv-zdhzMY][madre de todos los demos]] que les
+    presenté en nuestro primer día de clases?), y hacia 1973 aparecio
+    una interfaz gráfica que hoy en día resulta reconocible, la [[https://en.wikipedia.org/wiki/History_of_the_graphical_user_interface#Xerox_PARC][Xerox
+    PARC]]. Pero los primeros entornos de escritorio en computadoras
+    personales llegaron apenas hasta 1983.
+  - Respecto al texto de "Almacenamiento seguro", es un buen
+    resumen. Hoy en día habría que actualizar muchas cosas, algunas de
+    las cuales cubriremos, como el /firmware/ (que es RAM disfrazado
+    de ROM) y las /unidades Flash/ (que son básicamente ROM disfrazado
+    de unidades de disco).
+- Calificación :: 10
+
+* Ramírez Simón
+- Documentos entregados :: [[RamirezSimon/proyectosistop.txt][./RamirezSimon/proyectosistop.txt]]
+- Comentarios ::
+  - Ah, las heterogeneidades de nuestro idioma... Sí, siempre que leas
+    un texto español de computación hablarán de "ordenador" por
+    "computadora", "fichero" por "archivo", y una gran cantidad de
+    términos que nos resultan incómodos y poco
+    naturales. Afortunadamente, en general podemos entenderlos sin
+    más.
+  - ¡El texto del segundo artículo es /Mensaje comprendido/, no
+    /Mensaje comprimido/ como lo indicas! El desarrollo del texto es
+    correcto.
+- Calificación :: 10
+
+* Sánchez Andrew
+- Documentos entregados :: [[SánchezAndrew/primerProyecto.odt][./SánchezAndrew/primerProyecto.odt]]
+- Comentarios ::
+  - Te tocó revisar una de las computadoras menos comunes de toda la
+    serie. Prácticamente todas las computadoras de la época venían con
+    algún dialecto de BASIC; a Forth únicamente llegué a ver como
+    software opcional para la Apple ][. En esa época, era visto como
+    "complejo", y nunca lo aprendí. Sin embarego, leyendo [[https://es.wikipedia.org/wiki/Forth][su entrada
+    en Wikipedia]], queda bastante más claro. Tal vez una de las cosas
+    más confusas sería el uso de la [[https://es.wikipedia.org/wiki/Notaci%C3%B3n_polaca_inversa][notación polaca inversa]] (¿estás
+    familiarizado con el término?)
+
+    Si bien eso la hace una computadora más interesante, estoy seguro
+    que contribuyó a que no despegara. ¿Quién quiere aprender /eso/?
+    ;-)
+  - Buen resumen relativo a los /sprites/. Si el tema te interesa un
+    poco más, te invito a revisar el material con el que yo aprendí a
+    hacerlo (¡!), lo encontré hace cosa de un año mientras
+    /escombraba/ en casa. Está en español, y está dirigido a niños
+    entre 8 y 12 años para la /Commodore 64/: [[https://gwolf.org/files/C64_graficacion_y_sonido.pdf][C64 Graficación y
+    Sonido]], y puedes usar en línea [[http://www.c64js.com/][una C64 emulada en Javascript]].
+- Calificación :: 10
+
+* Tolentino Eduardo
+- Documentos entregados :: [[TolentinoEduardo/P1.docx][./TolentinoEduardo/P1.docx]]
+- Comentarios ::
+  - ¡Ojo! Indicas que trabajaste sobre el fascículo 12, pero en
+    realidad fue sobre el 13. ¡me costó trabajo encontrarlo para
+    referencia! (no califico a ciegas). Es correcto, es el que te
+    tocaba según tu matrícula.
+    - Mencionas también varias veces "Sord MD5" como modelo de
+      computadora, cuando era simplemente "M5". También con eso
+      lograste confundirme un poco...
+  - El artículo de la Sord menciona un dato muy importante, el
+    esfuerzo de estandarización MSX, que si bien no fue tan exitoso
+    como se esperaba, apuntaba en el sentido que poco tiempo después
+    tomó el mercado.
+- Calificación :: 10
+
+* Valeriano Cristian
+- Documentos entregados :: [[ValerianoCristian/proyecto1.pdf][./ValerianoCristian/proyecto1.pdf]]
+- Comentarios ::
+  - Me llaman la atención varios puntos en particular de la Jupiter
+    Ace, que te tocó revisar. Te remito al comentario que hice a tu
+    compañero Andrew Sánchez, al respecto.
+  - Y, al igual que Andrew, elegiste el texto acerca de los /Gráficos
+    con vida/ — No me sorprende que llame su atención :-)
+  - No recuerdo ver nada que aparentara "gráficos complejos en tres
+    dimensiones", pero supongo que era posible, al menos crudamente.
+- Calificación :: 10

@@ -1,0 +1,25 @@
+PROBLEMA DE CRUCE DE RIO
+
+Para llegar a un encuentro de desarrolladores de sistemas
+operativos, hace falta cruzar un río en balsa.
+
+Los desarrolladores podrían pelearse entre sí, hay que cuidar
+que vayan con un balance adecuado
+
+En la balsa caben cuatro (y sólo cuatro) personas
+La balsa es demasiado ligera, y con menos de cuatro puede volcar.
+Al encuentro están invitados hackers (desarrolladores de Linux) y serfs(desarrolladores de Microsoft).
+Para evitar peleas, debe mantenerse un buen balance: Nodebes permitir que aborden tres hacker y un serf
+o tres serfsy un hacker.
+ Pueden subir cuatro del mismo bando, o dos y dos.
+Hay sólo una balsa.
+No se preocupen por devolver la balsa (está programada para
+volver sola).
+
+Para desarrollar el problema del cruce de rio elegi usar el lenguaje python, ya que por los ejemplos vistos en clase  creo que se me
+hizo mas facil poder entender la sitaxis y la estructura.
+Para poder dar solucion a este problema lo primero que hice fue pensar que metodos de sincronizacion podria utilizar,
+llegando a la conclusion de que necesitaba un mutex, una barrera para la balsa (para esperar a que hubieran 4 personas)
+Posterior a eso revise la bibliografia que se mencionaba y me guie del planteamiento del autor y los ejemplos en clase
+para intentar resolver el problema.
+

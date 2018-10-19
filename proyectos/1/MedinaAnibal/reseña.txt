@@ -1,0 +1,21 @@
+MiComputer fasiculo 16 reseña:
+-Al leer este fasculo  se puede notar la gran diferencia del empleamiento de la tecnologia de lo que  es la actualidad y el antaño, en primera instancia aparece un articulo donde se abla de las posibilidades que da la conceccion por cable como por ejemplo la conceccion entre todos en un area local pero que el problema concistia en el gran nudo de cables que ocasionaria una conexion a si,a demas tambien existe el problema de la gran condensacion de datos que podria circular en este sisteme por lo que la solucion a estos problemas seria una concexion inalambra actualmente ya empleada.
+
+-En segunda instancia se hablo de las nuevas memorioas o metodos de almacenamiento como son la burbuja o el laser y se hablo de que el diseño de hacer memorias mas potentes ha sido la meta de los diseñadores desde el principio por lo cual enel articulo se da un rapido repaso de la historia de las memorias desde las cintas magneticas hasta las memorias mencionadas anteriormente.
+
+-Sharp mz-711:
+Se trata de un ordenador personal que en sumomento fue una inovacion ya que en ella si incorpora funciones mas comodas para el uso personal como son el ctrl+E para pasar las letras a minusculas y el ctrl+F parapasar las letras a mayusculas, a demas cuenta con la opcion de que en esta se acoplaran perifericos externos como por ejemplo una pequeña impresora.
+
+-Los brazos robot:
+En el articulo se plantea la posibilidad del uso de los brazos robot de forma cotidina como es que te abra un jarro de cafe lo cual es posible con una interfaz adecuada luego se dan ejemplo como los brazos robots usados  en las emprezas automotrices que ya podian hacer  tareas tandelicadas como lo es soldar.
+
+MiComputer fasiculo 22 reseña:
+-Diseños de alta calidad:
+ En este articulo se muestra como las computadoras han mejorado y facilitado el trabado de diseño de algun producto ya que entre varias cosas la computadora le permite al diseñador ver una respresentacion grafica de su diseño, el diseñador tambien puede modificar su modelo como el desee sin gastar tiempo restructurando todo el modelo y aparta la modificacion esfacil ya que se puede hacer uso de un periferico externo el lapiz optico el cual hayuda a mejorar la experiencia ya que el diseñador puede modificar el modelo como si en relidad estubiera dibujando en papel.
+
+-La cinta teorica:
+En este articulo ya se comiensa a hablar de lo que es conocida actualmente cono ciencia de la computacion un campo que estudia como aplicar las matematicas a la ingenieria de la computacion esto hace que este campo sea puramente teorico aun que verdaderamente util ya que mucho de de los conceptos de la ingenieria estan basados en estos conceptos teoricos como es la maquina de turing una ma quina que puede generar informacion infinitamente y al macenarla en una cinta infinata esta es la cinta teorica de la que se habla.
+
+-Commodore PET 4032:
+Este fue el ordenador que le dio popularidad a los microordenadores puesto que aun que antes de este ordenador ya existian maquinas mas potentes esta fue la unica que en verdad se podia usar con solo enchufarla, El usuario solo tenie que ingresar su informacion en esta  y solo tenia que guardarla en un caset sin la necesidad de conectar varios aparatos para guardar su informacion por loq eu se puede decier que este ordenador estaba diseñado especificamente para un uso mas casaeroy empresarial.
+

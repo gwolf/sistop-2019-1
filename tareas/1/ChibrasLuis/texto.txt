@@ -1,0 +1,10 @@
+Problema a resolver: Los alumnos y el asesor
+
+Desarrollado en Python3 en sistema operativo Fedora 27
+	para ejecutar solamente necesita tener instaladas las bibliotecas de python3 abrir una terminal ir a donde se encuentre el archivo
+	y teclear python3 funProf.py 
+
+	El programa nunca termina así que hay que  matarlo usando ctrl + c. Amenos que se decida comentar la línea 37, 38 y descomentar la línea 39 en cuyo caso el programa termina l finalizar los hilos creados
+
+Notas: El programa es un poco burdo pero cumple con lo solicitado. no pude trabajar con clases por mas que lo intente me confunde la manera de pasar atributos e invocar funciones que se encuentran en otra clases. No pude implementar una solución mas cercana al ejemplo del elevador por mis deficiencias en el manejo del lenguaje y mi nula experiencia con la programación orientada a objetos.
+

@@ -11,7 +11,10 @@ del curso]]. Les reitero, sin embargo, que resulta más enriquecedor (y
 como lo refleja la rúbrica, obtiene una calificación un poco más alta)
 el que ustedes me planteen los temas de su interés.
 
-|-------+------+-------------+------------+------------|
-| Fecha | Tema | Integrantes | Documentos | Evaluación |
-|-------+------+-------------+------------+------------|
-|-------+------+-------------+------------+------------|
+|-------+----------------------+----------------------------------+---------------------+------------|
+| Fecha | Tema                 | Integrantes                      | Documentos          | Evaluación |
+|-------+----------------------+----------------------------------+---------------------+------------|
+|       | Criptografía: Hashes | Simón Ramírez                    |                     |            |
+|       | Blockchain           | Guadalupe Moreno y Aníbal Medina | [[./MorenoGuadalupe/SO_Expocicion.pptx][Presentación (PPTX)]] |            |
+|       | Rust                 | Yesenia Velasco y Luis Moreno    |                     |            |
+|-------+----------------------+----------------------------------+---------------------+------------|

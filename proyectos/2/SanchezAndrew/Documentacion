@@ -1,0 +1,8 @@
+Comence por desarrollar una interfaz gráfica en Python para poder seleccionar de manera mas fácil, la selección del recurso a monitorear. esto lo hice con la biblioteca wxpython, la cual tuve que instalar para poder hacer uso de esta, por cuestiones compatibilidad con Ubuntu 14.04 (es donde lo desarrollo) instale la version 2.8.
+
+Me parece interesante monitorear estos recursos (CPU, memoria, disco duro y procesos) por cuestiones personales, ya que por ejemplo al estar corriedo programas y estar manejado muchos "recursos, en ocaciones las computadoras (sean de escritorio o laptop) pueden presentar fallos de rendimiento, y el poder monitorear estos recursos pueden ayudar a saber cual es el problema. Esto a raíz de que hace poco un amigo tuvo problemas con su computadora, la cual aun siendo "gamer", estaba funcionando muy lento y al instalar un programa donde se podia monitorar los recursos se pudo solucionar el problema (el cual era el calentamiento del CPU).
+
+#Agrego después comentarios al primer borrador del proyecto para saber como modificar un archivo y subirlo adecuadamente a GitHub#
+
+
+Autor: Sánchez Espinosa Andrew Blaise.

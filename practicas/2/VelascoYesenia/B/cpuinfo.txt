@@ -1,0 +1,6 @@
+Propiedad de:         Yesenia
+Modelo de sistema:    SVE141D
+Tipo de sistema:      x64
+Procesador:           1 Procesadores instalados.
+                      Intel64 Family 6
+Idioma de entrada:    es-mx;Español (México)

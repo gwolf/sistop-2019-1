@@ -1,8 +1,7 @@
-
 ------------------
 System Information
 ------------------
-Time of this report: 8/27/2018, 00:16:38
+Time of this report: 8/29/2018, 21:02:34
        Machine name: GAUDENCIA
    Operating System: Windows 8.1 Pro 64-bit (6.3, Build 9600) (9600.winblue_ltsb.170914-0600)
            Language: Spanish (Regional Setting: Spanish)
@@ -12,7 +11,7 @@ System Manufacturer: TOSHIBA
           Processor: Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz (4 CPUs), ~1.7GHz
              Memory: 8192MB RAM
 Available OS Memory: 8112MB RAM
-          Page File: 2113MB used, 7278MB available
+          Page File: 2134MB used, 7258MB available
         Windows Dir: C:\Windows
     DirectX Version: DirectX 11
 DX Setup Parameters: Not found
@@ -440,7 +439,7 @@ PS/2 Devices
 Disk & DVD/CD-ROM Drives
 ------------------------
       Drive: C:
- Free Space: 891.5 GB
+ Free Space: 892.8 GB
 Total Space: 943.5 GB
 File System: NTFS
       Model: TOSHIBA MQ01ABD100
@@ -1200,6 +1199,220 @@ Diagnostics
 
 Windows Error Reporting:
 +++ WER0 +++:
+Depósito con errores LKD_0x156_UDP_IMAGE_athwbx.sys, tipo 0
+Nombre de evento: LiveKernelEvent
+Respuesta: No disponible
+Identificador de archivo CAB: 560c3826-732f-47e3-babf-c45f14fbaf41
+
+Firma del problema:
+P1: 156
+P2: ffffe000520813e0
+P3: 1
+P4: 58
+P5: fffff8002e065230
+P6: 6_3_9600
+P7: 0_0
+P8: 256_1
+P9: 
+P10: 
+
+Archivos adjuntos:
+C:\Windows\LiveKernelReports\WinsockAFD\WinsockAFD-20180826-2238.dmp
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER-1240652468-0.sysdata.xml
+C:\Windows\LiveKernelReports\WinsockAFD-20180826-2238.dmp
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WERF021.tmp.WERInternalMetadata.xml
+
+Es posible que estos archivos estén disponibles aquí:
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\Kernel_156_4a983f3282be5d22f3350de52ab38ca968718f5_00000000_cab_03cdf514
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: d0154adf-a9aa-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: 
++++ WER1 +++:
+Depósito con errores 0xCFFFFFFF_IMAGE_afd.sys, tipo 0
+Nombre de evento: AppTermFailureEvent
+Respuesta: No disponible
+Identificador de archivo CAB: 13972854-56fb-44ae-90f3-f357a71cbe83
+
+Firma del problema:
+P1: 
+P2: 
+P3: 
+P4: 
+P5: 
+P6: 
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+C:\Windows\Temp\WER44AB.tmpatk.kdmp
+C:\Windows\Temp\WER44BC.tmp.appcompat.txt
+C:\Windows\Temp\WER44EC.tmp.xml
+
+Es posible que estos archivos estén disponibles aquí:
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\Kernel_0_0_00000000_cab_03cdc847
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: 513eefc8-a9ad-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: 
++++ WER2 +++:
+Depósito con errores 0xCFFFFFFF_IMAGE_afd.sys, tipo 0
+Nombre de evento: AppTermFailureEvent
+Respuesta: No disponible
+Identificador de archivo CAB: 468cecb9-5b0e-4741-88b5-dbce606aff47
+
+Firma del problema:
+P1: 
+P2: 
+P3: 
+P4: 
+P5: 
+P6: 
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+C:\Windows\Temp\WERBA57.tmpatk.kdmp
+C:\Windows\Temp\WERBA58.tmp.appcompat.txt
+C:\Windows\Temp\WERBA98.tmp.xml
+
+Es posible que estos archivos estén disponibles aquí:
+C:\ProgramData\Microsoft\Windows\WER\ReportArchive\Kernel_0_0_00000000_cab_03cda7cf
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: ee0394ca-a9ac-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: 
++++ WER3 +++:
+Depósito con errores 133156375681, tipo 5
+Nombre de evento: MoAppHang
+Respuesta: No disponible
+Identificador de archivo CAB: 0
+
+Firma del problema:
+P1: microsoft.windowscommunicationsapps_17.5.9600.20911_x64__8wekyb3d8bbwe
+P2: praid:ppleae38af2e007f4358a809ac99a64a67c1
+P3: 17.5.9600.20911
+P4: 559467ee
+P5: c40a
+P6: 8388608
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER6638.tmp.WERInternalMetadata.xml
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_microsoft.window_d985446cd537a1927634679ff9132e5a1e84e6_b393a731_cab_21a16694\memory.hdmp
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_microsoft.window_d985446cd537a1927634679ff9132e5a1e84e6_b393a731_cab_21a16694\triagedump.dmp
+
+Es posible que estos archivos estén disponibles aquí:
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportArchive\AppHang_microsoft.window_d985446cd537a1927634679ff9132e5a1e84e6_b393a731_174d85df
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: f5912b37-a501-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: bd4432f829b403b43f3d98d01ff5a0c7
++++ WER4 +++:
+Depósito con errores 133156375681, tipo 5
+Nombre de evento: MoAppHang
+Respuesta: No disponible
+Identificador de archivo CAB: 0
+
+Firma del problema:
+P1: microsoft.windowscommunicationsapps_17.5.9600.20911_x64__8wekyb3d8bbwe
+P2: praid:ppleae38af2e007f4358a809ac99a64a67c1
+P3: 17.5.9600.20911
+P4: 559467ee
+P5: c40a
+P6: 8388608
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+
+Es posible que estos archivos estén disponibles aquí:
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportArchive\AppHang_microsoft.window_d985446cd537a1927634679ff9132e5a1e84e6_b393a731_174d8487
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: 2317e4df-a997-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: bd4432f829b403b43f3d98d01ff5a0c7
++++ WER5 +++:
+Depósito con errores 1533169900556657384, tipo 5
+Nombre de evento: AppHangB1
+Respuesta: No disponible
+Identificador de archivo CAB: 0
+
+Firma del problema:
+P1: chrome.exe
+P2: 68.0.3440.106
+P3: 5b6a37f5
+P4: a248
+P5: 134217728
+P6: 
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+
+Es posible que estos archivos estén disponibles aquí:
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportArchive\AppHang_chrome.exe_c5b34163b956c2967a5161d1867a20a1123791d_30ee34d9_174d835e
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: 49020528-a9ad-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: ec32ac94bdde1c057546e9e6c70022e8
++++ WER6 +++:
+Depósito con errores 2247861066009941081, tipo 5
+Nombre de evento: AppHangB1
+Respuesta: No disponible
+Identificador de archivo CAB: 0
+
+Firma del problema:
+P1: chrome.exe
+P2: 68.0.3440.106
+P3: 5b6a37f5
+P4: 73e5
+P5: 134217728
+P6: 
+P7: 
+P8: 
+P9: 
+P10: 
+
+Archivos adjuntos:
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER9153.tmp.appcompat.txt
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER92BB.tmp.WERInternalMetadata.xml
+C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER92DC.tmp.xml
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_cab_4ba09347\memory.hdmp
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_cab_4ba09347\triagedump.dmp
+
+Es posible que estos archivos estén disponibles aquí:
+C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportArchive\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_174d8199
+
+Símbolo de análisis: 
+Nueva búsqueda de una solución: 0
+Identificador de informe: e6390c1d-a9ac-11e8-8274-40e2309dbd2c
+Estado del informe: 0
+Depósito con algoritmo hash: ebef07882c124d44ff3201bad7f41459
++++ WER7 +++:
 Depósito con errores , tipo 0
 Nombre de evento: AppTermFailureEvent
 Respuesta: No disponible
@@ -1230,7 +1443,7 @@ Nueva búsqueda de una solución: 0
 Identificador de informe: 513eefc8-a9ad-11e8-8274-40e2309dbd2c
 Estado del informe: 96
 Depósito con algoritmo hash: 
-+++ WER1 +++:
++++ WER8 +++:
 Depósito con errores , tipo 0
 Nombre de evento: AppTermFailureEvent
 Respuesta: No disponible
@@ -1261,7 +1474,7 @@ Nueva búsqueda de una solución: 0
 Identificador de informe: 513eefc8-a9ad-11e8-8274-40e2309dbd2c
 Estado del informe: 4100
 Depósito con algoritmo hash: 
-+++ WER2 +++:
++++ WER9 +++:
 Depósito con errores , tipo 0
 Nombre de evento: AppHangB1
 Respuesta: No disponible
@@ -1289,223 +1502,3 @@ Nueva búsqueda de una solución: 0
 Identificador de informe: 49020528-a9ad-11e8-8274-40e2309dbd2c
 Estado del informe: 4196
 Depósito con algoritmo hash: 
-+++ WER3 +++:
-Depósito con errores , tipo 0
-Nombre de evento: AppHangB1
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: chrome.exe
-P2: 68.0.3440.106
-P3: 5b6a37f5
-P4: 73e5
-P5: 134217728
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-Archivos adjuntos:
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER9153.tmp.appcompat.txt
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER92BB.tmp.WERInternalMetadata.xml
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER92DC.tmp.xml
-C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_cab_4ba09347\memory.hdmp
-C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_cab_4ba09347\triagedump.dmp
-
-Es posible que estos archivos estén disponibles aquí:
-C:\Users\Gaudencia Facundo\AppData\Local\Microsoft\Windows\WER\ReportQueue\AppHang_chrome.exe_7bc456cc9ad82c762c1c7917676be1edec8d2_30ee34d9_cab_4ba09347
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: e6390c1d-a9ac-11e8-8274-40e2309dbd2c
-Estado del informe: 101
-Depósito con algoritmo hash: 
-+++ WER4 +++:
-Depósito con errores , tipo 0
-Nombre de evento: AppTermFailureEvent
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 
-P2: 
-P3: 
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-Archivos adjuntos:
-C:\Windows\Temp\WERBA57.tmpatk.kdmp
-C:\Windows\Temp\WERBA58.tmp.appcompat.txt
-C:\Windows\Temp\WERBA98.tmp.xml
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_0_0_00000000_4564bb13
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: ee0394ca-a9ac-11e8-8274-40e2309dbd2c
-Estado del informe: 96
-Depósito con algoritmo hash: 
-+++ WER5 +++:
-Depósito con errores , tipo 0
-Nombre de evento: AppTermFailureEvent
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 
-P2: 
-P3: 
-P4: 
-P5: 
-P6: 
-P7: 
-P8: 
-P9: 
-P10: 
-
-Archivos adjuntos:
-C:\Windows\Temp\WERBA57.tmpatk.kdmp
-C:\Windows\Temp\WERBA58.tmp.appcompat.txt
-C:\Windows\Temp\WERBA98.tmp.xml
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_0_0_00000000_4564bb13
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: ee0394ca-a9ac-11e8-8274-40e2309dbd2c
-Estado del informe: 4100
-Depósito con algoritmo hash: 
-+++ WER6 +++:
-Depósito con errores , tipo 0
-Nombre de evento: LiveKernelEvent
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 156
-P2: ffffe000520813e0
-P3: 1
-P4: 58
-P5: fffff8002e065230
-P6: 6_3_9600
-P7: 0_0
-P8: 256_1
-P9: 
-P10: 
-
-Archivos adjuntos:
-C:\Windows\LiveKernelReports\WinsockAFD\WinsockAFD-20180826-2238.dmp
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER-1240652468-0.sysdata.xml
-C:\Windows\LiveKernelReports\WinsockAFD-20180826-2238.dmp
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WERF021.tmp.WERInternalMetadata.xml
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_156_4a983f3282be5d22f3350de52ab38ca968718f5_00000000_cab_480af030
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: d0154adf-a9aa-11e8-8274-40e2309dbd2c
-Estado del informe: 96
-Depósito con algoritmo hash: 
-+++ WER7 +++:
-Depósito con errores , tipo 0
-Nombre de evento: LiveKernelEvent
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 156
-P2: ffffe000520813e0
-P3: 1
-P4: 58
-P5: fffff8002e065230
-P6: 6_3_9600
-P7: 0_0
-P8: 256_1
-P9: 
-P10: 
-
-Archivos adjuntos:
-C:\Windows\LiveKernelReports\WinsockAFD\WinsockAFD-20180826-2238.dmp
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WER-1240652468-0.sysdata.xml
-C:\Windows\LiveKernelReports\WinsockAFD-20180826-2238.dmp
-C:\Users\Gaudencia Facundo\AppData\Local\Temp\WERF021.tmp.WERInternalMetadata.xml
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportQueue\Kernel_156_4a983f3282be5d22f3350de52ab38ca968718f5_00000000_cab_480af030
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: d0154adf-a9aa-11e8-8274-40e2309dbd2c
-Estado del informe: 4
-Depósito con algoritmo hash: 
-+++ WER8 +++:
-Depósito con errores 2250880518489938615, tipo 5
-Nombre de evento: WindowsUpdateFailure3
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 7.9.9600.18838
-P2: 8024402f
-P3: 00000000-0000-0000-0000-000000000000
-P4: Scan
-P5: 0
-P6: 0
-P7: 80072ee2
-P8: AutomaticUpdates
-P9: {7971F918-A847-4430-9279-4A52D1EFE18D}
-P10: 0
-
-Archivos adjuntos:
-C:\Windows\WindowsUpdate.log
-C:\Windows\SoftwareDistribution\ReportingEvents.log
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportArchive\NonCritical_7.9.9600.18838_cf9aad5ba9dde02e2e69097e35cf7c6b6983c7_00000000_45d46ea0
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: 8b0bba2d-a99a-11e8-8274-40e2309dbd2c
-Estado del informe: 0
-Depósito con algoritmo hash: cf792e365d77ad6b5f3cbbe7e8709ab7
-+++ WER9 +++:
-Depósito con errores , tipo 0
-Nombre de evento: WindowsUpdateFailure3
-Respuesta: No disponible
-Identificador de archivo CAB: 0
-
-Firma del problema:
-P1: 7.9.9600.18838
-P2: 8024402f
-P3: 00000000-0000-0000-0000-000000000000
-P4: Scan
-P5: 0
-P6: 0
-P7: 80072ee2
-P8: AutomaticUpdates
-P9: {7971F918-A847-4430-9279-4A52D1EFE18D}
-P10: 0
-
-Archivos adjuntos:
-C:\Windows\WindowsUpdate.log
-C:\Windows\SoftwareDistribution\ReportingEvents.log
-
-Es posible que estos archivos estén disponibles aquí:
-C:\ProgramData\Microsoft\Windows\WER\ReportQueue\NonCritical_7.9.9600.18838_cf9aad5ba9dde02e2e69097e35cf7c6b6983c7_00000000_cab_5b603abf
-
-Símbolo de análisis: 
-Nueva búsqueda de una solución: 0
-Identificador de informe: 8b0bba2d-a99a-11e8-8274-40e2309dbd2c
-Estado del informe: 4
-Depósito con algoritmo hash: 
-.

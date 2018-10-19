@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+jue ago 23 00:36:43 CDT 2018
+=======
 jue ago 23 01:26:42 CDT 2018
+>>>>>>> practica2b

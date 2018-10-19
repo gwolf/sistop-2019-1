@@ -1,0 +1,38 @@
+Primer Proyecto de Sistemas Operativos	30/08/2018
+Luis Alberto Moreno Morua
+MiComputer Fascículo 9
+
+Cómo artículos extra hubo dos que me llamaron la atención: “Juegos de aventuras” en la parte de software y 
+“La era de los portátiles” en la sección de hardware.
+El primero lo encontre sumamente interesante pero difícilmente trataba temas que se pudieran relacionar con la clase,
+a excepción de uno, que tiene que ser la escencia de todo juego: La interactividad con el usuario. Como veíamos en clase,
+originalmente las computadoras ( y por ende el software), estaban diseñados de una forma poco amigable, que pedían al
+usuario tener un conocimiento importante del hardware y habilidades de programación. Esto junto a sus altos precios 
+convirtió a las computadoras en algo inaccesible durante mucho tiempo, y genero dos “corrientes” importantes en cuanto 
+al diseño de software: El software hecho de programador a programador, y el creado por un programador para un usuario 
+final. Y es ahí donde me sorprendió el artículo. Mientras te explicaba que era un juego de aventura, exponía ideas para
+hacer tu juego (programa) más accesible y generar una experiencia placentera para el usuario. Yendo desde la interfaz
+gráfica, hasta mostrar un resultado  con cada acción que se realice en el programa (cosa que no hace Linux y lo vuelve
+aterrador y confuso para un usuario inexperto).
+El segundo articulo se mezcla mejor con los temas de clase. Aborda la portabilidad de las computadoras en su tiempo,
+que con las mejoras tecnológicas se vuelven cada vez más pequeñas. Y mencionan un punto que me pareció muy interesante
+y no lo tenía en cuenta: Es muy importante la usabilidad al momento de achicar un producto. El texto menciona que aunque
+los chips se vuevan cada vez más pequeños, hay partes en una computadora (como la pantalla o el teclado) que límitan que
+tan pequeño puede ser un objeto. No nos sirve una computadora con un microteclado y una micropantalla (a menos para usos 
+generales). Y creo que eso explica la evolución de los celulares: De ser maletines o ladrillos enormes pasaron a volverse
+objetos cada vez más compactos, e incluso con miniteclados como un blackberry, sólo para agrandarse de nuevo a un tamaño
+más “cómodo”, priorizando algunos elementos cómo la pantalla.  
+Otro punto que resalta el artículo es la mayor complejidad que van a ir alcanzando las computadoras gracias a el avance 
+tecnológico, que nos permite poner cada vez más componentes en una misma área. Esto es algo que hemos experimentado. El 
+texto habla con emoción sobre el uso de la voz para controlar una computadora, e incluso poder recibir respuestas de ella,
+que es algo que se ha estado perfeccionando recientemente con Siri, Cortana, etc. Igual hemos visto las capacidades y 
+velocidades de los componentes electrónicos aumentar, pero como hemos visto en clase, una computadora no sólo es un
+procesador veloz o una enorme memoría. Los componentes interactúan entre ellos de formas que pueden anular por completo 
+cualquier mejora aparente. 
+Y por último la computadora que muestra la revista es la Epson HX-20. Que según el texto es de los primeros ordenadores en
+poder considerarse realmente portátil. Su principal ventaja es su pantalla de cristal líquido, que le permite deshacerse 
+de los enormes bulbos necesarios para generar imagen. Además de contar con accesorios importantes para la época, como su
+miniimpresora y su lector de minicasettes. También cuenta con la ventaja de ser totalmente programable en BASIC. Algo que
+me gusto de leer su pequeña publicidad es que la sentí bastante directa,informativa y realista. Quizá porque las 
+computadoras en esa época eran más fáciles de entender, pero al consultar sobre computadoras actuales en específico la 
+información se vuelve más escasa y confusa, como si se limitaran a decir: ¡Compra está porque es mejor que las demás! 
