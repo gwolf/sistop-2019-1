@@ -1,4 +1,496 @@
 #+title: Calificaciones y comentarios del proyecto 2
 #+author: Gunnar Wolf
 
-No hay todavía nada que ver por aquí :-þ
+El planteamiento del proyecto y la rúbrica para su calificación están
+[[./README.org][disponibles aquí]].
+
+* Laura Buendía y Efrén Trejo
+- Documentación :: [[./BuendiaLaura-TrejoEfren/Descripción.txt]]
+- Código :: [[./BuendiaLaura-TrejoEfren/monitt.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Línea de comando, conversacional
+- Aspecto monitoreado :: Diferentes comandos a ejecutar en el sistema
+- Uso de multitarea / sincronización :: Hay un semáforo que parecería
+     ser utilizado para señalización — Pero se maneja dentro del mismo
+     hilo/proceso, así que no hay sincronización
+- Observaciones :: 
+  - Entregado en el directorio incorrecto. La entrega estaba en el
+    directorio =proyectos/1=, no =proyectos/2=. Tengo que descontar un
+    poco del rubro /Directorio de proyecto/.
+  - Me dejaron pensando cómo calificar esto....
+    - Si consideramos al programa únicamente como lo que ustedes
+      escribieron, no hay multiproceso (=os.system= sí llama a algunos
+      procesos externos, pero esto no forma parte de la lógica), pero
+      sí hay (intento de) sincronización...
+    - Si consideramos que hay multiproceso porque se lanzan programas
+      externos, éstos no siguen ningún mecanismo explícito de
+      sincronización
+    - Por tanto, en el rubro de /concurrencia/, les doy 7.5 en un
+      rubro, 0 en el otro, sean cuales sean ☺
+  - Les faltó apenas /un pedacito/ para que la sincronización funcionara...
+    - Podrían haber lanzado mediante
+      =Thread(target=mosSistema).start()= y demás para las otras a las
+      funciones de información
+    - Poner todo el código que tiene cada una de ellas dentro de un
+      =while True:=
+    - Hacer que el =while= cada una de ellas iniciara con un
+      =sem.acquire()= (cada una con un semáforo distinto)
+    - El hash =opciones= tuviera a los tres (o n) semáforos
+    - Prácticamente con eso hubieran cumplido mucho mejor el
+      planteamiento.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.33 |
+| Creatividad            |         5 |        |     0.33 |
+| Complejidad            |         5 |        |     0.33 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |      1.5 |
+| Doc. externa           |       7.5 |        |     0.50 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |      1.5 |
+| Historia en Git        |         5 |        |     0.33 |
+| Dir. de proyecto       |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     0.75 |
+| Multiproceso           |       7.5 |        |     0.75 |
+| Sincronización         |         0 |        |     0.00 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     6.58 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Luis Chibras
+- Documentación :: [[./ChibrasLuis/Documentacion.txt]]
+- Código :: [[./ChibrasLuis/monPy.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Conversacional (línea de comando) basada en menú
+- Aspecto monitoreado :: Presenta la salida de diversos comandos del
+     sistema
+- Uso de multitarea / sincronización :: Un mutex protege a cada
+     invocación de comando — No es en realidad necesario, porque salvo
+     por la función =hilo()= (/mostrar todo/) no se presenta nunca
+     concurrencia (sólo se ejecuta un proceso a la vez). El mutex sí
+     ayuda a proteger la salida al ejecutar =hilo()=.
+- Observaciones ::
+  - Resolución simplista ☹ ¿Cómo podrías haber aprovechado estos datos
+    para combinarlos de alguna manera?
+  - Obtuviste todos tus datos llamando a procesos externos. Sin
+    embargo, invocar a =cat= como proceso externo puede ser evitado
+    (ahorrándote por lo menos una llamada al sistema, ¡y lanzar un
+    proceso completo!) Sugiero que más bien leas los archivos y los
+    despliegues desde tu mismo programa.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |      1.5 |
+| Creatividad            |       7.5 |        |     0.50 |
+| Complejidad            |         5 |        |     0.33 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |      1.5 |
+| Doc. externa           |       7.5 |        |     0.50 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |         5 |        |     0.33 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.08 |
+| Multiproceso           |       7.5 |        |     0.75 |
+| Sincronización         |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     7.25 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Edgar Guadarrama
+- Documentación :: [[./GuadarramaEdgar/documentacion.odt]]
+- Código :: [[./GuadarramaEdgar/monitor.c]]
+- Lenguaje de desarrollo :: C
+- Interfaz :: GUI (GTK+)
+- Aspecto monitoreado :: Utilización del procesador y memoria,
+     detalles de cada uno de los procesos en ejecución
+- Uso de multitarea / sincronización :: "Recolección" de hilos
+     lanzados mediante =pthread_join()=
+- Observaciones ::
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |       2. |
+| Cumplimiento           |        10 |        |     2.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.17 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |       7.5 |        |     0.50 |
+| Código válido          |           |        |     0.00 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.67 |
+| Multiproceso           |        10 |        |     1.00 |
+| Sincronización         |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.86 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Karla Guzmán
+- Entregado en el directorio incorrecto
+- Documentación :: Ninguna
+- Código :: [[./GuzmanKarla/programa.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: GUI (Tkinter)
+- Aspecto monitoreado :: Diferentes datos presentados – Carga de cada
+     CPU del sistema, RAM / swap, procesos en ejecución, carga global
+     de sistema / usuario / inactivo
+- Uso de multitarea / sincronización ::
+     No lo veo ☹ Usas los métodos de planificador =Tk.Frame.after()=,
+     pero no es sincronización comparable con lo que estudiamos.
+- Observaciones ::
+  - ¿Por qué no documentaste? Sería una de las partes más sencillas
+    junto a lo que desarrollaste ☹
+  - Al ejecutar tu programa me indica que no especificaste la
+    codificación empleada:
+    #+BEGIN_SRC sh
+      $ python3 programa.py
+        File "programa.py", line 94
+      SyntaxError: Non-UTF-8 code starting with '\xf3' in file programa.py on line 94, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+    #+END_SRC
+    Se corrige muy simple: Únicamente hay que colocar como la segunda
+    línea de tu código fuente =# -*- coding: utf-8 -*-=. ¡Revisa el
+    URL indicado para obtener una explicación!
+  - Tuve que comentar las líneas 157 y 158 de tu fuente, en que
+    presentas una imagen (=system-monitor.png=). No la incluiste en tu
+    commit.
+  - Veo que comenzaste a desarrollar código para implementar
+    multihilos, ¿pero quedó todo comentado?
+    - Dado el esfuerzo que obviamente dedicaste a este programa, voy a
+      tomar a la planificación de refresco de las dos pestañas
+      mediante =Tk.Frame.after()= como /algo similar/ a la
+      sincronización (sí es manejo de hilos concurrentes).
+  - Me gustaría darle mejor calificación a este proyecto. Sin embargo,
+    omitiste /muchos/ puntos... Muy importantes en su conjunto.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |       2. |
+| Cumplimiento           |        10 |        |     2.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     0.33 |
+| Doc. externa           |         0 |        |     0.00 |
+| Entorno y dependencias |         0 |        |     0.00 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |      1.5 |
+| Historia en Git        |         5 |        |     0.33 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.33 |
+| Multiproceso           |        10 |        |     1.00 |
+| Sincronización         |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     7.17 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Paola Lara
+- Documentación :: [[./LaraPaola/Documentacion.txt]]
+- Código :: [[./LaraPaola/monitorSystemMac.py]],  [[./LaraPaola/monitorSystemUL.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Conversacional (línea de comando) basada en menú
+- Aspecto monitoreado :: Información sobre el CPU, SO y memoria
+- Uso de multitarea / sincronización :: Señalización para que el menú
+     vuelva a "tomar el control" diez segundos después de desplegar la
+     información solicitada. Sin embargo... Es una señalización con un
+     único hilo de ejecución ☹
+- Observaciones ::
+  - Usas únicamente un hilo ☹ Los semáforos resultan meramente
+    decorativos. En todo caso, con la estructura del programa que
+    elegiste, podrías haber lanzado tres hilos, activándolos al
+    recibir la señal — Algo por el estilo de:
+    #+BEGIN_SRC python
+    sem_menu = threading.semaphore(1)
+    sem_proc = threading.semaphore(0)
+    sem_sist = threading.semaphore(0)
+    sem_mem = threading.semaphore(0)
+    # (...)
+    threading.Thread(target=Menu,args=[]).start()
+    threading.Thread(target=Procesador,args=[]).start()
+    threading.Thread(target=Sistema,args=[]).start()
+    threading.Thread(target=Memoria,args=[]).start()
+    def Procesador():
+        while True:
+ 	    sem_proc.acquire()
+	    # (... pero _sin_ hacer el "return 0")
+	    sem_menu.release()
+    def Menu():
+        opciones = {'1':sem_proc, '2':sem_sist, '3':sem_mem}
+        while True:
+	    sem_menu.acquire()
+	    # (... imprime menú, obtiene operación en op)
+	    opciones[op].release()
+	    time.sleep(10)
+    #+END_SRC
+  - En Python manejar de forma consistente la indentación es
+    clave. Para poder ejecutar tu correo tuve que corregir la
+    indentación de las líneas 27, 28, 29 y 68
+  - ¡Manejo de errores! Al pedir la opción 1 (CPU) o 3 (memoria) me
+    presenta el menú de inmediato. Comenté la línea 78 para que no
+    limpie la pantalla al presentar el menú, y veo que /intenta/
+    ejecutarse, pero se muere en el camino. En =Memoria()=, porque
+    la variable =mTotal= no está definida, y en =Procesador()=, porque
+    la variable =nucleos= no está definida. Pero, dado que llamas a la
+    función desde un =try=/=except=, simplemente ignoras sus errores y
+    me dificultas la depuración ☹
+  - Tu técnica para obtener renglones específicos del archivo es
+    /super/ ineficiente. Para cada dato que requieres estás lanzando a
+    un /pipeline/ de /cuatro procesos/. Esto, en producción... Le pega
+    /fuertemente/ al rendimiento. Lo correcto es leer el archivo, y
+    procesarlo desde memoria. Por ejemplo, usando al módulo =re=
+    (expresiones regulares):
+    #+BEGIN_SRC python
+    import re
+    f = open('/proc/meminfo', 'r')
+    data = f.readlines()
+    for linea in data:
+        busqueda = re.match('(.*): *(\d+)', linea)
+	datos_linea = busqueda.groups()
+	if datos_linea[0] == 'MemTotal':
+	    memTotal = int(datos_linea[1]
+	# (...)
+    #+END_SRC
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |       1. |
+| Cumplimiento           |         5 |        |     1.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |      1.5 |
+| Creatividad            |         5 |        |     0.33 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |      1.5 |
+| Historia en Git        |       7.5 |        |     0.50 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |      0.5 |
+| Multiproceso           |         0 |        |     0.00 |
+| Sincronización         |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     6.51 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Aníbal Medina y Guadalupe Moreno
+- Documentación :: [[./MedinaAnibal-MorenoGuadalupe/Documentacion.txt]]
+- Código :: [[./MedinaAnibal-MorenoGuadalupe/Monitor.py]]
+- Lenguaje de desarrollo :: Python
+- Estado :: Entregado a tiempo, pero no en la versión
+            correcta. ¡Esperando al pull request correcto!
+# - Interfaz ::
+# - Aspecto monitoreado ::
+# - Uso de multitarea / sincronización ::
+# - Observaciones ::
+
+# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+# |------------------------+-----------+--------+----------|
+# | *Requisitos*           |           |    0.2 |          |
+# | Cumplimiento           |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Proyecto*             |           |    0.2 |          |
+# | Creatividad            |           |        |          |
+# | Complejidad            |           |        |          |
+# | Interfaz usuario       |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Documentación*        |           |    0.2 |          |
+# | Doc. externa           |           |        |          |
+# | Entorno y dependencias |           |        |          |
+# | Comentarios            |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Entrega*              |           |    0.2 |          |
+# | Historia en Git        |           |        |          |
+# | Dir. de proyecto       |           |        |          |
+# | Código válido          |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Concurrencia*         |           |    0.2 |          |
+# | Multiproceso           |           |        |          |
+# | Sincronización         |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *TOTAL*                |           |        |          |
+# |------------------------+-----------+--------+----------|
+# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Luis Moreno y Ángel Ramírez
+- Documentación :: [[./MorenoLuis-RamirezAngel/ReporteMonitorWindowsLA.pdf]]
+- Código :: [[./MorenoLuis-RamirezAngel/MonitorWindowsLA.cpp]],
+            [[./MorenoLuis-RamirezAngel/stdafx.cpp]],
+            [[./MorenoLuis-RamirezAngel/stdafx.h]],
+            [[./MorenoLuis-RamirezAngel/targetver.h]]
+- Lenguaje de desarrollo :: C++
+- Interfaz :: Gráfica basada en consola
+- Aspecto monitoreado :: Uso de CPU, RAM e interfaz de red
+- Uso de multitarea / sincronización :: Mutex para no modificar la
+     información mientras se imprime; varios hilos son lanzados para
+     recopilar información y esperados mediante =join()=
+- Observaciones ::
+  - El programa se ve interesante, ¡me gustaría verlo en acción! No
+    tengo un VisualStudio para probarlo en mi VM Windows. ¿Podrían
+    mostrármelo en clase?
+  - Me da particular gusto que hayan encontrado cómo obtener toda esta
+    información en Windows. Supongo que es cosa de buscar un poquito
+    la documentación. ¡Muy bien! Y muchas gracias por documentar las
+    funciones que usaron y cómo las interpretan.
+  - Algo que a mi juicio faltó es algo que proteja a los valores
+    utilizados globalmente de uso simultánea — Por ejemplo, el conteo
+    total de datagramas, =dTot=, se inicializa en la línea 25, pero se
+    modifica tanto en la función =datagramas()= (línea 174) como
+    =imprime()= (línea 206), y se consulta en varios otros lugares. Me
+    parece que podría caer en condición de carrera.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |       2. |
+| Cumplimiento           |        10 |        |     2.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.84 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.67 |
+| Multiproceso           |        10 |        |     1.00 |
+| Sincronización         |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     9.53 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Miguel Pérez
+- Documentación :: [[./PerezMiguel/Documentacion]]
+- Código :: [[./PerezMiguel/Monitor.py]]
+- Lenguaje de desarrollo :: Python
+- Estado :: Entregado a tiempo, pero no en la versión
+            correcta. ¡Esperando al pull request correcto!
+# - Interfaz ::
+# - Aspecto monitoreado ::
+# - Uso de multitarea / sincronización ::
+# - Observaciones ::
+
+# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+# |------------------------+-----------+--------+----------|
+# | *Requisitos*           |           |    0.2 |          |
+# | Cumplimiento           |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Proyecto*             |           |    0.2 |          |
+# | Creatividad            |           |        |          |
+# | Complejidad            |           |        |          |
+# | Interfaz usuario       |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Documentación*        |           |    0.2 |          |
+# | Doc. externa           |           |        |          |
+# | Entorno y dependencias |           |        |          |
+# | Comentarios            |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Entrega*              |           |    0.2 |          |
+# | Historia en Git        |           |        |          |
+# | Dir. de proyecto       |           |        |          |
+# | Código válido          |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Concurrencia*         |           |    0.2 |          |
+# | Multiproceso           |           |        |          |
+# | Sincronización         |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *TOTAL*                |           |        |          |
+# |------------------------+-----------+--------+----------|
+# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Andrew Sánchez
+- Documentación :: [[./SanchezAndrew/Documentacion]]
+- Código :: [[./SanchezAndrew/MonitorSistema.py]]
+- Lenguaje de desarrollo :: Python
+- Estado :: Entregado a tiempo, pero no en la versión
+            correcta. ¡Esperando al pull request correcto!
+# - Interfaz :: Texto (menú). Emplea wx, pero no genera una interfaz
+#               gráfica con él (?)
+# - Aspecto monitoreado :: Niveles de disco, memoria, procesos y CPU
+# - Uso de multitarea / sincronización :: La función =hilo()= crearía a
+#      cuatro hilos, uno por función, pero no es llamada. La función
+#      =Opciones()= genera a los hilos conforme son requeridos.
+
+#      Las funciones iniciadas por cada uno de estos hilos declaran un
+#      mutex, y las funciones =cpu()=, =procesos()=, =memoria()= y
+#      =disco()= adquieren y liberan un mutex, pero no es necesario
+#      (porque viven a fin de cuentas dentro de una lógica secuencial).
+# - Observaciones ::
+#   - ¡Ortografía!
+# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+# |------------------------+-----------+--------+----------|
+# | *Requisitos*           |           |    0.2 |          |
+# | Cumplimiento           |         5 |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Proyecto*             |           |    0.2 |          |
+# | Creatividad            |         5 |        |          |
+# | Complejidad            |         5 |        |          |
+# | Interfaz usuario       |         5 |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Documentación*        |           |    0.2 |          |
+# | Doc. externa           |           |        |          |
+# | Entorno y dependencias |           |        |          |
+# | Comentarios            |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Entrega*              |           |    0.2 |          |
+# | Historia en Git        |           |        |          |
+# | Dir. de proyecto       |           |        |          |
+# | Código válido          |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *Concurrencia*         |           |    0.2 |          |
+# | Multiproceso           |           |        |          |
+# | Sincronización         |           |        |          |
+# |------------------------+-----------+--------+----------|
+# | *TOTAL*                |           |        |          |
+# |------------------------+-----------+--------+----------|
+# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16

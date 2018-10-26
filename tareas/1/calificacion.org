@@ -1,0 +1,268 @@
+#+title: Ejercicios de Sincronización • Calificaciones y comentarios
+#+author: Gunnar Wolf
+
+- Yerenia Amado ::
+  - Problema elegido :: Los alumnos y el asesor
+  - Documentación :: No hay
+  - Código :: [[./AmadoYerenia/Alumno.java.txt]], [[./AmadoYerenia/Asesor.java.txt]], [[./AmadoYerenia/Asesoria.java.txt]], [[./AmadoYerenia/ClaseAlumno.java.txt]], [[./AmadoYerenia/ClaseAsesor.java.txt]], [[./AmadoYerenia/ClaseAsesoria.java.txt]], [[./AmadoYerenia/ClasePrincipal.java.txt]], [[./AmadoYerenia/Principal.java.txt]]
+  - Lenguaje :: Java
+  - Comentarios ::
+    - Los nombres de tus archivos: El compilador de Java *requiere*
+      que todos sus archivos usen la extensión =.java=. ¿Por qué los
+      nombraste =.java.txt=? ¿Y por qué hay otros que inician su
+      nombre con =Clase= y no se ``apellidan'' =.java=?
+    - Estás declarando el paquete =Tarea01=. Para que al compilador
+      ``le guste'', deberías haber creado el directorio
+      correspondiente (esto es, hacer tu entrega en
+      =tareas/1/AmadoYerenia/Tarea01/=)
+    - Código duplicado. Varios de tus archivos son idénticos entre
+      sí: =Alumno.java.txt= con =ClaseAlumno.txt=,
+      =Principal.java.txt= con =ClasePrincipal.txt=, =Asesor.java.txt=
+      con =ClaseAsesor.txt=, =Asesoria.java.txt= con
+      =ClaseAsesoria.txt= (en este último, difieren únicamente en un
+      salto de línea al final). ¿Por qué?
+    - Utilizas dos llamadas declaradas como =synchronized=:
+      =llegarAlumno()= y =atenderAlumno()= (ambas en =Asesoria=). El
+      manejo que haces de tu variable =contador= me hace pensar que
+      intentaste /implementar un semáforo/ utilizando =synchronized=.
+    - No entro más en detalles; veo que hay camino en el sentido
+      correcto; el control del flujo sí "rebota" entre asesor y
+      alumno, pero hay varios de los puntos del planteamiento que no
+      se atienden. No se maneja el número de lugares, no se alternan
+      las preguntas entre los alumnos ``activos''.
+  - Calificación :: 6
+
+- Laura Buendía y Efrén Trejo ::
+  - Problema elegido :: El cruce del río
+  - Documentación :: [[./BuendiaLaura-TrejoEfren/Equipo.txt]]
+  - Código ::   [[./BuendiaLaura-TrejoEfren/linuxvsmicro.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    Primero precisiones a la documentación:
+
+    - En primer lugar, Python no se compila como un
+      paso explícito; el lenguaje compila a memoria y
+      ejecuta (ojo, ¡no es lo mismo que /interpretar/!)
+    - En segundo lugar, Python es un lenguaje multiplataforma, pueden
+      ejecutarlo desde Windows. Es posible que haya algunas
+      diferencias en el modelo de procesos que podrían tener algún
+      impacto para este ejercicio, pero como sea, podrían utilizarlo
+      perfectamente en su entorno favorito.
+
+    La ejecución del ejercicio es exitosa. ¡Bien!
+
+    Ahora sí, respecto al ejercicio implementado:
+    - ¡El código carece por completo de comentarios! Es importante
+      explicar (para mi, para ustedes mismos, para El Futuro™) lo que
+      hacen, sobre todo si emplean estructuras poco habituales.
+    - Hay una máxima de la programación — DRY. /Don't Repeat
+      Yourself/. No te repitas.
+
+      Las funciones =hackerlinux()= y =serfmicro()= son prácticamente
+      idénticas. O más bien, su lógica es idéntica, pero intercambian
+      el /sentido/ en el que operan. Yo se que este es un ejercicio
+      corto y rápido, pero les sugiero desarrollar la costumbre de
+      /parametrizar/ este tipo de funciones: Tal vez si comenzara con:
+      #+BEGIN_SRC python
+      nums = {'hackers' : 0, 'serfs' : 0} # en vez de numHackerslinux y numSerfsmicro
+      # (...)
+      def llegaPersona(tipo):
+        if tipo == 0: # Linux
+	  mi_fila = filaHackers
+	  otra_fila = filaSerfs
+	  aumentar = 'hackers'
+	else:
+	  mi_fila = filaSerfs
+	  otra_fila = filaHackers
+	  aumentar = 'serfs'
+      #+END_SRC
+      Con un /poquito/ de trabajo adicional podrían tener a ambas
+      funciones convertidas en una sola. Aumenta la legibilidad,
+      aumenta la claridad, y mejora la mantenibilidad.
+
+    ¡Bien solucionado!
+  - Calificación :: 10
+
+- Luis Chibras ::
+  - Problema elegido :: Los alumnos y el asesor
+  - Documentación :: [[./ChibrasLuis/texto.txt]]
+  - Código :: [[./ChibrasLuis/funProf.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Mencionas, /El programa es un poco burdo pero cumple con lo
+      solicitado/. ¡No te preocupes! Es una tarea, y el requisito es
+      que me demuestres haber entendido el principio de la
+      programación multihilos empleando sincronización.
+    - Dices también, /No pude trabajar con clases por mas que lo
+      intente me confunde (...)/ — Si quieres (o cualquiera otro de
+      ustedes), con gusto podemos encontrarnos en algún otro horario
+      para revisar este u otros temas. De nuevo, para la resolución de
+      este problema, no necesitas usar objetos. Yo muchas veces lo
+      hago — Cuando me resulta en alguna ventaja, por simplicidad, por
+      comprensibilidad.
+    - La simplicidad es una /virtud/. ¡Bien por una solución simple,
+      comprensible y original!
+  - Calificación :: 10
+
+- Emma Fuentes ::
+  - Problema elegido :: ?
+  - Documentación :: [[./FuentesEmma/TAREA1.txt]]
+  - Código :: ¿No disponible?
+  - Lenguaje :: Dr. Racket
+  - Comentarios ::
+    - ¿No incluiste código? Entiendo por tu documentación que le
+      sigues ``picando'' a Dr. Racket... Pero no enviaste código
+      alguno. No puedo tomarlo como una tarea entregada. ¡Actualiza
+      esto mediante un pull request! ¡Envíame código, aunque sea feo e
+      incompleto!
+  - Calificación :: 
+
+- Edgar Guadarrama ::
+  - Problema elegido :: El cruce del río
+  - Documentación :: [[./GuadarramaEdgar/Documentacion.txt]]
+  - Código ::  [[./GuadarramaEdgar/desarrolladores.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Agradezco que menciones que te referiste al libro que sugerí. Se
+      nota, y después de un par de vueltas me conozco ya la solución
+      del /Pequeño Libro/.
+      - Se vale, y doy crédito, a lo que narras. ¡Bien! Una barrera es
+        una estructura apta para /parte de/ la solución.
+    - ...Sin embargo... El programa tieen varios fallos, y no se puede
+      ejecutar sin un poco de cirugía
+      - No importaste los módulos =threading= ni =time= (necesarios
+        para =Semaphore()=, =Thread()=, =sleep()=)
+      - En la inicialización de los hilos, línea 64 en adelante, la
+        indentación (fundamental para Python) es incorrecta, y el
+        segundo =for= no indica que sigue un bloque con dos puntos
+      - Algunos problemas de ámbito de variables... No permiten
+        ejecutar el programa sin /menearle/ un poco más.
+  - Calificación :: 7 × 0.8 = 5.6 (entrega fuera de tiempo)
+
+- Alejandro Hernández y Simón Ramírez ::
+  - Problema elegido :: De gatos y ratones
+  - Documentación :: [[./HernandezAlejandro-RamirezSimon/GatosRatones.txt]]
+  - Código :: [[./HernandezAlejandro-RamirezSimon/GatosRatones.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - ¡Ah! Los atributos... Pasa que la sintaxis =self.algo= (y en
+      general, el uso de =self=) indica que estás trabajando con
+      programación orientada a objetos. Sin embargo, ustedes no
+      declararon ninguna clase. Cuando desde la línea 56 llaman
+      =conta(1)=, dentro de la función =conta()= tenemos que =self= no
+      es un objeto sino que un entero (=1=), y no puedes asignarle un
+      valor a =1.plato= (porque 1 no tiene un atributo llamado
+      =plato=).
+    - Tampoco definen en ningún momento a la variable =c= que
+      utilizaron dentro tanto de =comerGato()= como de =comerRaton()=
+    - Incluso con las correcciones que menciono, no pude ejecutar el
+      programa ☹ La lógica general no se ve mal, aunque sí quisiera
+      revisarlo más a detalle...
+  - Calificación :: 8
+
+- Paola Lara ::
+  - Problema elegido :: Santa Claus
+  - Documentación :: Comentarios en el código
+  - Código :: [[./LaraPaola/santaiPaw.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - ¡Muy buen programa y muy buena implementación!
+    - Sólo apuntaría a un cambio, pero más por pasarme de literal que
+      otra cosa: Los nueve renos son siempre los mismos. Al
+      inicializar, tendría que ser:
+      #+BEGIN_SRC python
+      for num_reno in range(9):
+        threading.Thread(target=Reno, args=[]).start()
+      #+END_SRC
+      Claro, eso requeriría modificar a =Reno()= para que viva dentro
+      de un =while True:=, agregando una señal al final del
+      =viaje_anual()= para que, todos juntos, pudieran irse a
+      descansar.
+
+      (no me meto con los elfos, esos sí podrían ser infinitos ☺)
+  - Calificación :: 10 × 0.8 = 8    (entrega fuera de tiempo)
+
+- Aníbal Medina y Guadalupe Moreno ::
+  - Problema elegido :: Intersección de caminos
+  - Documentación :: [[./MedinaAnibal_MorenoGuadalupe/Documentacion.txt]]
+  - Código ::  [[./MedinaAnibal_MorenoGuadalupe/Accion.py]],
+              [[./MedinaAnibal_MorenoGuadalupe/Transito.py]],
+              [[./MedinaAnibal_MorenoGuadalupe/camino.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - ¡Ortografía! ¿En serio =Cruze=? ☹
+    - ¡Ups! El diagrama que intenta mostrar la documentación quedó
+      completamente descuadrado...
+    - La solución que proponen es ineficiente (le falta el
+      refinamiento 1 propuesto). Mencionan la acción que sigue cada
+      coche, pero es únicamente una cadena (no modela un
+      comportamiento real).
+    - El semáforo se comporta como en la realidad (y eso no tiene nada
+      inherentemente malo, pero causa un poco de inanición). Va
+      A,B,C,D,A,B,C,D,... Pueden presentarse casos en que en C no haya
+      ningún auto, pero igual le tocan sus tres segundos.
+    - El planteamiento dice que no hay señalamiento vial. No hay un
+      semáforo vial central, como el que ustedes pusieron. ¿Y si el
+      comportamiento de cada auto incluyera:
+      #+BEGIN_SRC python
+      cruce.acquire()
+      puts "Estoy cruzando la calle"
+      cruce.release()
+      #+END_SRC
+      ¡Ya con esto tenemos garantía de que no haya choques!
+  - Calificación :: 8
+
+- Miguel Pérez ::
+  - Problema elegido :: El cruce del río
+  - Documentación :: [[./PerezMiguel/tarea1.txt]]
+  - Código :: [[./PerezMiguel/tarea1.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Se nota la similitud con la solución sugerida por el autor —
+      Pero está bien, ¡si yo mismo les di la referencia!
+    - Se nota, en tus comentarios y documentación, que comprendiste lo
+      suficiente el problema. ¡Bien!
+  - Calificación :: 10
+
+- Andrew Sánchez ::
+  - Problema elegido :: De gatos y ratones
+  - Documentación :: [[./SánchezAndrew/ReporteTareaDos.txt]]
+  - Código :: [[./SánchezAndrew/gatos_ratones.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Tus gatos no verifican si hay un ratón al llegar al plato, sino
+      que sí o sí se lo comen (esto es, todo =Gato()= va a pasar por:
+      #+BEGIN_SRC python
+      senalComeRaton.acquire()
+      comeg.gato_raton()
+      ratones.pop()
+      indexr -= 1
+      #+END_SRC
+      - Deberías hacer esto condicional, dependiente del número de
+        ratones
+
+    - ¿Por qué siguen apareciendo platos y platos y más platos? Si no
+      te cuidas, nomás lo dejas pasar un rato y son miles. Eso sí, la
+      población de ratones /sí/ se mantiene a raya:
+      #+BEGIN_SRC text
+      (...)
+      raton comiendo
+      hay 17272 plato
+      hay 925 raton
+      raton comiendo
+      hay 8172 gato
+      gato comiendo
+      #+END_SRC
+      - Ojo, tendrías que haber protegido la modificación del arreglo
+        =ratones= (línea 66) por un mutex.
+  - Calificación :: 8
+
+- Cristian Valeriano ::
+  - Problema elegido :: Santa Claus
+  - Documentación :: [[./ValerianoCristian/README.txt]]
+  - Código :: [[./ValerianoCristian/tarea1.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - ¡Buena implementación!
+    - Y me gustó mucho la documentación que presentas.
+  - Calificación :: 10 × 0.8 = 8    (entrega fuera de tiempo)

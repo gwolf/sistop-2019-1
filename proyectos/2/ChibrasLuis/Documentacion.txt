@@ -1,0 +1,26 @@
+Sistema operativo: Fedora 27
+Lenguaje: Python3
+
+Descripcion:
+Monitor de  sistema multi hilos que permite desplegar información del equipo y sistema donde se ejecuta de una manera amigable para el usuario
+
+librerías necesarias:
+	Im-sensors
+
+	para instalar:
+		1) sudo apt-get install Im-sensors
+		2) sudo sensors-detect
+
+	Según yo las demás librerías utilizadas son estándar por lo que no será necesario instalarlas(os,threading)
+
+Para ejecutar:
+	desde una terminal ir al fichero donde se encuentre el archivo monPy.py y teclear python3 monPy.py
+
+
+Notas:
+	Después de seleccionar una opción del menú será desplegada la información solicitada, y para volver al menú es necesario presionar la tecla enter nuevamente
+
+no agrego ningún .gitignor ya que según yo Python no genera archivos basura
+  
+
+

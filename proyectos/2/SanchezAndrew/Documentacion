@@ -1,0 +1,31 @@
+Comence por desarrollar una interfaz gráfica en Python para poder seleccionar de manera mas fácil, la selección del recurso a monitorear. esto lo hice con la biblioteca wxpython, la cual tuve que instalar para poder hacer uso de esta, por cuestiones compatibilidad con Ubuntu 14.04 (es donde lo desarrollo) instale la version 2.8.
+
+Me parece interesante monitorear estos recursos (CPU, memoria, disco duro y procesos) por cuestiones personales, ya que por ejemplo al estar corriedo programas y estar manejado muchos "recursos, en ocaciones las computadoras (sean de escritorio o laptop) pueden presentar fallos de rendimiento, y el poder monitorear estos recursos pueden ayudar a saber cual es el problema. Esto a raíz de que hace poco un amigo tuvo problemas con su computadora, la cual aun siendo "gamer", estaba funcionando muy lento y al instalar un programa donde se podia monitorar los recursos se pudo solucionar el problema (el cual era el calentamiento del CPU).
+
+En mi proyecto se puede consultar por separado la información del Cpu y la temperatura de este mismo para poder verlo mas cuidadosamente.
+
+#Agrego después comentarios al primer borrador del proyecto para saber como modificar un archivo y subirlo adecuadamente a GitHub#
+
+Comentarios de la ventana creada:
+	-> Se cierra como una pantalla normal (con el tachecito "x") y esto termina la ejecucion del programa.
+	-> Se seleccionan las casillas y después dar al boton Aceptar
+	-> Se puede limpiar la terminal con el boton Borrar
+	-> Se puede pedir información de mas de una casilla al mismo tiempo
+
+Se uso: 
+
+IDE: 
+	Python 2.7.6
+
+Interfaz gráfica:
+	wxpython 2.8	( sudo apt-get install python-wxgtk2.8 )
+
+Sensores de temperatura (CPU):
+	lm-sensors
+		primero:	( sudo apt-get install lm-sensors )
+		segundo:	( sudo sensors-detect )
+		tercero:	( sudo service kmod start )
+		para saber la informacion:	( sensors )
+
+
+Autor: Sánchez Espinosa Andrew Blaise.

@@ -11,7 +11,15 @@ del curso]]. Les reitero, sin embargo, que resulta más enriquecedor (y
 como lo refleja la rúbrica, obtiene una calificación un poco más alta)
 el que ustedes me planteen los temas de su interés.
 
-|-------+------+-------------+------------+------------|
-| Fecha | Tema | Integrantes | Documentos | Evaluación |
-|-------+------+-------------+------------+------------|
-|-------+------+-------------+------------+------------|
+|--------+-----------------------------------------+------------------------------------+---------------------------------------+------------|
+| Fecha  | Tema                                    | Integrantes                        | Documentos                            | Evaluación |
+|--------+-----------------------------------------+------------------------------------+---------------------------------------+------------|
+| 23/oct | Criptografía: Hashes                    | Simón Ramírez                      | [[./HernandezAlejandro-RamirezSimon/Hash.pdf][Presentación (PDF)]], [[HernandezAlejandro-RamirezSimon/Hash.txt][Documento (texto)]] | [[./HernandezAlejandro-RamirezSimon/evaluacion.org][Evaluación]] |
+| 25/oct | Blockchain                              | Guadalupe Moreno y Aníbal Medina   | [[./MorenoGuadalupe/SO_Expocicion.pptx][Presentación (PPTX)]]                   |            |
+| 6/nov  | SPECTRE y Meltdown                      | Alberto Espinosa y Alejandro Pérez |                                       |            |
+| 8/nov  | Rust                                    | Yesenia Velasco y Luis Moreno      |                                       |            |
+| 13/nov | Coherencia de caché                     | Edgar Facundo y Emma Fuentes       |                                       |            |
+| 15/nov | Sistemas de archivos distribuidos: IPFS | Karla Guzmán y Leonel Macario      |                                       |            |
+| 20/nov | Desduplicación                          | Paola Lara y Ángel Aguilar         |                                       |            |
+|--------+-----------------------------------------+------------------------------------+---------------------------------------+------------|
+

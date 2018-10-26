@@ -1,0 +1,70 @@
+
+Hecho por Brenda Paola Lara Moreno
+Sistop-2019-1|FI-UNAM|iPaw
+ 11 - Octubre - 2018
+ Proyecto 2
+Lenguaje: Python
+Este trabajo se desarrollo en la version 2.7.10
+Para ejecutarlo requiere de Python,psutil y ejecutarlo desde la terminal posisionandose en
+el directorio donde se encuentre guardado el archivo y
+posteriormente ejecutarlo de la sig manera ----> python monitorSystemMac.py | python monitorSystemUL.py (DEpende de que version se ejecute).
+
+El funcionamiento principal de estos programas es mostrar la informacion del sistema, utilizando semaforos para mostrar 
+por procesos esta informacion, en un tiempo limitado por los mismos.
+Existen dos versiones ya que en un principio lo realice con un sistema MacOS y no obtenia satisfactoriamente los datos requeridos. 
+
+
+Para el proyecto de la versión para MacOS fue utilizado psutil, que segun la documentacion que consulte solo viene restringido a unas cuantas opciones (https://psutil.readthedocs.io/en/latest/)
+Cabe mencionar que las funciones utilizadas son diferentes para cada sistema.
+
+En la otra version para obtener la informacion me base en sistemas UNIX/LINUX (se supone que macOS es derivado de UNIX , pero no, esta version (monitorSystemUL.py) no funciona en MacOS 😔 )
+
+
+------------------------------- Instalacion de psutil ------------------------------------------------
+
+Para la instalacion de psutil en MacOS se necesita iniciar sesion como usuario root
+para esto en la barra superior de la ventana damos clic en la manzanita () > despues se da clic en preferencias de sistema>usuarios y grupos
+> se le da clic en el candado e introducimos nuestro usuario y contraseña > opciones de inicio> Abrir utilidad de directorios > en la parte superior edicion y activar usuario root > introducir una contraseña diferente a la cuenta que esta en uso. 
+NOTA :Para desactivar el usuario root , hacer el mismo procedimiento.
+
+cerramos sesión y abrimos la sesion de root 
+abrimos la terminal e introducimos lo sig: 
+		python < <(curl -s https://bootstrap.pypa.io/get-pip.py)
+	cuando termina este proceso se introduce :
+		pip install psutil
+
+	LISTO! esta instalado y ya podemos importar la funcion de psutil desde el codigo.
+
+----------------------------------------------------------------------------------------------------------------------
+
+***** Significados de los resultados obtenidos en cada una de las opciones *****
+*NOTA : Dependiendo de que sistema operativo estemos utilizando se mostrara la informacion
+en este caso es MacOS y la informacion mostrada a continuacion es la que nos arroja el programa.*
+
+
+Option 1 --- System Info
+
+user: time spent by normal processes executing in user mode; on Linux this also includes guest time
+system: time spent by processes executing in kernel mode
+idle: time spent doing nothing
+nice (UNIX): time spent by niced (prioritized) processes executing in user mode; on Linux this also includes guest_nice timeç
+
+Option 2 --- Memory Info
+
+total: total physical memory.
+available: the memory that can be given instantly to processes without the system going into swap. This is calculated by summing different memory values depending on the platform and it is supposed to be used to monitor actual memory usage in a cross platform fashion.
+used: memory used, calculated differently depending on the platform and designed for informational purposes only. total - free does not necessarily match used.
+free: memory not being used at all (zeroed) that is readily available; note that this doesn’t reflect the actual memory available (use available instead). total - used does not necessarily match free.
+active (UNIX): memory currently in use or very recently used, and so it is in RAM.
+inactive (UNIX): memory that is marked as not used.
+wired (BSD, macOS): memory that is marked to always stay in RAM. It is never moved to disk.
+
+Swap memory
+
+total: total swap memory in bytes
+used: used swap memory in bytes
+free: free swap memory in bytes
+percent: the percentage usage calculated as (total - available) / total * 100
+sin: the number of bytes the system has swapped in from disk (cumulative)
+sout: the number of bytes the system has swapped out from disk (cumulative)
+

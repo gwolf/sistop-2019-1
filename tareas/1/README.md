@@ -15,6 +15,11 @@ Ahora es su turno: Van a resolver un problema de programación
 concurrente en el que es necesario emplear algún mecanismo de
 sincronización.
 
+## Calificaciones y comentarios
+
+Pueden [consultar aquí las calificaciones y comentarios a sus
+soluciones](./calificaciones.org).
+
 ## Los problemas
 
 Les mostré una presentación con siete problemas de sincronización. Si
