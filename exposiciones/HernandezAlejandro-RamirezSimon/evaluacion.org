@@ -1,0 +1,44 @@
+#+title: Evaluación de exposición: Hashes
+#+author: Gunnar Wolf
+
+- Tema presentado por: Alejandro Hernández, Simón Ramírez
+- Calificación global: (7.21 × 0.3) + (7.875 × 0.7) = *7.675*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|           10 |         10 |      7.5 |       7.5 |  8.75 |
+|          7.5 |          5 |      7.5 |       7.5 |  6.88 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |         10 |      7.5 |        10 |  8.75 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |         5 |  6.88 |
+|          7.5 |          5 |      7.5 |       7.5 |  6.88 |
+|          7.5 |          5 |      7.5 |         5 |  6.25 |
+|          7.5 |          5 |        5 |         5 |  5.63 |
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|          7.5 |        7.5 |      7.5 |         5 |  6.88 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|            5 |        7.5 |      7.5 |         5 |  6.25 |
+|--------------+------------+----------+-----------+-------|
+|         7.83 |       7.17 |     7.17 |      6.67 |  7.21 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Excelente (10)
+- Material desarrollado :: Bueno (7.5)
+- Contenido :: Excelente (10)
+- Fuentes bibliográficas :: Suficiente (5)
+- Uso del tiempo :: Excelente (10)
+- Dominio del tema :: Bueno (7.5)
+- Presencia :: Suficiente (5)
+- Global :: 10×0.1 + 7.5×0.2 + 10×0.2 + 5×0.1 + 10×0.1 + 7.5×0.15 +
+            5×0.15 = *7.875*
+

@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
- #!/usr/bin/env python
-=======
 #!/usr/bin/env python
->>>>>>> 3
-=======
-#!/usr/bin/env python
->>>>>>> 4
-=======
-#!/usr/bin/env python
->>>>>>> 5
 # -*- coding: utf-8 -*-
 from tkinter import *
 from tkinter import ttk
@@ -94,14 +81,6 @@ def cpuInactivo():
     alertProces()
     return str(cpu_uso)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 4
-=======
->>>>>>> 5
 
 
 # memoria total que tiene nuestra computadora, se muestra en kB
@@ -122,12 +101,6 @@ def MemoUso():
     alertProcess()
     return memuso
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3
-=======
-=======
->>>>>>> 5
 # memoria de intercambio total que tiene nuestra computadora(se muestra en kB)
 def MemoSwapTotal():
     memswap =  subprocess.getoutput("cat /proc/meminfo | while read c1 c2; do echo $c2; done | sed -n '19 p'")
@@ -239,9 +212,6 @@ def iniciaHilos():
 
 
 
-<<<<<<< HEAD
->>>>>>> 4
-=======
 # interfaz gráfica con tkinter
 def interfaz():
 	contenedor = Tk()
@@ -314,4 +284,3 @@ def main():
 
 # Ejecución del programa
 main()
->>>>>>> 5

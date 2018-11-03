@@ -1,0 +1,92 @@
+Exposición: Hash
+Integrantes:
+	Hernández Alejandro
+	Ramírez Simón
+
+Descripción:
+Las funciones de hash están definidas por sus propiedades, y son estas propiedades las que hacen que las funciones de hash sean tan útiles. Principalmente necesitamos funciones hash para ser funciones de una sola vía . Queremos que sea fácil calcular el hash para x , pero queremos que sea poco práctico, o imposible, para revertir el hash para encontrar x . En otras palabras, no deberíamos poder deducir x dado su valor hash. También nos gustaría que nuestras funciones hash sean resistentes a las colisiones. No queremos entradas similares como "Hello World!" Y "Hello World?" Para hacer un hash en la misma salida, por ejemplo. Tampoco queremos dos entradas completamente diferentes de hash para la misma salida. Por razones de seguridad, necesitamos funciones hash que se comportan aparentemente al azar. La salida de la función hash debe parecer lo suficientemente aleatoria para que no podamos deducir fácilmente la entrada original.
+
+Paradoja de cumpleaños:
+
+Según la teoría matemática, si reuniéramos a 23 personas1 en una habitación existe aproximadamente un 50% de posibilidades de que 2 de ellas cumplan años el mismo día. Si en vez de 23 juntamos 75 la probabilidad sube al 99.9%.
+Simplemente porque podríamos tener 2 criptogramas iguales cuyo origen sean 2 M diferentes. En un momento entenderemos esto con mas detalle.
+Es mucho mas sencillo generar varios mensajes ( por ejemplo variaciones del mensaje fraudulento) y buscar que uno haga que: – Hash ( mensaje verdadero)=Hash ( mensaje falso)
+Por ejemplo si el hash es de 64 bits habría 2 64 posibles valores, pero bastaría generar 2 32 para que apareciera uno que cumpliese con la condición anterior.
+Entonces el secreto está en usar funciones hash que generen resúmenes suficientemente grandes.
+Entonces el tamaño de la función hash es importante para la fortaleza ante ataques de cumpleaños.
+Un hash de 128 bits ( MD5) implica hacer 2 64 mensajes, pero hash de 160 bits implica 2 80 por ahora fuera de el rango posible por simple aplicación del LPC (Codificacion predictiva lineal)
+
+Propiedades:
+
+Bajo costo:
+Calcular el valor hash necesita poco costo (computacional, de memoria, etc.).
+
+Compresión:
+Una función hash comprime datos si puede mapear un dominio con datos de longitud muy grande a datos con longitud más pequeña.
+
+Inyectividad:
+Se dice que la función hash es inyectiva cuando cada dato de entrada se mapea a un valor hash diferente. En este caso se dice que la función hash es perfecta. Para que se dé, es necesario que la cardinalidad del conjunto dominio sea inferior o igual a la cardinalidad del conjunto imagen. Normalmente, sólo se dan funciones hash perfectas cuando las entradas están preestablecidas. 
+Ejemplo: mapear los días del año en números del 1 al 366 según el orden de aparición.
+Cuando no se cumple la propiedad de inyectividad se dice que hay colisiones.
+
+Determinista:
+Una función hash se dice que es determinista cuando dada una cadena de entrada siempre devuelve el mismo valor hash. Es decir, el valor hash es el resultado de aplicar un algoritmo que opera solo sobre la cadena de entrada. Ejemplos de funciones hash no deterministas son aquellas funciones hash que dependen de parámetros externos, tales como generadores de números pseudoaleatorios o la fecha. Tampoco son deterministas aquellas funciones hash que dependen de la dirección de memoria en la que está almacenada la cadena de entrada. Esa dirección es accidental y no se considera un cambio de la cadena entrada en sí. De hecho puede cambiar dinámicamente durante la propia ejecución del algoritmo de la función hash.
+
+Propiedades para analizar la resistencia frente a colisiones:
+El estudio de este tipo de propiedades es muy útil en el campo de la criptografía para los llamados 'códigos de detección de modificaciones'.
+
+*Resistencia a la primera preimagen:
+Se dice que una función hash tiene resistencia a la primera preimagen si, dado un valor hash 'y', es computacionalmente intratable encontrar 'x' tal que h(x)=y.
+
+*Resistencia a colisiones:
+​Se dice que una función hash tiene resistencia a colisiones si encontrar un par h(x) = h(y) es computacionalmente intratable. Es decir, es difícil encontrar dos entradas que tengan el mismo valor hash.
+
+Como encontrar una segunda preimagen no puede ser más fácil que encontrar una colisión, entonces la resistencia a colisiones incluye la propiedad de resistencia a la segunda preimagen.
+
+Tmabién podemos tener una función resistente a colisiones de 256 bits que no es resistente a la casi-colisión porque se pueden encontrar casi-colisiones para los 224 bits de más a la izquierda.
+
+*Funciones con colisiones de hash parciales:
+Son funciones en las que invirtiendo cierto coste en procesamiento de CPU y memoria es posible encontrar en tiempos razonables dos entradas que produzcan resultados en los que sus bits se parezcan en cierto grado. Por ejemplo que se parezcan en un porcentaje de bits, o más comúnmente que sean iguales es los n-bits más significativos.
+
+Funciones hash con esta propiedad se usan en sistemas de prueba de trabajo, como Hashcash o Bitcoin para conseguir las pruebas de trabajo.
+
+*Resistencia a las preimágenes parciales:
+Una función resumen tiene resistencia a preimágenes parciales si es difícil encontrar una parte de la preimagen de un valor hash incluso conociendo el resto de la preimagen. Es decir, se debe recurrir a la fuerza bruta: si se desconocen t bits de la preimagen, se deben realizar en promedio 2^(n-t) operaciones de hash encontrarlo.
+
+*Con normalización de datos:
+En algunas aplicaciones, las cadenas de entrada pueden contener características que son irrelevantes cuando comparamos las cadenas. Por ejemplo en algunas aplicaciones las mayúsculas pueden ser irrelevantes. Por tanto para hallar el valor hash es interesante ignorar las distinciones no relevantes entre las cadenas de entrada. De esta forma cadenas distintas con diferencias no relevantes, tienen asociados valores hash iguales.
+
+*Continuidad:
+Se dice que una función hash es continua cuando una modificación minúscula (ej un bit) en la cadena de entrada ocasiona pequeños cambios en el valor hash.
+En funciones hash usadas para búsqueda normalmente se buscan funciones tan continuas como sea posible; de forma que entradas que difieran un poco deberían tener valores hash similares o iguales. Sin embargo la continuidad no es deseable para funciones hash usadas para sumas de verificación o funciones criptográficas por evidentes razones.
+
+*Efecto avalancha:
+En una función hash se dice que no hay correlación cuando los bits de las cadenas de entrada y los bits de las cadenas de salida no están relacionados, es decir, cuando una modificación minúscula (por ejemplo un bit) en la cadena de entrada ocasiona cambios en el valor hash comparables a un cambio de cualquier otro tipo. Por tanto cualquier cambio en el mensaje original idealmente hace que cada uno de cualquier bit del valor resumen resultante cambie con probabilidad 0.5. Cuando esto sucede (o casi) se dice que se produce un efecto avalancha
+
+Ejemplos:
+Verificando la integridad del archivo
+
+El uso más obvio es "verificar la integridad del archivo". Si acaba de descargar una gran parte del software de un sitio web, ¿cómo sabe que lo ha recibido correctamente y que no se ha manipulado?
+Una forma es volver a descargar el archivo y comparar los bits: si los bits son iguales, probablemente estés bien, pero si son diferentes, ¿cuáles son los bits correctos? Descubrir significa otra descarga con comparación, y esto se vuelve muy tedioso muy rápidamente.
+En cambio, si el sitio web publica los valores hash de sus paquetes de descarga, puede verificarlo usted mismo.
+
+Contraseñas de hash
+
+Un segundo ejemplo que es muy común, pero menos obvio, es el hashing de las contraseñas de acceso, y reiteraremos que "el hashing no es cifrado".
+Es una mala idea para los sistemas informáticos almacenar contraseñas en texto claro (en su forma original), porque si el malo puede llegar a donde están almacenadas, obtiene todas las contraseñas. Sabiendo cuántas personas usan tontamente una contraseña en múltiples sitios, obtener un alijo de un sistema puede dar acceso a otros.
+Una forma más segura es almacenar un hash de la contraseña , en lugar de la contraseña en
+sí. Dado que estos hashes no son reversibles , no hay manera de averiguar con seguridad "¿qué contraseña produjo este hash?" - Y la consecuencia de un compromiso es mucho menor.
+Ahora hemos guardado la contraseña en un lugar seguro, pero como se trata de una función de una sola vía, ¿cómo sabremos que algún usuario futuro en un mensaje de inicio de sesión nos da la misma contraseña?
+La respuesta es simple: tomamos la contraseña propuesta, en texto claro, la ejecutamos a través de la misma función hash y vemos si este resultado coincide con el hash que hemos guardado en el almacén de contraseñas. Si coinciden, el usuario debe haber conocido la contraseña correcta, por lo que se concede el acceso, pero si los hashes no son idénticos, se deniega el acceso.
+
+Documentos firmados digitalmente
+
+En términos generales, "firmar" un documento electrónicamente es el equivalente digital de colocar un autógrafo en un papel, y nuestra discusión gira en torno a cómo se representa la firma. ¿Cómo se sabe que esta firma digital se aplica a este documento?
+La respuesta: uno firma (encripta con su clave privada) el hash del documento, cuyo resultado es una firma digital.
+
+Referencias:
+
+https://es.wikipedia.org/wiki/Función_hash
+http://unixwiz.net/techtips/iguide-crypto-hashes.html 
+https://s3.amazonaws.com/ 
+http://www.eslared.net/ 

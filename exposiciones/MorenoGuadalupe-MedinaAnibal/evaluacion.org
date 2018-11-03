@@ -1,0 +1,45 @@
+#+title: Evaluación de exposición: Hashes
+#+author: Gunnar Wolf
+
+- Tema presentado por: Guadalupe Moreno y Aníbal Medina
+- Calificación global: (7.79 × 0.3) + (6.625 × 0.7) = *6.98*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |          5 |        5 |       7.5 |  6.25 |
+|          7.5 |        7.5 |      7.5 |        10 |  8.13 |
+|          7.5 |         10 |        5 |         5 |  6.88 |
+|           10 |        7.5 |        5 |       7.5 |  7.50 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |       10 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |         10 |       10 |        10 |  9.38 |
+|           10 |         10 |      7.5 |       7.5 |  8.75 |
+|          7.5 |        7.5 |       10 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |        10 |  8.13 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|           10 |         10 |      7.5 |         5 |  8.13 |
+|          7.5 |          5 |      7.5 |         5 |  6.25 |
+|--------------+------------+----------+-----------+-------|
+|         8.38 |       7.79 |     7.50 |      7.50 |  7.79 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Bueno (7.5)
+- Material desarrollado :: Suficiente (5)
+- Contenido :: Bueno (7.5)
+- Fuentes bibliográficas :: Suficiente (5)
+- Uso del tiempo :: Excelente (10)
+- Dominio del tema :: Bueno (7.5)
+- Presencia :: Suficiente (5)
+- Global :: 7.5×0.1 + 5×0.2 + 7.5×0.2 + 5×0.1 + 10×0.1 + 7.5×0.15 +
+            5×0.15 = *6.625*
