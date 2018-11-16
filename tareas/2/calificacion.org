@@ -158,3 +158,24 @@
       /de forma individual o en equipos de 2 personas/ 😉
       - Además... De todos modos, no alcanzaron calificación ☹
   - Calificación :: 0 (entrega más de una semana después de la fecha límite)
+
+- Luis Chibras ::
+  - Código :: [[./ChibrasLuis/tarea2.py][tarea2.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - El programa tiene varios errores de implementación, no logré
+      correrlo ejecutarlo exitosamente
+      - En =menu()=, el valor recibido en =opcion= no es una cadena
+        (siempre da falso cuando lo comparas con ='0'= o ='1'=). Ya
+        sea que lo conviertes en una o que comparas con el entero
+        correspondiente.
+      - La lógica de =Borrar()= me parece correcta a grandes rasgos,
+        pero falla al intentar evluar al nombre del proceso solicitado
+        (=NameError: name 'A' is not defined=).
+      - Me parece que tu fallo al iniciar se presenta cuando generas
+        una cadena que no puede satisfacerse (p.ej. se excede el
+        tamaño de la memoria(?): Tu =while= busca la condición =ar
+        !=0=, pero cuando asignas espacio, disminuyes =ar= dos veces
+        (y puede pasar de =1= a =-1=).
+
+  - Calificación :: 0 (entrega más de una semana después de la fecha límite)
