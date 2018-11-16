@@ -13,7 +13,7 @@ def existe_archivo_interno(nombre):
 	with open('hi','r') as arch:
 		archComoLista=arch.read().splitlines()
 		for line in archComoLista:
-			print ("Dentro de interno:"),line,nombre
+			#print ("Dentro de interno:"),line,nombre
 			if line == nombre:
 				interno = True
 	return interno			
@@ -55,7 +55,7 @@ def crear():
 			cadena = completa_cadena(cadena,nombre)
 			archComoLista.append(cadena)
 			archComoLista.insert(0,'\n')
-			print archComoLista
+			#print archComoLista
 			arch.writelines(archComoLista)
 	else:
 		print("Archivo ya existe!")
@@ -67,7 +67,7 @@ def completa_cadena(cadena,nombre):
 def modificar():
 	print ("Ingresa el nombre del archivo a modificar(Solo agregar contenido):\n")
 	nombre=raw_input(">>")
-	print nombre, existe_archivo_interno(nombre)
+	#print nombre, existe_archivo_interno(nombre)
 	if existe_archivo_interno(nombre):	
 		print ("Ingresa el contenido del archivo:\n")
 		cadena = raw_input()
@@ -95,10 +95,11 @@ def leer():
 			rango=posicion_final_cont(nombre)-posicion_inicial_cont(nombre)
 			for line in range(rango):
 				print arch.readline()
+	sleep(3)
 
 	else:
 		print ("No existe el archivo...")
-		sleep(1)
+		sleep(2)
 
 def posicion_inicial_cont(nombre):
 	with open('hi','r') as arch:
@@ -119,7 +120,7 @@ def borrar():
 		with open('hi','r+') as arch:
 			archComoLista=arch.read().splitlines()
 			archComoLista.remove(nombre)
-			print len(archComoLista),posicion_inicial_cont(nombre),posicion_final_cont(nombre)-1
+			#print len(archComoLista),posicion_inicial_cont(nombre),posicion_final_cont(nombre)-1
 			for i in range(posicion_final_cont(nombre)-1,posicion_inicial_cont(nombre)):
 				archComoLista.pop(i)
 			arch.writelines(archComoLista)
