@@ -1,0 +1,40 @@
+Chibras Guillermo Luis Javier
+
+Proyecto: Micro sistema de archivos
+Sistema operativo: Fedora 27
+
+Lenguaje:Python 3
+
+Descripcion: Micro sistema de archivos que emula un shell de Unix. cuenta con restricciones de tamaño (ocho caracteres) en los caracteres que hacepta para los nombres de los directorios y archivos.
+Tambien cuenta con su lista de comandos propios y no hacepta el uso de cualquier comano que no se encuentre en esta lista:
+
+nDir:  Permite crear un nuevo directorio en el directorio actual.
+nArch: Crea un nuevo archivo en el directorio actual.
+lista: Imprime en pantalla el contenido del directorio actual.
+dDir:  Elimina el directorio seleccionado.
+dArch: Elimina el archivo seleccionado.
+edit:  Lanza el editor Vi en el cual es posible editarel contenido del archivo seleccionado.
+mues:  Presenta el contenido del archivo seleccionado.
+entra: Permite acceder a otros directorios ingresando la ruta Eje ' Documento/Luis' o regresar al directorio padre Eje ' . . '.
+limpia: borra los datos en pantalla".
+
+
+Ejecucion:Escribir el siguiente comando en terminal
+
+python3 SystAr.py
+
+
+Ejemplo de ejecucion:
+
+			!!!Bienvenido al micro sistema!!!
+ Los comandos son: nDir, nArch, lista, dDir, dArch, edit, mues, entra, limpia, manual
+		(para mas información consulte manual) \n")
+**> nDir
+¿Como se llamara el nuevo directorio?: muestra
+**> lista
+muestra
+
+
+
+
+
