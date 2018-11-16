@@ -1,0 +1,46 @@
+#+title: Evaluación de exposición: Spectre y Meltdown
+#+author: Gunnar Wolf
+
+- Tema presentado por: Alberto Espinoza y Alejandro Pérez
+- Calificación global: (7.78 × 0.3) + (7.25 × 0.7) = *7.41*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|           10 |         10 |      7.5 |        10 |  9.38 |
+|           10 |         10 |      7.5 |       7.5 |  8.75 |
+|           10 |         10 |       10 |        10 |    10 |
+|           10 |         10 |        5 |       7.5 |  8.13 |
+|           10 |         10 |        5 |         5 |  7.50 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |          0 |        5 |         5 |  4.38 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|           10 |         10 |       10 |        10 |    10 |
+|           10 |        7.5 |      7.5 |         5 |  7.50 |
+|          7.5 |         10 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|           10 |         10 |       10 |        10 |    10 |
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|          7.5 |        7.5 |        5 |         0 |  5.00 |
+|--------------+------------+----------+-----------+-------|
+|         8.89 |       8.19 |     7.08 |      6.94 |  7.78 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Bueno (10)
+- Material desarrollado :: Suficiente (5)
+- Contenido :: Bueno (7.5)
+- Fuentes bibliográficas :: Suficiente (5)
+- Uso del tiempo :: Excelente (10)
+- Dominio del tema :: Bueno (7.5)
+- Presencia :: Bueno (7.5)
+- Global :: 10*0.1 + 5*0.2 + 7.5*0.2 + 5*0.1 + 10*0.1 + 7.5*0.15 +
+            7.5*0.15 = *7.25*

@@ -1,0 +1,160 @@
+#+title: Asignación de memoria
+#+author: Gunnar Wolf
+
+- Edgar Guadarrama ::
+  - Código :: [[./GuadarramaEdgar/tarea2.c][tarea2.c]]
+  - Lenguaje :: C
+  - Comentarios ::
+    - ¡Muy bien resuelto!
+    - Recomendación: Estás utilizando los comentarios como
+      micro-documentación de uso. Si bien es válido en una tarea, te
+      crea malas prácticas a futuro. Los comentarios deben ser
+      información útil /al programador/ que se acerque a tu código. La
+      documentación (como tus líneas 117 y 121) debería ser un archivo
+      aparte, orientado a tus /usuarios/.
+  - Calificación :: 10
+
+- Aníbal Medina y Guadalupe Moreno ::
+  - Código :: [[./MorenoGuadalupe-MedinaAnibal/Asignador.java][Asignador.java]]
+  - Lenguaje :: Java
+  - Comentarios ::
+    - ¡Buena implementación! (¿ven cómo sí soy capaz de decir eso de
+      un programa en Java? ☺)
+    - Cómodo y útil que los procesos que se vayan asignando vayan
+      tomando letras y tamaños aleatorios. Sin embargo, dado que no
+      reporta el tamaño del proceso que intentaría asignar, tuve que
+      "picarle" varias veces para convencerme de que no implementa
+      compactación. Vamos:
+      #+BEGIN_SRC text
+      Entra proceso (W) de tamaño 10
+      CCCHHHIIIIIIIIIIIIIWWWWWWWWWW-
+
+      s
+      Se eliminó al proceso H
+      CCC---IIIIIIIIIIIIIWWWWWWWWWW-
+
+      a
+      No hay espacio suficiente para el proceso D
+      CCC---IIIIIIIIIIIIIWWWWWWWWWW-
+
+      a
+      Entra proceso (X) de tamaño 2
+      CCCXX-IIIIIIIIIIIIIWWWWWWWWWW-
+      #+END_SRC
+    - Y, sí... Les faltó implementar la compactación.
+  - Calificación :: 9
+
+- Miguel Pérez ::
+  - Código :: [[./PerezMiguel/Memoria.java][Memoria.java]], [[./PerezMiguel/TestMemoria.java][TestMemoria.java]]
+  - Lenguaje :: Java
+  - Comentarios ::
+    - ¡Bien! Asigna, libera, compacta, reporta errores... ¿Qué más
+      puedo pedir? ☺
+    - Tu código no compila tal como lo mandaste:
+      #+BEGIN_SRC text
+	$ javac TestMemoria.java 
+	./Memoria.java:140: error: cannot find symbol
+			if(Tabla.asigna(nombre, tamanio) == 1)
+			   ^
+	  symbol:   variable Tabla
+	  location: class Memoria
+	1 error
+      #+END_SRC
+      Basta con quitar =Tabla.= para que funcione. ¿Qué pasó ahí? :-]
+  - Calificación :: 10
+
+- Simón Ramírez ::
+  - Código :: [[./RamirezSimon/asigMem.py][asigMem.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - ¿Archivo vacío? ☹ ¿No hubo entrega?
+  - Calificación :: 0
+
+- Miguel Aguilar ::
+  - Código :: [[./AguilarMiguel/asignador.c][asignador.c]]
+  - Lenguaje :: C
+  - Comentarios ::
+    - Tu programa depende de un archivo que indique cómo
+      asignar/emplear la memoria. Este archivo debe seguir un formato
+      en específico. ¡Pero no incluyes documentación! Tuve que generar
+      el archivo básicamente por /ingeniería inversa/ — Viendo lo que
+      tu programa /busca hacer/ con él.
+    - Tu programa en general es /muy bueno/ — Con un par de
+      anotaciones importantes, sí, pero la forma en que lo resolviste
+      es muy buena.
+      - En primer lugar, solicité /asignación contigua/. Tu programa
+        asigna espacio en memoria incluso si no puede satisfacerse. Al
+        detectar que la memoria no puede asignarse de forma contigua,
+        deberías forzar una /compactación/
+      - En segundo lugar, tu función =asigMemoria()= no contempla el
+        caso de que no haya memoria suficiente para satisfacer la
+        solicitud. Si bien verificas y podrías imprimir =No se pudo
+        asignar= (línea 110), nunca llegas ahí. Por ejemplo, indicando
+        las siguientes solicitudes, tu programa se queda en un ciclo
+        eterno, nomás quemando CPU:
+	#+BEGIN_SRC text
+	1 14
+	2 3
+	#+END_SRC
+  - Calificación :: 0 (entrega más de una semana después de la fecha límite)
+
+- Karla Guzmán ::
+  - Código :: [[./GuzmánKarla/asigmem.py][asigmem.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Buena implementación, aunque con un par de detalles
+    - Al intentar quitar un proceso, Python manda un error:
+      #+BEGIN_SRC text
+	1 => Agregar proceso
+	2 => Quitar proceso
+	0 => Salir
+	$$ 2
+	ingresa el nombre del proceso: Z
+	Traceback (most recent call last):
+	  File "asigmem.py", line 110, in <module>
+	    control()
+	  File "asigmem.py", line 108, in control
+	    opcion(numero)
+	  File "asigmem.py", line 94, in opcion
+	    vacia_memoria(proceso, tamano)
+	  File "asigmem.py", line 31, in vacia_memoria
+	    while contador1 > 0:
+	UnboundLocalError: local variable 'contador1' referenced before assignment
+      #+END_SRC
+      Esto es porque estás asignando (línea 30) un valor a la variable
+      =contador=, pero en la siguiente línea la utilizas como
+      =contador1=. Corrigiendo el nombre de la variable, el programa
+      funciona bien.
+    - Tu programa detecta correctamente la compactación de memoria,
+      /pero no la efectúa/, y realiza asignación de memoria no
+      contigua:
+      #+BEGIN_SRC text
+	1 => Agregar proceso
+	2 => Quitar proceso
+	0 => Salir
+	$$ 1
+	ingresa el nombre del proceso: G
+	ingresa el tamaño de tu proceso: 6
+	se requiere compactar la memoria
+
+	Mapa de memoria 
+
+	|A| |A| |A| |A| |A| |A| |A| |A| |A| |A| 
+
+	|A| |A| |A| |A| |A| |G| |G| |G| |B| |B| 
+
+	|B| |R| |R| |R| |R| |G| |G| |G| |*| |*| 
+      #+END_SRC
+  - Calificación :: 0 (entrega más de una semana después de la fecha límite)
+
+- Andrew Sánchez ::
+  - Código :: [[./SanchezAndrew/Tarea2.py][Tarea2.py]]
+  - Documentación :: [[./SanchezAndrew/Documentacion.txt][Documentacion.txt]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - El programa es básicamente el mismo que el entregado por Karla
+      Guzmán, los comentarios a aquel valen para este
+    - No hay problema, el problema estaba planteado para resolverse
+      /de forma individual o en equipos de 2 personas/ 😉
+      - Además... De todos modos, no alcanzaron calificación ☹
+  - Calificación :: 0 (entrega más de una semana después de la fecha límite)

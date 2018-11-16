@@ -142,16 +142,16 @@ El planteamiento del proyecto y la rúbrica para su calificación están
 | Entorno y dependencias |        10 |        |     0.67 |
 | Comentarios            |        10 |        |     0.67 |
 |------------------------+-----------+--------+----------|
-| *Entrega*              |           |    0.2 |     1.17 |
+| *Entrega*              |           |    0.2 |     1.67 |
 | Historia en Git        |        10 |        |     0.67 |
 | Dir. de proyecto       |       7.5 |        |     0.50 |
-| Código válido          |           |        |     0.00 |
+| Código válido          |       7.5 |        |     0.50 |
 |------------------------+-----------+--------+----------|
 | *Concurrencia*         |           |    0.2 |     1.67 |
 | Multiproceso           |        10 |        |     1.00 |
 | Sincronización         |        10 |        |     0.67 |
 |------------------------+-----------+--------+----------|
-| *TOTAL*                |           |        |     8.86 |
+| *TOTAL*                |           |        |     9.36 |
 |------------------------+-----------+--------+----------|
 #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
 
@@ -319,40 +319,128 @@ El planteamiento del proyecto y la rúbrica para su calificación están
 - Documentación :: [[./MedinaAnibal-MorenoGuadalupe/Documentacion.txt]]
 - Código :: [[./MedinaAnibal-MorenoGuadalupe/Monitor.py]]
 - Lenguaje de desarrollo :: Python
-- Estado :: Entregado a tiempo, pero no en la versión
-            correcta. ¡Esperando al pull request correcto!
-# - Interfaz ::
-# - Aspecto monitoreado ::
-# - Uso de multitarea / sincronización ::
-# - Observaciones ::
+- Interfaz :: Ventana de texto sobre una interfaz GUI Tkinter
+- Aspecto monitoreado :: Características del equipo, memoria, CPU y
+     lista de procesos
+- Uso de multitarea / sincronización :: Se definen varios mutexes,
+     pero de forma efectiva, sólo se emplea uno a modo de mutex en
+     =alertProces()=. Los hilos corren de forma estrictamente secuencial.
+- Observaciones ::
+  - ¡Se ve que le invirtieron bastante trabajo al proyecto! ¡Bien!
+  - Por lo visto, el código se les /batió/ al unir versiones - Y la
+    versión que me enviaron no es funcional ☹ Tuve que hacer un poco
+    de /arqueología digital/ para lograr que el programa arrancara...
+    - Tienen por lo menos dos diferentes sistemas de nombres para las
+      funciones y variables utilizadas. Las líneas que inician con
+      '-', el código de ustedes. Las que inician con '+', mis
+      correcciones:
+      #+BEGIN_SRC diff
 
-# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
-# |------------------------+-----------+--------+----------|
-# | *Requisitos*           |           |    0.2 |          |
-# | Cumplimiento           |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Proyecto*             |           |    0.2 |          |
-# | Creatividad            |           |        |          |
-# | Complejidad            |           |        |          |
-# | Interfaz usuario       |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Documentación*        |           |    0.2 |          |
-# | Doc. externa           |           |        |          |
-# | Entorno y dependencias |           |        |          |
-# | Comentarios            |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Entrega*              |           |    0.2 |          |
-# | Historia en Git        |           |        |          |
-# | Dir. de proyecto       |           |        |          |
-# | Código válido          |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Concurrencia*         |           |    0.2 |          |
-# | Multiproceso           |           |        |          |
-# | Sincronización         |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *TOTAL*                |           |        |          |
-# |------------------------+-----------+--------+----------|
-# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+	index a1a67c4..5a8594d 100644
+	--- a/proyectos/2/MedinaAnibal-MorenoGuadalupe/Monitor.py
+	+++ b/proyectos/2/MedinaAnibal-MorenoGuadalupe/Monitor.py
+	@@ -9,7 +9,7 @@ import threading
+	 import psutil
+ 
+	 # Numero de nucleos que tiene nuestra computadora
+	-NumNucleos = int(subprocess.getoutput("grep processor /proc/cpuinfo | wc -l"))
+	+numNucleos = int(subprocess.getoutput("grep processor /proc/cpuinfo | wc -l"))
+ 
+	 # Mutex para proteger al contador
+	 mutex = threading.Semaphore(1)
+	@@ -68,7 +68,7 @@ def Sistema():
+	     estado1 = subprocess.getoutput("cat /proc/stat | grep 'cpu ' | while read c1 c2 c3 c4 c5; do echo $c4; done")
+	     time.sleep(1)
+	     estado2 = subprocess.getoutput("cat /proc/stat | grep 'cpu ' | while read c1 c2 c3 c4 c5; do echo $c4; done")
+	-    cpu_uso = (int(estado2) - int(estado1)) / NumNucleos
+	+    cpu_uso = (int(estado2) - int(estado1)) / numNucleos
+	     alertProces()
+	     return str(cpu_uso)
+ 
+	@@ -77,7 +77,7 @@ def cpuInactivo():
+	     estado1 = subprocess.getoutput("cat /proc/stat | grep 'cpu ' | while read c1 c2 c3 c4 c5 c6; do echo $c5; done")
+	     time.sleep(1)
+	     estado2 = subprocess.getoutput("cat /proc/stat | grep 'cpu ' | while read c1 c2 c3 c4 c5 c6; do echo $c5; done")
+	-    cpu_uso = (int(estado2) - int(estado1)) / NumNucleos
+	+    cpu_uso = (int(estado2) - int(estado1)) / numNucleos
+	     alertProces()
+	     return str(cpu_uso)
+ 
+	@@ -98,7 +98,7 @@ def MemoLibre():
+	 # memoria que está usando el usuario(se muestra en kB)
+	 def MemoUso():
+	     memuso =  subprocess.getoutput("cat /proc/meminfo | while read c1 c2; do echo $c2; done | sed -n '7 p'")
+	-    alertProcess()
+	+    alertProces()
+	     return memuso
+ 
+	 # memoria de intercambio total que tiene nuestra computadora(se muestra en kB)
+	@@ -202,7 +202,7 @@ def listProces():
+ 
+ 
+ 
+	-funcionesALanzar = [cpuUsuario, cpuSistema,cpuInactivo, memTotal,memLibre,memUso,memSwapTotal,memSwapLibre,memSwapUso,numProcesos,numProcEjecucion,tFuncionamiento,tInactivo,listaProc]
+	+funcionesALanzar = [Usuario, Sistema,cpuInactivo, MemoTotal,MemoLibre,MemoUso,MemoSwapTotal,MemoSwapLibre,MemoSwapUso,NumProcesos,NumProcEjecucion,tFuncionamiento,tInactivo,listProces]
+	 func_monitor = len(funcionesALanzar)
+ 
+	 # lanzar los hilos
+	@@ -268,7 +268,7 @@ def interfaz():
+ 
+ 
+	 def main():
+	-       global conthilos
+	+       global contahilos
+		while True:
+			iniciaHilos()
+			# Espera a que todos los hilos terminen
+      #+END_SRC
+  - La parametrización / construcción interna de la lista de
+    =funcionesALanzar=, utilizada en =iniciaHilos()=, es una buena
+    práctica que permite /desacoplar/ la lógica del
+    funcionamiento. ¡Bien hecho!
+  - Todas las mediciones se ejecutan /dos/ veces por ciclo: Una vez,
+    invocadas desde =iniciaHilos()= y la otra, de forma secuencial,
+    desde =interfaz()=.  Esto es, la porción que aprovecha la
+    ejecución paralela... Se desecha y se usa únicamente de forma
+    secuencial ☹
+    - Podrían haber hecho que cada función actualizara sus datos
+      dentro de un arreglo global, y podrían mantenerse ejecutando
+      todos de forma simultánea. =alertProces()=, llamado al inicio de
+      la ejecución de cada una, obtiene y libera un mutex, pero
+      únicamente para contar la cantidad de hilos.
+  - El código incluye tres =time.sleep(1)=. Esto significa que, dado
+    que el código completo se ejecuta (/¡secuencialmente!/) dos veces,
+    la ventana con los resultados tarda /seis segundos/ en aparecer o
+    en actualizarse. Si se omiten estos =time.sleep(1)=, ¡la
+    usabilidad del programa resultado aumenta mucho!
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.08 |
+| Multiproceso           |       7.5 |        |     0.75 |
+| Sincronización         |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.27 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
 
 * Luis Moreno y Ángel Ramírez
 - Documentación :: [[./MorenoLuis-RamirezAngel/ReporteMonitorWindowsLA.pdf]]
@@ -413,84 +501,158 @@ El planteamiento del proyecto y la rúbrica para su calificación están
 - Documentación :: [[./PerezMiguel/Documentacion]]
 - Código :: [[./PerezMiguel/Monitor.py]]
 - Lenguaje de desarrollo :: Python
-- Estado :: Entregado a tiempo, pero no en la versión
-            correcta. ¡Esperando al pull request correcto!
-# - Interfaz ::
-# - Aspecto monitoreado ::
-# - Uso de multitarea / sincronización ::
-# - Observaciones ::
+- Interfaz :: Curses (consola, pero con acomodo semi-gráfico)
+- Aspecto monitoreado :: Uso de CPU, memoria, número de núcleos,
+     principales procesos
+- Uso de multitarea / sincronización ::
+  - Barrera a la /salida/ de las funciones recolectores de datos
+  - mutex para la modificación de contadores
+- Observaciones ::
+  - ¡Bonita implementación!
+  - Me faltó un poco de documentación / comentarios para entender el
+    flujo de ejecución / intercambio de datos
+  - Muy buen uso de los módulos de Python para obtener información del
+    sistema (en vez de obtenerlos de lugares específicos a Linux o
+    cuestiones por el estilo)
+  - Respecto a la documentación, te sugiero trabajar un poco en lograr
+    una redacción más clara. ¡No por buscar escribir algo en tono
+    formal / apersonal debe resultar de difícil lectura!
+  - Para poderlo ejecutar en un entorno como el que documentas, tuve
+    que modificar el nombre de la variable =tamañio= por =tamanio=
+    (restricciones de Python 2.x)
 
-# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
-# |------------------------+-----------+--------+----------|
-# | *Requisitos*           |           |    0.2 |          |
-# | Cumplimiento           |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Proyecto*             |           |    0.2 |          |
-# | Creatividad            |           |        |          |
-# | Complejidad            |           |        |          |
-# | Interfaz usuario       |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Documentación*        |           |    0.2 |          |
-# | Doc. externa           |           |        |          |
-# | Entorno y dependencias |           |        |          |
-# | Comentarios            |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Entrega*              |           |    0.2 |          |
-# | Historia en Git        |           |        |          |
-# | Dir. de proyecto       |           |        |          |
-# | Código válido          |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Concurrencia*         |           |    0.2 |          |
-# | Multiproceso           |           |        |          |
-# | Sincronización         |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *TOTAL*                |           |        |          |
-# |------------------------+-----------+--------+----------|
-# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |       2. |
+| Cumplimiento           |        10 |        |     2.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     1.67 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.84 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.42 |
+| Multiproceso           |       7.5 |        |     0.75 |
+| Sincronización         |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.94 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
 
 * Andrew Sánchez
 - Documentación :: [[./SanchezAndrew/Documentacion]]
 - Código :: [[./SanchezAndrew/MonitorSistema.py]]
 - Lenguaje de desarrollo :: Python
-- Estado :: Entregado a tiempo, pero no en la versión
-            correcta. ¡Esperando al pull request correcto!
-# - Interfaz :: Texto (menú). Emplea wx, pero no genera una interfaz
-#               gráfica con él (?)
-# - Aspecto monitoreado :: Niveles de disco, memoria, procesos y CPU
-# - Uso de multitarea / sincronización :: La función =hilo()= crearía a
-#      cuatro hilos, uno por función, pero no es llamada. La función
-#      =Opciones()= genera a los hilos conforme son requeridos.
+- Interfaz :: Menú GUI (wx); resultados de la ejecución hacia consola
+- Aspecto monitoreado :: Niveles de disco, memoria, procesos y CPU
+- Uso de multitarea / sincronización :: La función =hilo()= crea a
+     cuatro hilos, uno por función, pero no es llamada. La función
+     =Opciones()= genera a los hilos conforme son requeridos.
 
-#      Las funciones iniciadas por cada uno de estos hilos declaran un
-#      mutex, y las funciones =cpu()=, =procesos()=, =memoria()= y
-#      =disco()= adquieren y liberan un mutex, pero no es necesario
-#      (porque viven a fin de cuentas dentro de una lógica secuencial).
-# - Observaciones ::
-#   - ¡Ortografía!
-# | *Rubro*                | *Parcial* | *Peso* | *Puntos* |
-# |------------------------+-----------+--------+----------|
-# | *Requisitos*           |           |    0.2 |          |
-# | Cumplimiento           |         5 |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Proyecto*             |           |    0.2 |          |
-# | Creatividad            |         5 |        |          |
-# | Complejidad            |         5 |        |          |
-# | Interfaz usuario       |         5 |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Documentación*        |           |    0.2 |          |
-# | Doc. externa           |           |        |          |
-# | Entorno y dependencias |           |        |          |
-# | Comentarios            |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Entrega*              |           |    0.2 |          |
-# | Historia en Git        |           |        |          |
-# | Dir. de proyecto       |           |        |          |
-# | Código válido          |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *Concurrencia*         |           |    0.2 |          |
-# | Multiproceso           |           |        |          |
-# | Sincronización         |           |        |          |
-# |------------------------+-----------+--------+----------|
-# | *TOTAL*                |           |        |          |
-# |------------------------+-----------+--------+----------|
-# #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+     Las funciones iniciadas por cada uno de estos hilos declaran un
+     mutex, y las funciones =cpu()=, =procesos()=, =memoria()= y
+     =disco()= adquieren y liberan un mutex, pero no es necesario
+     (porque viven a fin de cuentas dentro de una lógica secuencial).
+- Observaciones ::
+  - Tu código tiene un error de indentación (línea 147). Tuve que
+    corregirlo para que corra el programa. Afortunadamente la
+    resolución es obvia para humanos ;-)
+  - Presentas cinco =CheckBox= en una retícula, que aparecen en la
+    ventana "normal". Hay un sexto =CheckBox=, que aparece /fuera/ de
+    la ventana, y no tiene etiqueta. Lo recibe la función
+    =boolSelec()=. No alcanzo a encontrar dónde puede ser
+    utilizado. ¿Qué hace?
+  - Me parece muy correcto que separes la interfaz (clase =OpcionesM=)
+    de la acción propiamente dicha (el código bajo el espacio de
+    nombres principal del programa).
+  - Le invertiste tiempo a hacer un buen lanzador, pero simplemente
+    /avientas/ el resultado de varios comandos o archivos a pantalla,
+    de una forma que ni siquiera resulta fácil de seguir :-( Me
+    hubiera encantado que procesaras el resultado, o buscaras cómo
+    mostrar mejor cada resultado parcial.
+  - Ojo: Cada vez que llamas a un comando mediante =system()= se abre
+    un nuevo shell, y los cambios en el ambiente no se propagan. Esto
+    es, tu línea 145 (=os.system("cd")=) resulta inútil. Para lo que
+    intentas hacer en =Disk()= podrías cambiar de directorio desde
+    Python (=os.chdir()=), o dar un comando compuesto (=os.system('cd;
+    du')=).
+  - Tu código tiene varias /funciones muertas/. Por ejemplo, =hilo()=
+    es un lanzador de hilos, al igual que =Opciones()=... Y
+    =Opciones()= es llamado desde =MS()=, que... Nunca es
+    llamado. Me tardé en encontrar desde dónde llamas a =hilo()=,
+    estaba por calificarte más bajo por no emplear hilos.
+  - Tal vez sea un tecnicismo, pero a fin de cuentas es mi tarea
+    hacerlos: Dado que todas tus funciones "actuadoras" llaman a la
+    ejecución de procesos externos, resulta innecesario bloquear
+    mediante =mutex= entre las distintas ejecuciones. Esto es, los
+    diferentes comandos nunca se van a /pisar los callos/ porque tu
+    proceso completo (con todos sus hilos) se va a dormir cada vez que
+    invocas a un externo. Y dada la forma en que vas creando e
+    iniciando a tus hilos, la concurrencia queda muy limitada (por no
+    decir inexistente)
+  - Probablemente cumpliría /mejor/ los objetivos del proceso si
+    lanzaras =hilo()= sin condicionales desde un principio, sino que
+    mediante señalización. Si al iniciar creas un semáforo
+    (inicializado a 0) por cada una de las funciones:
+    #+BEGIN_SRC python
+      mostrar = {'Disco': threading.Semaphore(0),
+		 'Memoria': threading.Semaphore(0),
+		 # (...)
+      }
+    #+END_SRC
+    Y tus cinco funciones siguieran la forma:
+    #+BEGIN_SRC python
+      def Disk():
+	global mutex, mostrar
+	while True:
+	  mostrar['Disco'].acquire()
+	  mutex.acquire()
+	  # Haz tu chamba
+	  mutex.release()
+    #+END_SRC
+    La lógica de =hilo()= (o su reemplazo) podría ser sencillamente:
+    #+BEGIN_SRC python
+    def hilo(OpSelec):
+      global mostrar
+      for k in OpSelec.keys():
+        if opSelec[k] == True:
+          mostrar[k].release()
+    #+END_SRC
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.33 |
+| Creatividad            |       7.5 |        |     0.50 |
+| Complejidad            |         5 |        |     0.33 |
+| Interfaz usuario       |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.84 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.33 |
+| Multiproceso           |        10 |        |     1.00 |
+| Sincronización         |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.01 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16

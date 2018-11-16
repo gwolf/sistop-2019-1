@@ -115,7 +115,11 @@
       alguno. No puedo tomarlo como una tarea entregada. ¡Actualiza
       esto mediante un pull request! ¡Envíame código, aunque sea feo e
       incompleto!
-  - Calificación :: 
+
+      Si entiendo correctamente, este texto justifica la no-entrega de
+      tu tarea. No te puedo dar calificación, pero la cuento como
+      entregada.
+  - Calificación :: 0
 
 - Edgar Guadarrama ::
   - Problema elegido :: El cruce del río
@@ -266,3 +270,21 @@
     - ¡Buena implementación!
     - Y me gustó mucho la documentación que presentas.
   - Calificación :: 10 × 0.8 = 8    (entrega fuera de tiempo)
+
+- Miguel Ángel Aguilar ::
+  - Problema elegido :: Los alumnos y el asesor
+  - Documentación :: No entregada
+  - Código :: [[./AguilarMiguel/tarea1.py]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - Correcciones al código.
+      - Al inicio de tu código tienes dos
+	"cadenas desnudas" (¿a modo de comentario?). La primera de ellas
+	no inicia - esto es, dejas al código completo como parte de una
+	cadena (y a tu cadena, ¡como error de sintaxis!)
+      - Al final de tu código, que es necesario anidar =hilos_alum+=1=
+        al mismo nivel que el lanzamiento del hilo para que se lea
+        correctamente de qué alumno se trata.
+      - La resolución es, al menos a primera vista, correcta.
+  - Calificación :: 0 (Entrega _muy_ fuera de tiempo (un mes tarde);
+                    lo recibo, pero no obtiene ya calificación)

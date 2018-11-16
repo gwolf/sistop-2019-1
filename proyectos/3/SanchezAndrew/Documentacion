@@ -1,0 +1,38 @@
+Sánchez Espinosa Andrew Blaise.
+
+IDE:
+	Python 2.7.6 
+
+Probado en Ubuntu 14.04 LTS
+
+En este proyecto se hara un (micro) Sistema de archivos, en el lenguaje de programación Python. El cual puede crear, eliminar, mostrar el contenido de un archivo, agregar información al archivo y mostrar los archivos en el directorio actual. En el código hay faltas de ortografía dado a que mi compilador no acepta los acentos, los toma como errores aun en los comentarios.
+
+Esto se puede ver con el comanod ayuda en el mismo (micro) Sistema de Archivos
+
+	-- Escriba lsdoc para mostrar los archivos en el directorio
+
+	-- Escriba brr nombreArchivo para borrar 
+
+	-- Escriba crr nombreArchivo Contenido para crear un archivo
+		 y poner el contenido en el (no es necesario poner contenido) 
+
+	-- Escriba mst nombreArchivo para mostrar el contenido de un archivo 
+
+	-- Escriba agg nombreArchivo TextoParaAgregar para agregar informacion a un archivo sino existe lo crea
+
+	-- Escriba yabasta para cerrar el (micro) Sistema de Archivos
+
+
+
+Ejemlos:
+
+		~$: crr Hola Hola # Esto crea un archivo Hola.txt y se escribe Hola dentro del mismo
+		~$: crr Hola	  # Esto solo crea el archivo Hola.txt
+
+		~$: brr Hola	  # Esto borra el archivo Hola.txt
+
+		~$: mst Hola	  # Esto muestra el contenido del archivo Hola.txt 						# (solo habra un espacio si el archivo esta vació)
+
+		~$: agg Hola Mundo! #Esto agraga Mundo! al Archivo Hola ya creado si tiene información lo 						# agrega al final de la cadena
+
+		~$: lsdoc 	    # Esto muestra los archivos del directorio actual
