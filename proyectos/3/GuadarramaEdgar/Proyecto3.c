@@ -6,7 +6,7 @@ El microsistema de archivos funciona en base a un archivo binario con el siguien
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include <windows.h> //para windows
+//#include <windows.h> //para windows
 
 #define MAX_CONTENT 515
 #define MAX_FILENAME 64
