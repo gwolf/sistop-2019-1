@@ -1,0 +1,18 @@
+Tomo 1 Fasiculo 6
+Al inicio para obtener el numero que me correspone no obtenia el mmodulo ya que este no tenia fin
+por lo tanto decidi tomar el 6, del primer tomo.
+Me llamo la atencion por la seccion de la casa.
+En esta seccion nos hablan del implemento de las computadoras en las escuelas y debido a esto tenemos 
+nuevos programadores y por lo tanto nuevas cosas. pero los programadores profesionales son totalmente distintos a  lo que un usuario normal haria.
+En la sona de la casa Pagina 106 nos muestran como es que microporcesadores estan en nuestra vida cotidiana, ya sea en la lavadora un mejor funcionamiento, el carro que nos ayuda a saber mas cosas sobre el mismo, un juego comun, maquina de coser que  nos permite hacer distintas puntos para cocer.
+La tele, y el ordenador personal. son distintos aparatos que gracias a los micropocesadores hemos mejorado nuestro estilo de vida.
+recuerdo cuando llego la primer computadora con mi abuelo. tenia windows 98 o 96, desde ahi fue donde me interese por las computadoras, todo era muy basico y complejo a la vez.
+
+Seccion Intermedia.
+El disco flexible.
+"El ordenador personal 'olvidara' toda la informaicion con la cual se habia programado con solo interrumpir la alimentacion electrica.
+debido a que existen momentos donde archivos importantes o no se perdian por causa de esto, se incorporo  un procedimiento que permite almacenar con caracter permanente el contenido de la memoria del ordenador. El cual consistia en una cinta de cassette en la cual el programa se almacena digitalmente como una serie de tonos.
+pero para programas extensos o serie de programas cortos, el tiempo de localizado y de cargar el programa , significaba un contratiempo. "todo desde un inicio"
+o los tonos dependiendo de la velocidad de la lectura podria probocar errorr
+Tambien se le conoce como Floppy o diskette)
+

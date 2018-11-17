@@ -1,0 +1,20 @@
+Problema: De gatos y ratones
+
+Lenguaje: Python 3.7
+
+Se intento implementar un Mutex para una función 
+que es el contador de gatos y ratones, un multiplex
+para los platos de comida, una señalización con una 
+variable sin utilizar un semaforo y dos contadores 
+para acumular a los animales que esten comiendo.
+
+El programa no se concluyo ya que no pudimos resolver 
+un error que nor marco al liberar los hilos, cuando 
+compilamos las funciones por separado no nos arrojo 
+ningun error, pero al aplicarlas nos marco "AttributeError"
+para varias varibles no definidas en entero. Aplicamos varias 
+soluciones encontradas en foros de internet, pero 
+ninguna funciono.
+
+Entregamos la tarea y seguiremos en el intento por 
+lograr que el programa funcione.

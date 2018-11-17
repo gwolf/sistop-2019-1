@@ -30,6 +30,7 @@ Podría pedirles que elijan un fascículo al azar, pero estoy seguro que
 la distribución distaría mucho de ser homogénea ☺ Por tanto:
 
 *f = &lfloor; (mat % 100) / 4 &rfloor; | mat ≥ 4*
+
 *f = rand(24) | mat < 4*
 
 Esto es:

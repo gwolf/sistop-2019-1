@@ -1,0 +1,16 @@
+package Tarea01;
+
+import java.lang.Thread;
+//Creando clase Alumno
+public class Alumno extends Thread {
+	Asesoria asesoria;
+	public Alumno(Asesoria asesoria) {
+		this.asesoria = asesoria;
+		}
+	public void run() {
+		while(true) {
+			asesoria.llegarAlumno();
+			System.out.println("Llego un nuevo alumno\n");
+		}
+	}
+}

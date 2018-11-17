@@ -11,7 +11,17 @@ del curso]]. Les reitero, sin embargo, que resulta más enriquecedor (y
 como lo refleja la rúbrica, obtiene una calificación un poco más alta)
 el que ustedes me planteen los temas de su interés.
 
-|-------+------+-------------+------------+------------|
-| Fecha | Tema | Integrantes | Documentos | Evaluación |
-|-------+------+-------------+------------+------------|
-|-------+------+-------------+------------+------------|
+|--------+-----------------------------------------+-------------------------------------+---------------------------------------+------------|
+| Fecha  | Tema                                    | Integrantes                         | Documentos                            | Evaluación |
+|--------+-----------------------------------------+-------------------------------------+---------------------------------------+------------|
+| 23/oct | Criptografía: Hashes                    | Simón Ramírez y Alejandro Hernández | [[./HernandezAlejandro-RamirezSimon/Hash.pdf][Presentación (PDF)]], [[HernandezAlejandro-RamirezSimon/Hash.txt][Documento (texto)]] | [[./HernandezAlejandro-RamirezSimon/evaluacion.org][Evaluación]] |
+| 25/oct | Blockchain                              | Guadalupe Moreno y Aníbal Medina    | [[./MorenoGuadalupe-MedinaAnibal/SO_Expocicion.pptx][Presentación (PPTX)]]                   | [[./MorenoGuadalupe-MedinaAnibal/evaluacion.org][Evaluación]] |
+| 6/nov  | SPECTRE y Meltdown                      | Alberto Espinosa y Alejandro Pérez  | [[./EspinozaAlberto-PerezAlejandro/Spectre_y_Meltdown_SO.pptx][Presentación (PPTX)]]                   | [[./EspinozaAlberto-PerezAlejandro/evaluacion.org][Evaluación]] |
+| 8/nov  | Rust                                    | Yesenia Velasco                     | [[./YeseniaVelasco/RUST.pptx][Presentación (PPTX)]]                   | [[./YeseniaVelasco/evaluacion.org][Evaluación]] |
+| 13/nov | Sistemas de archivos distribuidos: IPFS | Karla Guzmán y Leonel Macario       | [[./MacarioFalconLeonel-KarlaGuzmanCoronel/SISTOP.pdf][Presentación (PDF)]]                    | [[./MacarioFalconLeonel-KarlaGuzmanCoronel/evaluacion.org][Evaluación]] |
+| 15/nov | Coherencia de caché                     | Edgar Facundo y Emma Fuentes        |                                       |            |
+| 20/nov | Desduplicación                          | Paola Lara y Ángel Aguilar          |                                       |            |
+|--------+-----------------------------------------+-------------------------------------+---------------------------------------+------------|
+
+Los alumnos que no hayan alcanzado fecha para exposición pueden
+entregar el [[./remedial/README.org][trabajo remedial]].

@@ -1,0 +1,10 @@
+•
+ENTORNO/AMBIENTE
+El programa fue desarrollado en el lenguaje de programacion C y sobre el sistema operativo
+ubuntu 16.04. En la arquitectura del programa se han utilizado unicamente bibliotecas en el
+estándar de C.
+•
+INSTRUCCIONES DE COMPILACIÓN
+Para la compilación y ejecución del programa se ha empleado la terminal de comandos.
+Compilación: $gcc archivos.c -o archivos
+

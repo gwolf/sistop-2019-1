@@ -1,0 +1,12 @@
+Sánchez Espinosa Andrew Blaise.
+
+IDE:
+	python 2.7.6 (con virtual python 3)
+
+No se requiere alguna extensión para su uso.
+
+Se proporciona un proceso con mayuscula y su tamaño, para agregar un proceso, para eliminarlo solo se da el nombre de proceso igual en mayuscula.
+
+La compactación no logre implementarla.
+
+Mi propuesta se inclina por Primer ajuste.

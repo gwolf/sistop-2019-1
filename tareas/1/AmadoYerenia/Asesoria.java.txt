@@ -1,0 +1,41 @@
+package Tarea01;
+
+import java.lang.InterruptedException;
+//Creando clase Asesoria
+public class Asesoria {
+	int contador;
+	
+	public Asesoria (int contador) {
+		this.contador = contador;
+	}
+public synchronized void atenderAlumno(){
+	if(contador == 0) {
+		try {
+			wait();
+		}
+catch(InterruptedException e) {
+	e.printStackTrace();}
+		contador ++;
+	}
+	else if(contador >= 1) {
+		notify();
+	}
+}
+public synchronized void llegarAlumno(){
+	int x = contador;
+	if(contador == x) {
+		//Bloque de código con excepcion
+		try {
+		wait();
+		}
+catch(InterruptedException e) {
+	e.printStackTrace();
+	}
+		contador --;
+		}
+	else if(contador < x) {
+		notify();
+	}
+  }
+}
+

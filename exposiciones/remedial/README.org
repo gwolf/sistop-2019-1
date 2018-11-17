@@ -1,0 +1,54 @@
+#+title: Remedial ante la falta de exposición
+#+author: Gunnar Wolf
+
+* ¿Qué y para quién?
+
+Como lo expuse [[http://sistop.gwolf.org/generalidades.html][al principio del cursado]], la calificación del curso
+permite llegar hasta un 110% — 60% por proyectos y exámenes, 30% por
+tareas y prácticas, y 20% por exposición.
+
+El semestre actual, los alumnos tardaron demasiado en comenzar a
+solicitar exposición.
+
+No puedo mantener la /sobrecalificación/; no puedo ya darles el 20%,
+pero puedo dejarles el presente trabajo para lograr un 10% de la
+calificación final.
+
+Este trabajo es únicamente para los alumnos /que no hayan presentado
+exposición/.
+
+* Planteamiento
+
+Existen decenas de sistemas operativos, desde los que tienen fines
+meramente académicos hasta los específicos a implementaciones de
+determinada necesidad. Algunos incluso son desarrollados /por
+diversión/, por interés de probar determinados aspectos.
+
+Para este trabajo, les pido que:
+
+- Elijan un sistema operativo /alterno/ — Uno que no sea de los más
+  habituales. Esto es /no/ pueden elegir:
+  - Windows
+  - MacOS (incluyendo iOS)
+  - Linux (incluyendo Android y derivados)
+  - *BSD (FreeBSD, NetBSD, OpenBSD)
+- Expliquen las características principales del sistema
+- Indiquen cómo opera este sistema de cara a las tres principales
+  divisiones de nuestro curso. ¿Cómo implementa los siguientes puntos?
+  - Administración y planificación de procesos
+  - Administración de memoria
+  - Sistemas de archivos
+- Instálenlo. Presenten /evidencia/ de haberlo instalado.
+- Denme su opinión o comentario sobre este sistema.
+
+* Entrega
+
+La entrega se manejará, como siempre, mediante Git. Como siempre, les
+sugiero crear una rama específica para esta entrega, para manejarlo
+sin conflictos y con entregas independientes respecto al proyecto
+final (#3). Generen un directorio dentro de =exposiciones/remedial=
+con la nomenclatura habitual. La entrega de este trabajo se entrega de
+forma individual o en equipos de dos personas.
+
+Y, al igual que el proyecto #3, la entrega es el /jueves 15 de
+noviembre/.

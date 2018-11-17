@@ -1,0 +1,56 @@
+
+
+
+Proyecto 1          Fascículo 17 
+
+Guadarrama Flores Edgar Alejandro
+
+	Reseña de equipo de cómputo.
+
+
+Tandy MC-10
+	Es una máquina que se inventó en el año de 1984 y aunque tiene más de 30 años tiene características que nuestras computadoras actuales conservan (en ciculomucha 
+menor medida). 
+	
+	Por ejemplo, algo que me llamo mucho la atención fueron las capacidades de RAM y del cristal de esta computadora, la memoria RAM tiene capacidad de 4Kbytes los 
+cuales no están disponibles para que el usuario los use en su totalidad, ya que de ahí también tomaban memoria la pantalla y algunas variables del sistema, esta memoria RAM 
+tan pequeña ni siquiera cabía en un solo chip, estaba divida en dos conectados en forma paralela. Otro aspecto que me sorprendió mucho fue la capacidad del reloj, ya que 
+tiene una frecuencia de 4.4MHz y estaba subdividido en impulsos pequeños para que toda la maquina lo utilizara.
+	
+	En la parte de gráficos también se me hizo muy curioso que tuviera un chip especial con un procesador de visualización que podía programarse para formatos de 
+pantalla diferentes.  Como es de esperarse este procesador de video no es muy potente, solo podía visualizar 16 líneas de 32 caracteres con una resolución muy baja, además 
+solo se podía visualizar texto color verde sobre negro o viceversa. Además, otro aspecto negativo en gráficos es que, aunque la maquina podía distinguir entre mayúsculas y 
+minúsculas esto no era muy útil, ya que al momento de verlo en pantalla solo aparecían letras en mayúscula. 
+
+
+
+Artículo de mi elección
+
+Título: Sistema Operativo
+	
+	Empezando por el título del articulo y su fecha de publicación me resulto un tanto extraño que hubiera una explicación detallada de cómo funciona un Sistema 
+Operativo, ya que yo tenía la idea de que los sistemas operativos eran más actuales (mediados de los 90).
+	
+	El articulo nos explica que para poder ejecutar un programa dentro de nuestra computadora primero debemos correr programas internos que puedan administrar los 
+componentes del sistema, para poder interpretar las instrucciones que el usuario quiere ejecutar (resistores, capacitores, chips, controladores, etc). Este conjunto de 
+programas internos (S.O.) se encuentran almacenados de forma permanente en la memoria ROM. 
+	
+	El articulo también menciona la unidad de disco, si nuestra maquina incluía una, gran parte de esta unidad iba a estar dedicada al sistema operativo para que pueda hacer 
+diversas operaciones y que a este conjunto de rutinas se les llama (Disk Operating System) o por sus siglas “DOS”. 
+El DOS se puede presentar en tres formas diferentes comúnmente, en la primera puede ocupar parte la ROM en las cuales puede llevar incorporadas instrucciones para hacer 
+funcionar un programa determinado. En la segunda forma el DOS se almacena en ROM lo cual era beneficioso para el usuario ya que no le quitaba memoria. Y la tercera es que 
+el DOS puede residir dentro de la memoria RAM.	
+
+	El artículo se enfoca un poco más en la tercera forma de DOS, nos explica como el DOS se introduce a la RAM el cual necesita de un pequeño programa incorporado en la ROM 
+que se ejecute cada que la maquina se encienda (Parecido a un proceso init). Este programa pequeño se llama bootstrap, el bootstrap tiene que encontrar el DOS principal y 
+llevarlo byte por byte a la RAM, para que ese DOS pueda hacer otras funciones más complejas. Después de que el DOS tiene el control, el ordenador espera recibir una orden 
+del usuario (Semejante a lo que pasa cuando iniciamos la terminal o el escritorio de Windows)
+
+	También nos explica la función principal de DOS que consiste en llevar un directorio de los programas o datos existentes en el disco y proporcionar una relación de 
+bloques (registros) donde se encuentran almacenados y conocer también los espacios que tiene libre el disco por si necesita agregar un nuevo programa o dato. 
+
+	Otra parte interesante del artículo es que nos menciona que el almacenamiento de datos o programas no se hace de manera consecutiva, y esto se hace así porque si se 
+guardara de forma consecutiva el ordenador tendría que esperar una revolución completa del disco lo que haría al sistema mucho más lento.
+
+	Me parece que este artículo, aunque ya tiene muchos años, nos muestra conceptos que seguimos implementando, por lo que no se siente tan ajeno a los equipos 
+actuales, aunque la evolución en tamaño capacidad y rapidez creo que es lo que más destaca también es interesante poder ver las bases de lo que ahora tenemos.

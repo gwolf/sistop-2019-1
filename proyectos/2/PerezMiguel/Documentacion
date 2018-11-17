@@ -1,0 +1,72 @@
+Alumno:
+Perez Miguel
+Objetivo:
+El alumno aplicará los conocimientos adquiridos en los temas de administración de
+procesos, y de planificación de procesos; Así como también pondrá en práctica la
+utilización de hilos.
+Problemática:
+Se planteó para la evaluación de esta unidad la creación de un monitor de
+sistema, el cual debe contener concurrencia, por lo que debería de llevar las
+partes de:
+- Multiproceso (la utilización de hilos que siguen una división clara de
+funciones)
+- Sincronización (El uso de mutex y/o semáforos)
+Solución:
+En el ambiente en el cual se programó se trato de implementar a lo largo de varias
+funciones las diferentes opciones que ocuparemos en programa, ya que tenemos
+desde las funciones para la creación de la interfaz, así como también el como
+vamos a estar utilizándola.
+
+No dejando de lado la parte donde se ve la parte de sincronización, así como
+también la parte de la utilización de los hilos para volverse multiprocesos. En
+conjunto con las demás funciones que se utilizaron, se podrá visualizar en pantalla
+una interfaz donde se va a poder observar los procesos activos, el uso que
+maneja, que procesos se encuentran dormidos o despiertos.
+Aunque también se podrá visualizar el uso de la memoria RAM, y la capacidad del
+Disco, así mismo se verá datos importantes que se nos debe de dar como el
+procesador, núcleos, versión. Etc.
+Ambiente de Programación:
+
+El ambiente deseado en el cual se va a programar será con el lenguaje de
+programación de python el cual es un lenguaje de programación interpretado cuya
+filosofía hace hincapié en una sintaxis que favorezca un código legible.
+
+Se trata de un lenguaje de programación multiparadigma, ya que
+soporta orientación aobjetos, programaciónimperativa y,en menormedida, programación funcional. Esun lenguaje interpretado, usa tipadodinámico y es multiplataforma.
+
+En este lenguaje se pusieron en marcha algunas de las tantas funcionalidades que
+tiene python, funciones ya diseñadas para el mismo uso, así como también
+nosotros como programadores desarrollamos, creando y depurando algunas ya
+usadas como curses, Psutil, time, etc.Cuales ya está programadas y sus
+diferentes funciones contiene cada una de ellas, con esto se puede percatar y
+ayudar al programador, en las cueles se ve la utilización de hilos, y de diferentes
+opciones
+Se trato también de implementar en el mismo proyecto librerías que nos ayudan a
+tener una mejor interfaz, ya que nos enseñan y nos dan una fuente de letra
+deseada, y no la estándar que maneja la terminal de GCC.
+Uso:
+Leer completo.
+Para que se pueda visualizar el monito del sistema es necesario correrlo en un
+sistema operativo de la gama de Unix, en la parte de la terminal del mismo
+sistema se abre la carpeta en la que se encuentra el programa, recordar usar el
+comando “cd” para cambiarse de directorios, una vez estando en la carpeta
+correspondiente se debe poner el comando “Python Monitor.py”, el cual
+sucesivamente abrirá el monitor de sistema.
+
+Se solicita que la ventana de la terminar sea tamaño completo para una mejor
+visualización. Es posible que se pidan que se instale la siguiente librería ”psutil”,
+por lo que enseguida dejare los comandos para los cuales será utilizados para la
+instalación, y un buen funcionamiento del mismo sistema.
+Los comandos se deberán ir escribiendo de la siguiente forma:
+sudo apt-get install python-dev
+sudo pip install psutil
+sudo pip install psutil --upgrade
+sudo apt-get install python-pip
+En dado caso que no se necesite intalar, el monitor aparecerá terminado el primer
+comando mencionado.
+
+Restricciones:
+-Es un monitor no persistente
+-Se debe visualizar en pantalla completa
+-De ser necesario instalar librerias y/o ambiente de programación antes
+ mencionada.

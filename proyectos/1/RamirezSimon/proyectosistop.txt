@@ -1,0 +1,20 @@
+
+Proyecto No. 1		Fecha: 30 Agosto del 2018	Ramírez Ancona Simón Eduardo
+
+En el artículo central de la revista titulado Modelos de Hardware del fascículo 4 se encuentra la descripción de la Dragon 32, escrito por Chris Stevens (De quien no hallé información), este “ordenador”, que llamaré computadora a lo largo de la reseña, es de origen galés y tiene la particularidad de utilizar un nuevo chip (Motorola 6809E) y además incorpora una nueva serie de sofisticados gráficos.
+
+Dragon Data fue una compañía galesa fundada por los fabricantes de juguetes Mettoy, la Dragon 32 fue lanzada en 1982 y contaba con 32 KB de memoria y un interprete para lenguaje BASIC, era retrocompatible con otra computadora, la Tandy Color, esto debido a que ambas tenían el mismo chip. 
+Tenia instrucciones para facilitar la parte gráfica, algunas de ellas: DRAW, CIRCLE, PAINT y COLOUR.
+A diferencia de otras computadoras de la época solo podía tocar una nota a la vez, sin embargo su interprete de BASIC le permitía programar melodías mas claras.
+Dentro de los proyectos que había para la Dragon 32 estaba el de ampliar su memoria a 64 KB que permitiría su uso con algunos programas de gestión.
+
+La Dragon 32, primero fue criticada por la distribución de sus teclas para mover el cursor (Situadas a ambos lados del teclado), introduce un botón de reset que ahorra más energía que al apagarla y prenderla, una conexión para casetes, una conexión para palanca de mando, salida a una impresora de 8 bits, tiene un chip que genera las señales de video además de un modulador para que se transmitan de forma correcta al televisor, utiliza cristales de cuarzo para sincronización entre microprocesador y chip de video, tenía una RAM de 32 K formada por 16 chips de 2 K, dentro de los dos chips de ROM, en uno de los chips de 16 KB se encontraba el interprete de BASIC, el microprocesador Motorola 6809E tenía velocidad de reloj de 1 MHz, contaba con una ranura de expansión para cartuchos de software que se conectaba directamente al microprocesador y finalmente un regulador de voltaje con algunos disipadores para evitar el sobrecalentamiento.
+
+El artículo que elegí se titula Mensaje comprimido de la sección información general.
+
+En esta artículo se nos habla sobre como la computadora en realidad son un montón de piezas de distintos materiales que no sabe hacer nada, a menos que sea programada. La primera parte es del programador y lo que hace es plantear el problema, anteriormente en diagramas de flujo -En esta parte aún no tenemos multiprocesamiento, entonces aún se maneja todo de manera estructurada- luego se traduce a algún lenguaje que entienda la máquina por ejemplo BASIC el programa se introduce a través del teclado en la memoria de la computadora - En las regiones libres, por ejemplo en la Dragon 32 solo se tienen 16 KB para introducir el programa ya que tiene los otros 16KB para el interprete de BASIC- el interprete de BASIC lo interpreta haciendo que con una matriz de chips se convierta en lenguaje máquina para que pueda llegar al procesador y se realicen los cálculos necesarios finalmente regresa los resultados a través de un periférico como una pantalla o una impresora.
+
+Para realizar el proceso anterior manejan un concepto que denominan “Software oculto” definido como diferentes niveles de software que trabajan constantemente mientras la computadora se encuentra encendida, algunas tareas son leer la tecla pulsada, controlar lo que se visualiza en pantalla, verificar el estado y contenido de la memoria RAM entre otros.
+-Esto sería la primera imagen de lo que es un sistema operativo, a diferencia de lo que seria el interprete de BASIC que ya venía en la memoria de la Dragon 32, por ejemplo-
+
+
