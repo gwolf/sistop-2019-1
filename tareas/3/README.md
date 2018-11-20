@@ -69,4 +69,5 @@ Y, cuando hagan su _pull request_, háganlo a partir de `tarea3`.
 
 ## Calificaciones y comentarios
 
-Estarán disponibles aquí una vez sea calificado.
+[Aquí pueden encontrar](./calificacion.org) las calificaciones y
+comentarios a sus tareas.
