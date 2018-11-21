@@ -1,0 +1,43 @@
+#+title: Evaluación de exposición: Hashes
+#+author: Gunnar Wolf
+
+- Tema presentado por: Guadalupe Moreno y Aníbal Medina
+- Calificación global: (7.04 × 0.3) + (6.125 × 0.7) = *6.4*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|          7.5 |         10 |        5 |       7.5 |  7.50 |
+|           10 |         10 |       10 |        10 |    10 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |          5 |        5 |         5 |  5.63 |
+|          7.5 |         10 |        5 |         5 |  6.88 |
+|          7.5 |          5 |        5 |         5 |  5.63 |
+|          7.5 |         10 |      7.5 |       7.5 |  8.13 |
+|           10 |        7.5 |        0 |         0 |  4.38 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |         10 |        5 |         5 |  6.88 |
+|          7.5 |        7.5 |        5 |       7.5 |  6.88 |
+|          7.5 |        7.5 |      7.5 |         5 |  6.88 |
+|--------------+------------+----------+-----------+-------|
+|         8.00 |       8.00 |     6.00 |      6.17 |  7.04 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Bueno (Bueno (7.5)
+- Material desarrollado :: Suficiente (5)
+- Contenido :: Bueno (7.5)
+- Fuentes bibliográficas :: Suficiente (5)
+- Uso del tiempo :: Suficiente (5)
+- Dominio del tema :: Suficiente (5)
+- Presencia :: Bueno (7.5)
+- Global :: 7.5×0.1 + 5×0.2 + 7.5×0.2 + 5×0.1 + 5×0.1 + 5×0.15 +
+            7.5×0.15 = *6.125*
