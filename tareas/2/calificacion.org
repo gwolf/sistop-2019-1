@@ -179,3 +179,32 @@
         (y puede pasar de =1= a =-1=).
 
   - Calificación :: 0 (entrega más de una semana después de la fecha límite)
+
+- Alejandro Pérez ::
+  - Código :: [[./PerezAlejandro/mem.py][mem.py]]
+  - Documentación :: [[./PerezAlejandro/doc.pdf][doc.pdf]]
+  - Lenguaje :: Python
+  - Comentarios ::
+    - No detecta ni realiza compactación, "rompe" un proceso en
+      secciones si no hay un espacio contiguo adecuado:
+      #+BEGIN_SRC text
+	1. Agregar proceso
+	2. Quitar proceso
+	0. Salir
+	>> 1
+	Ingresa el nombre del proceso: T
+	Ingresa el tamaño del proceso: 6
+	Se requiere compactación de memoria
+	sh: 1: cls: not found
+
+	───────────────── MEMORY MAP ─────────────────
+
+	 F   F   F   F   E   E   E   T   T   T  
+
+	 T   T   R   R   R   R   R   R   T   -  
+
+	 -   L   L   L   L   L   L   L   L  
+      #+END_SRC
+
+  - Calificación :: 8 × 0.8 = 6.4 (subido a Git a tiempo, pero
+                    entregado mucho después)

@@ -114,3 +114,16 @@
       solicito, sí, pero me parece que queda demasiado "sobre el
       aire".
   - Calificación :: 9
+
+- Alejandro Pérez
+  - Documento :: [[./PerezAlejandro/GFS.docx][GFS.docx]], [[./PerezAlejandro/GlusterFS.pdf][GlusterFS.pdf]] (mismo contenido en dos
+                 formatos)
+  - Sistema de archivos abordado :: GlusterFS
+  - Comentarios ::
+    - GlusterFS es distribuido, sí. La razón que indicas, sin embargo,
+      es incorrecta — éste /no/ opera sobre NFS (¡no indicas tus
+      fuentes! ☹). Y NFS es un sistema de archivos remoto, no
+      distribuido.
+    - Copias texto sin atribución de Wikipedia (el párrafo acerca del
+      modelo de fallos). Si vas a copiar texto, debes /citarlo/.
+  - Calificación :: 5 × 0.8 (entrega extemporánea) = 4

@@ -656,3 +656,54 @@ El planteamiento del proyecto y la rúbrica para su calificación están
 | *TOTAL*                |           |        |     8.01 |
 |------------------------+-----------+--------+----------|
 #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Alejandro Pérez y Alberto Espinoza
+- Documentación :: [[./PerezAlejandro-EspinozaAlberto/Proyecto-2.pdf]]
+- Código :: [[./PerezAlejandro-EspinozaAlberto/monitor3b.py]]. Entregan
+            también [[./PerezAlejandro-EspinozaAlberto/monitor.c]], pero
+            indican que el proyecto es el primero.
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Conversacional (texto) basada en menú
+- Aspecto monitoreado ::
+  Presentan un ejemplo de lanzado/esperado de hilos, información de
+     características del CPU, memoria, tiempo encendido,
+     interrupciones. 
+- Uso de multitarea / sincronización ::
+  - Un semáforo global utilizado a modo de señalización (aunque
+    inútil, porque el flujo del programa es secuencial — =Menu()=
+    invoca directamente a cada una de las funciones
+  - Realizan un /ejemplo de multiprocesamiento/ en el que se lanzan
+    hilos con distintas características, pero la única espera entre
+    ellos es mediante =time.sleep()=, sin comunicación.
+- Observaciones ::
+  - Ufff... ¿Demoras de 20 segundos entre comandos? ¿Por qué no pedir
+    "cualquier tecla para continuar" o algo así? Da una mala
+    experiencia de usuario ☹
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.67 |
+| Creatividad            |       7.5 |        |     0.50 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |         5 |        |     0.33 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |      0.5 |
+| Multiproceso           |         0 |        |     0.00 |
+| Sincronización         |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     7.35 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16

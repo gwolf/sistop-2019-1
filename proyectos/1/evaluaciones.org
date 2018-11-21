@@ -274,6 +274,13 @@ ellos en un ordenamiento alfabético.
     que a mí más me gustan ☺
 - Calificación :: 10
 
+* Pérez Alejandro
+- Documentos entregados :: [[./PerezAlejandro/Proyecto 1]]
+- Comentarios ::
+  - ¡Ortografía y dedazos! ¿Esistió? ¿compuradora, monoromáico,
+    cnectar, antención...?
+- Calificación :: 10
+
 * Ramírez Ángel
 - Documentos entregados :: [[RamirezAngel/RamirezAngelProyecto1.docx][./RamirezAngel/RamirezAngelProyecto1.docx]],
      [[RamirezAngel/RamirezAngelProyectoUno.docx][./RamirezAngel/RamirezAngelProyectoUno.docx]]
