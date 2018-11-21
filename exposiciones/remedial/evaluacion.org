@@ -1,6 +1,10 @@
 #+title: Evaluación a los remediales para exposición
 #+author: Gunnar Wolf
 
+En el listado verán que aparece la /mitad/ de la calificación
+obtenida. Esto es porque el trabajo remedial vale por hasta un punto
+final, en tanto que la exposición vale por dos.
+
 * Luis Chibras
 - Sistema operativo :: ReactOS
 - Uso y opinión del sistema ::
