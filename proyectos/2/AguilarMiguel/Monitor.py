@@ -22,17 +22,6 @@ def CPU_info():
 		lectura = file.readline()
 	file.close()
 	semaforo.release()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 3
-=======
->>>>>>> 4
-=======
->>>>>>> 5
 #desplegando informacion de la memoria de la Computadora anfitriona
 def memory_info():
 	global semaforo
@@ -55,15 +44,6 @@ def use_time():
 		lectura = file.readline()
 	file.close()
 	semaforo.release()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 2
-=======
-=======
->>>>>>> 4
-=======
->>>>>>> 5
 #desplegando informcaion del uso de CPU
 def use_CPU():
 	global semaforo
@@ -86,12 +66,6 @@ def disk_part():
 		lectura = file.readline()
 	file.close()
 	semaforo.release()
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 3
-=======
-=======
->>>>>>> 5
 #desplegando informacion de los ultimos procesos ejecutados
 def process_act():
 	global semaforo
@@ -138,9 +112,6 @@ def acerca_de():
 		lectura = file.readline()
 	file.close()
 	semaforo.release()
-<<<<<<< HEAD
->>>>>>> 4
-=======
 """
 En este bloque se define el selector que controlara
 la ejecucion de cada Subproceso que se seleccione
@@ -216,4 +187,3 @@ def interfaz_Usuario():
 		time.sleep(0.1)
 	semaforo.release()	
 interfaz_Usuario()
->>>>>>> 5

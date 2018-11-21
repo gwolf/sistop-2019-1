@@ -1,0 +1,19 @@
+Autores: Medina Anibal y Moreno Guadalupe
+Micro sistema de archivos desarrollado en ubuntu 18 en el lenguaje de programacion python
+Manera de uso:
+Para ejecutar el programa debe usarse el siguente comando en la terminal de ubunto
+python inicio.py
+al ejecutarse  podra realizar  las opereciones de crear, buscar, leer, buscar, mostrar, hayuda y salir de el sistema por medio de los siguentes comandos:
+Crear-crear un archivo
+Leer-lee un archivo
+Mostrar-muestra la cantidad de archivos
+Buscar-busca un archivo
+Persistir-hace que persista un archivo
+Recuperar-recupera un archivo
+comandos- muestra la lista de comandos
+FSend- sale del sistema
+Problemas del sistema en esta version:
+-Los comandos Persistir y Recuperar aun no logran en su totalidad hacer que los archivos persistan y lo que logra hacer persistir manda una  salida sucia
+-No logramos usar un inodo ya que no comprendimos como programarlo
+-El sistema solo funciona para sistemas linux no windows
+

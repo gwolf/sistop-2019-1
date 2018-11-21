@@ -84,14 +84,6 @@ def hilos():
 	threading.Thread(target=procesos, args=[13]).start()
 	threading.Thread(target=porcentaje, args=[psutil.cpu_percent(interval=1),2]).start()
 	threading.Thread(target=porcentaje, args=[psutil.virtual_memory().percent,4]).start()
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> proyec3
-=======
->>>>>>> proyec4
 	
 #Funcion que dibuja toda la interfaz
 def interfaz(args):
@@ -115,12 +107,6 @@ def interfaz(args):
 		pantalla.addstr(7, 3,"Memoria Total: "+convesion(psutil.virtual_memory().total))
 		pantalla.addstr(7, 30,"Memoria Libre:")
 		pantalla.addstr(7, 55,"Memoria en Uso:")
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> proyec2
-=======
-=======
->>>>>>> proyec4
 		
 		for j in xrange(1,79):
 			pantalla.addstr(9, j, " ")
@@ -132,9 +118,6 @@ def interfaz(args):
 		pantalla.addstr(9,53,"% CPU",curses.A_REVERSE)
 		pantalla.addstr(9,63,"Memoria",curses.A_REVERSE)
 		
-<<<<<<< HEAD
->>>>>>> proyec3
-=======
 		
 		hilos()
 		mutex.acquire()
@@ -147,4 +130,3 @@ def interfaz(args):
 		curses.endwin()
 
 curses.wrapper(interfaz)
->>>>>>> proyec4

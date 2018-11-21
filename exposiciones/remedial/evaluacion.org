@@ -1,0 +1,32 @@
+#+title: Evaluación a los remediales para exposición
+#+author: Gunnar Wolf
+
+* Luis Chibras
+- Sistema operativo :: ReactOS
+- Uso y opinión del sistema ::
+     Demuestra haberlo utilizado satisfactoriamente; instalación de
+     software de terceros, buena crítica a diversos aspectos.
+- Unidades del curso ::
+     Buena cobertura general de los puntos abordados.
+- Calificación :: 10
+
+* Cristian Valeriano
+- Sistema operativo :: AROS
+- Uso y opinión del sistema ::
+     No presenta evidencia de instalación o uso del sistema.
+- Unidades del curso ::
+     El texto presentado es la traducción directa del material
+     presentado, no me queda claro que haya un aprendizaje al
+     respecto; sí seleccionó párrafos específicos de las regiones
+     relevantes de la documentación, pero no constituye un trabajo
+     original.
+- Calificación :: 6
+
+* Edgar Guadarrama
+- Sistema operativo :: Haiku
+- Uso y opinión del sistema ::
+     Presenta varias capturas documentando la instalación de Haiku
+- Unidades del curso ::
+     Cubre satisfactoriamente las unidades principales; demuestra
+     originalidad y comprensión de la información.
+- Calificación :: 10

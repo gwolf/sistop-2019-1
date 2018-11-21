@@ -1,0 +1,40 @@
+#+title: Evaluación de exposición: Coherencia de caché
+#+author: Gunnar Wolf
+
+- Tema presentado por: Facundo Acuña y Emma Fuentes
+- Calificación global: (8.7 × 0.3) + (8.375 × 0.7) = *8.47*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|           10 |         10 |       10 |        10 |    10 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|           10 |         10 |       10 |        10 |    10 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|            5 |         10 |      7.5 |       7.5 |  7.50 |
+|            5 |         10 |       10 |        10 |  8.75 |
+|          7.5 |         10 |       10 |       7.5 |  8.75 |
+|          7.5 |         10 |      7.5 |       7.5 |  8.13 |
+|          7.5 |         10 |       10 |        10 |  9.38 |
+|           10 |         10 |       10 |        10 |    10 |
+|            5 |         10 |        5 |       7.5 |  6.88 |
+|           10 |         10 |      7.5 |        10 |  9.38 |
+|--------------+------------+----------+-----------+-------|
+|         7.92 |       9.58 |     8.54 |      8.75 |  8.70 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Bueno (7.5)
+- Material desarrollado :: Suficiente (5)
+- Contenido :: Excelente (10)
+- Fuentes bibliográficas :: Excelente (10)
+- Uso del tiempo :: Excelente (10)
+- Dominio del tema :: Excelente (10)
+- Presencia :: Bueno (7.5)
+- Global :: 7.5×0.1 + 5×0.2 + 10×0.2 + 10×0.1 + 10×0.1 + 10×0.15 +
+            7.5×0.15 = *8.375*

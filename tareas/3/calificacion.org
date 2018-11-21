@@ -1,0 +1,116 @@
+#+title: Sistemas de archivos remotos
+#+author: Gunnar Wolf
+
+- Luis Chibras ::
+  - Documento :: [[./ChibrasLuis/HDFS.docx][HDFS.docx]]
+  - Sistema de archivos abordado :: HDFS (Hadoop Distributed File
+       System)
+  - Comentarios ::
+    - No indicas referencias o fuentes de información
+  - Calificación :: 9
+
+- Alberto Espinoza ::
+  - Documento :: [[././EspinozaAlberto/ReiserFS1.rtf][ReiserFS1.rtf]]
+  - Sistema de archivos abordado :: ReiserFS
+  - Comentarios ::
+    - ReiserFS es un sistema de archivos, pero /no es/ remoto ni distribuido
+      - No cumple con el planteamiento de la tarea.
+    - No indicas referencias o fuente de información... Tengo que
+      asumir que son /viejísimas/
+    - Párrafos copiados directamente de Wikipedia, sin atribución (¡Es
+      válido hacerlo, pero tienes que citar!)
+      - Además, un trabajo con alta proporción de copia te hace ver
+        muy mal. Cita cuando haga falta, pero que no sea la parte
+        substantiva de tu trabajo
+    - Por lo que copiaste, se nota que no comprendiste varios de lso
+      conceptos ☹
+  - Calificación :: 5
+
+- Edgar Guadarrama ::
+  - Documento :: [[./GuadarramaEdgar/Tarea3GoogleFS.pdf][Tarea3GoogleFS.pdf]]
+  - Sistema de archivos abordado :: GoogleFS
+  - Calificación :: 10
+
+- Paola Lara y Miguel Aguilar ::
+  - Documento :: [[./LaraPaola-AguilarMiguel/Tarea03-LaraPaola-AguilarMiguel.pdf][Tarea03-LaraPaola-AguilarMiguel.pdf]]
+  - Sistema de archivos abordado :: GoogleFS
+  - Comentarios ::
+    - Es un sistema de archivos /distribuido/, no /remoto/. En el
+      diagrama que presentan muestran cómo un archivo es dividido en
+      bloques y cada bloque es enviado a varios servidores
+      diferentes.
+      - Además, los mismos recursos que ustedes citan lo definen como
+        tal ;-)
+      - El uso principal de GoogleFS /no es/ el que los usuarios
+        clientes de Google lo utilicen, sino que /los propios
+        servidores/ lo hagan. A eso se refiere lo que mencionan
+        ustedes, /para la interacción sistema a sistema y no usuario a
+        sistema'.
+  - Calificación :: 8
+
+- Leonel Macario y Karla Guzmán ::
+  - Documento :: [[./MacarioLeonel-KarlaGuzman/Tarea3.pdf][Tarea3.pdf]]; enviaron también en otro directorio
+                 [[./GuzmánKarla/JFS_Wolf.pdf][JFS_Wolf.pdf]], pero dado que no cumpliría (JFS no es
+                 un sistema de archivos remoto ni distribuido), elijo
+                 quedarme con el expuesto en el primer documento.
+  - Sistema de archivos abordado :: GoogleFS
+  - Comentarios ::
+    - ¡Ojo! En los párrafos introductorios dicen que un sistema de
+      archivos peude ser distribuido o remoto. ¡No olviden que la
+      /gran mayoría/ de los sistemas de archivos son /locales/!
+    - Invirtieron remoto y distribuido. Remoto es cuando está alojado
+      en /un/ servidor, distribuido cuando el almacenamiento se
+      distribuye entre varios servidores.
+    - ...No indican si GoogleFS es remoto o distribuido (naturalmente,
+      distribuido)
+    - Párrafos copiados directamente de Wikipedia, sin atribución (¡Es
+      válido hacerlo, pero tienes que citar!)
+      - Además, un trabajo con alta proporción de copia te hace ver
+        muy mal. Cita cuando haga falta, pero que no sea la parte
+        substantiva de tu trabajo
+      - Presentan, sí, a Wikipedia como una de las referencias. Sin
+        embargo, siempre que hagan una copia de texto completo de uno
+        o más párrafos, deben indicarlo claramente y /citarlo/.
+  - Calificación :: 8
+
+- Guadalupe Moreno y Aníbal Medina ::
+  - Documento :: [[./MorenoGuadalupe-MedinaAnibal/HDFS.docx][HDFS.docx]], [[./MorenoGuadalupe-MedinaAnibal/HDFS.pdf][HDFS.pdf]] (idénticos)
+  - Sistema de archivos abordado :: HDFS (Hadoop Distributed File System)
+  - Calificación :: 10
+
+- Miguel Pérez ::
+  - Documento :: [[./PerezMiguel/Tarea3.pdf][Tarea3.pdf]]
+  - Sistema de archivos abordado :: HDFS (Hadoop Distributed File System)
+  - Comentarios ::
+    - El modelo de trabajo de Hadoop está fuertemente relacionado con
+      el modelo /MapReduce/ (aplicar /mapeos/ y /reducciones/), no
+      /MadReduce/ (¿reducir a lo loco y con rabia?) ☺
+  - Calificación :: 10
+
+- Andrew Sánchez ::
+  - Documento :: [[./SanchezAndrew/Tarea3.pdf][Tarea3.pdf]]
+  - Sistema de archivos abordado :: GoogleFS
+  - Comentarios ::
+    - Evita centrar el texto destinado a ser leído. Regresar la vista
+      a un punto cambiante en la pantalla es más difícil / cansado que
+      hacerlo al principio de línea.
+    - Tu texto es copiado directamente de Wikipedia, sin dar
+      atribución (presentas dos referencias distintas, pero el texto
+      está copiado directamente de ésta)
+  - Calificación :: 5
+
+- Cristian Valeriano y Simón Ramírez ::
+  - Documento :: [[./ValerianoCristian-RamirezSimon/sda.pdf][sda.pdf]]
+  - Sistema de archivos abordado :: Ceph y GlusterFS
+  - Comentarios ::
+    - Decir que algo "crece exponencialmente" es un error muy
+      frecuente. Sin embargo, creo que ustedes saben qué es el
+      /crecimiento exponencial/... ¿Estás seguro de que puede usarse
+      este término? ¿A qué se acota? ¿Qué implicaría a mediano o largo
+      plazo? ¡sugiero evitarlo!
+    - La descripción es correcta, aunque muy mínima. Dado que
+      eligieron dos sistemas de archivos, dedicar apenas dos medios
+      párrafos a cada uno resulta muy poco. Cubre los puntos que
+      solicito, sí, pero me parece que queda demasiado "sobre el
+      aire".
+  - Calificación :: 9

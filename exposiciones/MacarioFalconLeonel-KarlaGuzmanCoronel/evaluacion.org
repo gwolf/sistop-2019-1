@@ -1,0 +1,44 @@
+#+title: Evaluación de exposición: IPFS
+#+author: Gunnar Wolf
+
+- Tema presentado por: Karla Guzmán y Leonel Macario
+- Calificación global: (7.97 × 0.3) + (6.875 × 0.7) = *7.14*
+
+* Evaluación grupal
+
+[[./evaluacion_alumnos.pdf][Evaluaciones individuales de los alumnos]]
+
+|--------------+------------+----------+-----------+-------|
+| Originalidad | Relevancia | Claridad | Presencia | Total |
+|--------------+------------+----------+-----------+-------|
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|          7.5 |        7.5 |      7.5 |         5 |  6.88 |
+|           10 |          5 |       10 |       7.5 |  8.13 |
+|          7.5 |         10 |        5 |         5 |  6.88 |
+|          7.5 |          5 |      7.5 |        10 |  7.50 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|          7.5 |        7.5 |        5 |         5 |  6.25 |
+|           10 |         10 |       10 |       7.5 |  9.38 |
+|           10 |         10 |      7.5 |       7.5 |  8.75 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|           10 |          5 |       10 |       7.5 |  8.13 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|          7.5 |        7.5 |      7.5 |       7.5 |  7.50 |
+|           10 |         10 |       10 |        10 |    10 |
+|           10 |         10 |       10 |        10 |    10 |
+|           10 |        7.5 |      7.5 |       7.5 |  8.13 |
+|--------------+------------+----------+-----------+-------|
+|         8.91 |       7.81 |     7.81 |      7.34 |  7.97 |
+#+TBLFM: @>$1..@>$4=vmean(@II..@III-1); f-2::@2$>..@>$>=vmean($1..$4); f-2
+
+* Evaluación del docente
+
+- Originalidad del tema :: Excelente (10)
+- Material desarrollado :: Suficiente (5)
+- Contenido :: Bueno (7.5)
+- Fuentes bibliográficas :: Bueno (7.5)
+- Uso del tiempo :: Excelente (10)
+- Dominio del tema :: Bueno (7.5)
+  - Presencia :: Suficiente (5)
+- Global :: 10×0.1 + 5×0.2 + 7.5×0.2 + 7.5×0.1 + 7.5×0.1 + 7.5×0.15 +
+            5×0.15 = *6.875*
