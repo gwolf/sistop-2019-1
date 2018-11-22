@@ -60,3 +60,7 @@ El proyecto se calificará según la siguiente rúbrica:
 <tr><td><em>Estructura</em></td><td>El código está bien organizado y emplea un estilo de indentación de forma consistente</td><td>El código está mayormente indentado; hay inconsistencias menores</td><td>Falta claridad en los bloques por no emplear indentación o hacerlo de forma absolutamente inconsistente</td><td></td><td></td></tr>
 <tr><td><em>Nomenclatura</em></td><td>Los nombres de los símbolos (variables, funciones, métodos, clases) son claros y acorde a su función; los principales elementos están documentados expresamente</td><td>Los nombres de los símbolos mencionados son claros y acorde a su función, aunque no estén documentados</td><td>Los nombres de los símbolos no son claros, pero su uso y significado forma parte de la documentación</td><td>Cuesta trabajo seguir la lógica; los símbolos empleados no tienen nombres significativos, y su función no está documentada</td><td></td></tr>
 </table>
+
+## Calificación y comentarios
+
+[Aquí están](./calificaciones.org) las calificaciones y comentarios respecto a este proyecto.

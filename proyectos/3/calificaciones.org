@@ -1,0 +1,313 @@
+#+title: Calificaciones y comentarios del proyecto 3
+#+author: Gunnar Wolf
+
+El planteamiento del proyecto y la rúbrica para su calificación están
+[[./README.md][disponibles aquí]].
+
+* Miguel Aguilar y Paola Lara
+- Documentación :: [[./AguilarMiguel-LaraPaola/Documentacion][Documentacion]]
+- Código :: [[./AguilarMiguel-LaraPaola/archivos.c][archivos.c]]
+- Observaciones ::
+		   Este proyecto fue copiado, sin más modificación que
+                   eliminar el nombre del autor original, de uno
+                   [[https://github.com/gwolf/sistop-2018-1/blob/master/proyectos/1/TiradoJesus/archivos.c][entregado el año pasado por otro alumno]]. Es válido
+                   buscar documentarse en cómo un compañero resolvió
+                   el problema, pero no es válido simplemente copiar
+                   sin siquiera intentar entender. No recibo esta
+                   entrega.
+
+
+* Luis Chibras
+- Documentación :: [[./ChibrasLuis/Documentacion.txt][Documentacion.txt]]
+- Código :: [[./ChibrasLuis/SystAr.py][SystAr.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Comandos interactivos
+- Estrategia empleada :: Paso / traducción directa de comandos propios
+     a comandos del sistema
+- Observaciones ::
+  - ¡Ortografía! ¿/Hacepta/?
+  - El proyecto no implementa lo requerido ☹ Lo único que hace es
+    presentar un /envoltorio/ alrededor de comandos del sistema.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     0.00 |
+| Cumplimiento           |         0 |        |     0.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.33 |
+| Complejidad            |         5 |        |     0.33 |
+| Claridad de desarrollo |        10 |        |     0.67 |
+| Interfaz usuario       |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.50 |
+| Historia en Git        |         5 |        |     0.33 |
+| Directorio de proyecto |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     1.50 |
+| Estructura             |        10 |        |     1.00 |
+| Nomenclatura           |         5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     6.34 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
+
+* Alberto Espinoza y Alejandro Pérez
+- Documentación :: [[./EspinozaAlberto-PerezAlejandro/doc.pdf][doc.pdf]]
+- Código :: [[./EspinozaAlberto-PerezAlejandro/sist_arch.cpp][sist_arch.cpp]]
+- Lenguaje de desarrollo :: C++
+- Interfaz :: Línea de comando
+- Estrategia empleada :: Estructura de datos en memoria, =char
+     CdContenido[]=. No implementa persistencia, cada invocación se
+     parte de cero.
+- Observaciones ::
+  - El código es bastante difícil de seguir. La función =main()= es
+    kilométrica, y no queda claro lo que significa cada una de las
+    entradas de su =case=. Les sugiero fuertemente trabajar en el
+    /estilo de código/, seguir lineamientos o buenas prácticas para la
+    escritura de código.
+  - Se acercan al planteamiento, ¡pero no lo logran! Yo esperaba ver
+    cómo implementan grabar en disco esta información. Va un tip:
+    Podrían haber utilizado un mecanismo de /serialización/. Puede
+    interesarles [[http://www.ocoudert.com/blog/2011/07/09/a-practical-guide-to-c-serialization/][una guía práctica para la serialización en C++]].
+  - Hacen varias referencias a la documentación (¡incluso en la
+    documentación misma!), pero ésta no explica la forma de uso,
+    comandos, argumentos... ¡Todo lo tengo que averiguar por
+    ingeniería inversa!
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     1.00 |
+| Cumplimiento           |         5 |        |     1.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.16 |
+| Complejidad            |       7.5 |        |     0.50 |
+| Claridad de desarrollo |         5 |        |     0.33 |
+| Interfaz usuario       |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     1.50 |
+| Doc. externa           |       7.5 |        |     0.50 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.50 |
+| Historia en Git        |         5 |        |     0.33 |
+| Directorio de proyecto |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     1.50 |
+| Estructura             |        10 |        |     1.00 |
+| Nomenclatura           |         5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     6.66 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
+
+* Edgar Guadarrama
+- Documentación :: [[./GuadarramaEdgar/documentacion.pdf][documentacion.pdf]]
+- Código :: [[./GuadarramaEdgar/Proyecto3.c][Proyecto3.c]]
+- Lenguaje de desarrollo :: C
+- Interfaz :: Interactiva mediante menú
+- Estrategia empleada :: Archivo binario conteniendo directorio y
+     datos intercalados
+- Observaciones ::
+  - ¡Muy buena implementación!
+  - Recomendación de estilo: Muchos (¿todos?) tus comentarios inician
+    hacia el final de una línea, y se extienden el resto de dicha
+    línea:
+    #+BEGIN_SRC C++
+    else if(respuesta==3)//En caso de querer sobreescribir se hace lo mismo. Borra el archivo y lo vuelve a crear pero con el nuevo contenido.
+    #+END_SRC
+    En general, es preferible y más común escribir el comentario antes
+    de dicha línea, y limitar la longitud de línea a 80 caracteres:
+    #+BEGIN_SRC C++
+      //En caso de querer sobreescribir se hace lo mismo. Borra el archivo y
+      //lo vuelve a crear pero con el nuevo contenido.
+      else if(respuesta==3)
+    #+END_SRC
+    Así la lectura resulta mucho más agradable y natural.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     1.50 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.84 |
+| Complejidad            |        10 |        |     0.67 |
+| Claridad de desarrollo |        10 |        |     0.67 |
+| Interfaz usuario       |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     2.01 |
+| Historia en Git        |        10 |        |     0.67 |
+| Directorio de proyecto |        10 |        |     0.67 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     2.00 |
+| Estructura             |        10 |        |     1.00 |
+| Nomenclatura           |        10 |        |     1.00 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     9.36 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
+
+* Karla Guzmán
+- Código :: [[./GuzmanKarla/proyecto_wolf.c][proyecto_wolf.c]], [[./GuzmanKarla/ficheros.h][ficheros.h]], [[./GuzmanKarla/other.h][other.h]]
+- Lenguaje de desarrollo :: C
+- Observaciones :: Este proyecto fue copiado, con apenas unas mínimas
+                   modificación, de uno [[https://github.com/gwolf/sistop-2018-1/blob/master/proyectos/1/SantiagoLopezRicardo][entregado el año pasado por
+                   otro alumno]]. Es válido buscar documentarse en cómo
+                   un compañero resolvió el problema, pero no es
+                   válido simplemente copiar sin siquiera intentar
+                   entender. No recibo esta entrega.
+
+* Aníbal Medina y Guadalupe Moreno
+- Documentación :: [[./MedinaAnibal-MorenoGuadalupe/Documentacion][Documentacion]]
+- Código :: [[./MedinaAnibal-MorenoGuadalupe/Archivo.py][Archivo.py]], [[./MedinaAnibal-MorenoGuadalupe/File.py][File.py]], [[./MedinaAnibal-MorenoGuadalupe/inicio.py][inicio.py]], [[./MedinaAnibal-MorenoGuadalupe/Pila.py][Pila.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Línea de comando con comandos propios
+- Estrategia empleada :: El sistema de archivos es una pila en
+     memoria; se serializa / des-serializa con la biblioteca Pickle
+- Observaciones ::
+  - ¡Bien! Me gusta cuando acuden al conocimiento colectivo y usan
+    bibliotecas de serialización ;-) Podría verse como un poquito de
+    trampa... Pero se vale. ¡Porque lo digo yo!
+    - Tal vez sería mejor si, en vez de serializar y des-serializar
+      mediante comandos específicos, se des-serializara al iniciar
+      ejecución, y se serializara en automático después de cada
+      operación.
+  - No entiendo lo que comentan en la documentación respecto a «usar
+    un inodo».
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     1.50 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.67 |
+| Complejidad            |       7.5 |        |     0.50 |
+| Claridad de desarrollo |        10 |        |     0.67 |
+| Interfaz usuario       |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     1.67 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |       7.5 |        |     0.50 |
+| Directorio de proyecto |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     1.75 |
+| Estructura             |        10 |        |     1.00 |
+| Nomenclatura           |       7.5 |        |     0.75 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.26 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
+
+* Miguel Pérez
+- Documentación :: [[./PerezMiguel/leeme.txt][leeme.txt]]
+- Código :: [[./PerezMiguel/main.c][main.c]], [[./PerezMiguel/ficheros.h][ficheros.h]], [[PerezMiguel/other.h][other.h]]
+- Lenguaje de desarrollo :: C
+- Observaciones :: Este proyecto fue copiado, sin más modificación que
+                   eliminar el nombre del autor original, de uno
+                   [[https://github.com/gwolf/sistop-2018-1/blob/master/proyectos/1/SantiagoLopezRicardo][entregado el año pasado por otro alumno]]. Es válido
+                   buscar documentarse en cómo un compañero resolvió
+                   el problema, pero no es válido simplemente copiar
+                   sin siquiera intentar entender. No recibo esta
+                   entrega.
+
+* Andrew Sánchez
+- Documentación :: [[./SanchezAndrew/Documentacion][Documentacion]]
+- Código :: [[./SanchezAndrew/proyecto3.py][proyecto3.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Comandos interactivos
+- Estrategia empleada :: Paso / traducción directa de comandos propios
+     a comandos del sistema
+- Observaciones ::
+  - El proyecto no implementa lo requerido ☹ Lo único que hace es
+    presentar un /envoltorio/ alrededor de comandos del sistema.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     0.00 |
+| Cumplimiento           |         0 |        |     0.00 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     1.67 |
+| Complejidad            |         5 |        |     0.33 |
+| Claridad de desarrollo |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.84 |
+| Historia en Git        |        10 |        |     0.67 |
+| Directorio de proyecto |       7.5 |        |     0.50 |
+| Código válido          |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     1.25 |
+| Estructura             |         5 |        |     0.50 |
+| Nomenclatura           |       7.5 |        |     0.75 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     6.77 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
+
+* Cristian Valeriano y Simón Ramírez
+- Documentación :: 
+- Código :: [[./ValerianoCristian-RamirezSimon/mfs.py][mfs.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Línea de comando con comandos propios
+- Estrategia empleada :: Archivo de texto separado por
+     --%%Etiqueta%%--; tiene área de directorio (inicio del archivo) y
+     área de datos (resto del archivo)
+- Observaciones ::
+  - Hay un pequeño error de implementación que evita que muestre el
+    contenido de los archivos ☹ Están bien representados en el
+    archivo, sin embargo
+  - ¡No hay documentación! ☹
+  - El =sleep(3)= de la línea 98 está indentado fuera de lugar y,
+    junto con el =else= de la línea 100, crea un error de sintaxis que
+    evita ejecutar el programa. Por suerte, se corrige muy fácil.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |     1.50 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Complejidad            |        10 |        |     0.67 |
+| Claridad de desarrollo |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     0.00 |
+| Doc. externa           |         0 |        |     0.00 |
+| Entorno y dependencias |         0 |        |     0.00 |
+| Comentarios            |         0 |        |     0.00 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |        10 |        |     0.67 |
+| Directorio de proyecto |       7.5 |        |     0.50 |
+| Código válido          |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *Legibilidad*          |           |    0.2 |     2.00 |
+| Estructura             |        10 |        |     1.00 |
+| Nomenclatura           |        10 |        |     1.00 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     7.18 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3 ; f-2::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7 ; f-2::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11 ; f-2::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15 ; f-2::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18 ; f-2::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/2 ; f-2::@19$4=@2+@4+@8+@12+@16 ; f-2
