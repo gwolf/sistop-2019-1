@@ -707,3 +707,63 @@ El planteamiento del proyecto y la rúbrica para su calificación están
 | *TOTAL*                |           |        |     7.35 |
 |------------------------+-----------+--------+----------|
 #+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
+
+* Cristian Valeriano y Simón Ramírez
+- Documentación :: [[./ValerianoCristian-RamirezSimon/README.txt]]
+- Código :: [[./ValerianoCristian-RamirezSimon/monitor.py]]
+- Lenguaje de desarrollo :: Python
+- Interfaz :: Terminal a pantalla completa (con secuencias de escape
+              ANSI, no Curses); menú
+- Aspecto monitoreado :: Memoria, procesos, disco, últimos usuarios,
+     información de CPU, interrupciones
+- Uso de multitarea / sincronización ::
+     Manejo de hilos como mecanismo de control de flujo, invocación de
+     funciones. Manejan mutex para asegurar que no haya impresión de
+     dos rutinas simultáneas, aunque la lógica del sistema de todos
+     modos no lo permitiría (es en realidad secuencial)
+- Observaciones ::
+  - Tuve que hacer varias adecuaciones, porque el programa presenta
+    errores en todos los casos de uso de =readline()=. Los tres casos
+    de:
+    #+BEGIN_SRC python
+    for l in a.readline()
+         print a.readline()
+    #+END_SRC
+    hay que reemplazarlos por:
+    #+BEGIN_SRC python
+    for l in a.readlines():
+         print l
+    #+END_SRC
+    En dos de los casos, además, estaba incorrectamente indentado (lo
+    cual imposibilita la compilación). Me asalta la duda acerca de si
+    pudieron ejecutar el programa con estos errores ☹
+  - Me da gusto que hayan /dado correcta atribución/ al basarse en
+    trabajo de terceros.
+
+| *Rubro*                | *Parcial* | *Peso* | *Puntos* |
+|------------------------+-----------+--------+----------|
+| *Requisitos*           |           |    0.2 |      1.5 |
+| Cumplimiento           |       7.5 |        |     1.50 |
+|------------------------+-----------+--------+----------|
+| *Proyecto*             |           |    0.2 |     2.01 |
+| Creatividad            |        10 |        |     0.67 |
+| Complejidad            |        10 |        |     0.67 |
+| Interfaz usuario       |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Documentación*        |           |    0.2 |     2.01 |
+| Doc. externa           |        10 |        |     0.67 |
+| Entorno y dependencias |        10 |        |     0.67 |
+| Comentarios            |        10 |        |     0.67 |
+|------------------------+-----------+--------+----------|
+| *Entrega*              |           |    0.2 |     1.67 |
+| Historia en Git        |        10 |        |     0.67 |
+| Dir. de proyecto       |        10 |        |     0.67 |
+| Código válido          |         5 |        |     0.33 |
+|------------------------+-----------+--------+----------|
+| *Concurrencia*         |           |    0.2 |     1.25 |
+| Multiproceso           |       7.5 |        |     0.75 |
+| Sincronización         |       7.5 |        |     0.50 |
+|------------------------+-----------+--------+----------|
+| *TOTAL*                |           |        |     8.44 |
+|------------------------+-----------+--------+----------|
+#+TBLFM: @2$4=@3::@3$4=@3$2*@2$3 ; f-2::@4$4=@5+@6+@7::@5$4=$2*@4$3/3 ; f-2::@6$4=$2*@4$3/3 ; f-2::@7$4=$2*@4$3/3 ; f-2::@8$4=@9+@10+@11::@9$4=$2*@8$3/3 ; f-2::@10$4=$2*@8$3/3 ; f-2::@11$4=$2*@8$3/3 ; f-2::@12$4=@13+@14+@15::@13$4=$2*@12$3/3 ; f-2::@14$4=$2*@12$3/3 ; f-2::@15$4=$2*@12$3/3 ; f-2::@16$4=@17+@18::@17$4=$2*@16$3/2 ; f-2::@18$4=$2*@16$3/3 ; f-2::@19$4=@2+@4+@8+@12+@16
