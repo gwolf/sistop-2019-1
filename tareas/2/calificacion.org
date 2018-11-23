@@ -63,12 +63,31 @@
       Basta con quitar =Tabla.= para que funcione. ¿Qué pasó ahí? :-]
   - Calificación :: 10
 
-- Simón Ramírez ::
-  - Código :: [[./RamirezSimon/asigMem.py][asigMem.py]]
-  - Lenguaje :: Python
+- Simón Ramírez y Cristian Valeriano ::
+  - Código :: [[./RamirezSimon-ValerianoCristian/asigMem.rb][asigMem.rb]]
+  - Lenguaje :: ruby
   - Comentarios ::
-    - ¿Archivo vacío? ☹ ¿No hubo entrega?
-  - Calificación :: 0
+    - Tienen varios errores de uso de métodos erróneos
+      (=String#include= no existe para =cadena.include(cad_aux)=
+      repetidamente)
+    - =String#succ= entrega una cadena nueva, no modifica a la
+      existente (hay que re-asignar a procesos)
+    - Hay varios puntos en que la =cadena= no es pasada a la función,
+      por lo que el programa no llega a funcionar. Lo evalúo
+      únicamente basado en el fuente.
+    - La lógica de =asignaProceso()= suena correcta, y me gusta el uso
+      que hacen del lenguaje. La lógica de =liberaProceso()= llevaría
+      efectivamente a una compactación siempre que termine un proceso
+      - Podrías usar =String.gsub!()=:
+	#+BEGIN_SRC text
+	  >> v='AAAA--BBBBCCDDDD'.ljust(30,'-')
+	  => "AAAA--BBBBCCDDDD--------------"
+	  >> v.gsub!('C', '-')
+	  => "AAAA--BBBB--DDDD--------------"
+	  >> v.gsub!('B', '-')
+	  => "AAAA--------DDDD--------------"
+	#+END_SRC
+  - Calificación :: 8
 
 - Miguel Aguilar ::
   - Código :: [[./AguilarMiguel/asignador.c][asignador.c]]
