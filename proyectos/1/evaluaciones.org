@@ -189,6 +189,15 @@ ellos en un ordenamiento alfabético.
     vives hoy.
 - Calificación :: 10
 
+* Macario Leonel
+- Documentos entregados :: [[./LeonelMacario/Proyecto1.pdf]]
+- Comentarios ::
+  - Me parece interesante la comparación que haces al evaluar al Epson
+    HX-20 comparándolo con el estado actual de los dispositivos
+    móviles, y no únicamente ciñéndote al texto del artículo (en
+    relación a su momento histórico). Muy bien.
+- Calificación :: 10
+
 * Martínez Jair
 - Documentos entregados :: [[MartinezJair/Proyecto 1.pdf][./MartinezJair/Proyecto 1.pdf]]
 - Comentarios ::
